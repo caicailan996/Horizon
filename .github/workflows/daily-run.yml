@@ -28,6 +28,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # 如果有其他环境变量也一起加到这里
         run: |
+          echo "Secret injected status: ${{ secrets.OPENAI_API_KEY != '' }}"
+          echo "Env variable status: ${OPENAI_API_KEY:+SET}"
           uv sync
           # 这里指定使用你在 GitHub 用的配置文件
           uv run horizon --config data/config.github.json
