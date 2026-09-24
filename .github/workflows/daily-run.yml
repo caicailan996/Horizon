@@ -23,6 +23,7 @@ jobs:
       - name: Run Horizon
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: |
           uv sync
           uv run horizon --config data/config.github.json
