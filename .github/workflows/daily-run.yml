@@ -5,6 +5,9 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
+permissions:      # <-- 新增这两行
+  contents: write # <-- 新增这两行
+
 jobs:
   run-horizon:
     runs-on: ubuntu-latest
