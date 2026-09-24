@@ -5,8 +5,8 @@ on:
   schedule:
     - cron: '0 0 * * *'
 
-permissions:      # <-- 新增这两行
-  contents: write # <-- 新增这两行
+permissions:
+  contents: write
 
 jobs:
   run-horizon:
@@ -31,8 +31,9 @@ jobs:
           uv sync
           uv run horizon --config data/config.github.json
 
-      - name: Commit and push generated summaries
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "🤖 Auto-generate Horizon daily summary"
-          file_pattern: "data/summaries/* docs/_posts/*"
+      - name: Commit and push generated summaries manually
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -f docs/_posts/* data/summaries/*
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-generate Horizon daily summary" && git push)
