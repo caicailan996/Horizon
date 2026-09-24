@@ -1,0 +1,35 @@
+name: Horizon Daily Run
+
+on:
+  # 允许你手动在 Actions 页面点击触发
+  workflow_dispatch:
+  # 每天 UTC 0 点（北京时间 8 点）自动运行
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  run-horizon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Run Horizon
+        env:
+          # 这里把你的中转站 Key 传给程序
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # 如果有其他环境变量也一起加到这里
+        run: |
+          uv sync
+          # 这里指定使用你在 GitHub 用的配置文件
+          uv run horizon --config data/config.github.json
+
+      # (可选) 如果你需要把生成的结果推到 GitHub Pages，需要加一个部署步骤
