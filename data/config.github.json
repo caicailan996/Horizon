@@ -1,6 +1,6 @@
 {
   "ai": {
-    "provider": "deepseek",
+    "provider": "openai",
     "model": "deepseek-v4-flash-0731",
     "base_url": "https://token.caih.com/v1",
     "api_key_env": "OPENAI_API_KEY",
