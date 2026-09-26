@@ -39,11 +39,27 @@
             "OpenAI",
             "AnthropicAI",
             "GoogleAI",
-            "MetaAI"
+            "MetaAI",
+            "karpathy",
+            "lexfridman",
+            "lennysan",
+            "paulg",
+            "nikitabier",
+            "rrhoover",
+            "bgurley",
+            "levelsio",
+            "bobmcgrewai",
+            "deedydas",
+            "venturetwins",
+            "dongxi_nlp",
+            "op7418",
+            "dotey",
+            "vista8",
+            "ding_liam"
         ],
         "actor_id": "61RPP7dywgiy0JPD0",
         "fetch_replies": false,
-        "max_tweets": 20
+        "max_tweets": 50
     },
     "github": [
       {
