@@ -186,7 +186,16 @@ class ContentAnalyzer:
 
         if item.processing:
             item.processing.analysis = result
-
+            # 新增：打印每条内容的评分详情
+            logger.info(
+                "AI Score: %s/10 | Source: %s | Profile: %s | Title: %s | Reason: %s",
+                result.score,
+                item.source_type.value,
+                item.processing.classification.profile if item.processing.classification else "unknown",
+                (item.title or "")[:60],
+                (result.reason or "")[:120],
+            )
+            
     @classmethod
     def _validate_analysis_response(
         cls,
