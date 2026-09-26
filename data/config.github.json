@@ -29,6 +29,9 @@
       "finance-news": {
         "threshold": 7.0,
         "topic_dedup": true
+      },
+      "twitter-news": {
+        "threshold": 6.0
       }
     }
   },
@@ -186,13 +189,6 @@
           "profile": ["tech-news", "finance-news"]
         }
       ]
-    }
-  },
-  "processing": {
-    "profile_settings": {
-      "twitter-news": {
-        "threshold": 6.0  
-      }
     }
   },
   "collection": {
