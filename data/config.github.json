@@ -42,7 +42,7 @@
             "MetaAI"
         ],
         "fetch_replies": false,
-        "max_tweets": 5
+        "max_tweets": 10
     },
     "github": [
       {
