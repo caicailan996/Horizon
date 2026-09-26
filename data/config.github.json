@@ -41,7 +41,7 @@
             "lennysan"
         ],
         "fetch_replies": false,
-        "max_tweets": 50
+        "max_tweets": 5
     },
     "github": [
       {
