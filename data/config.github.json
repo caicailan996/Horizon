@@ -191,7 +191,7 @@
   "processing": {
     "profile_settings": {
       "twitter-news": {
-        "threshold": 6.0  // 仅对 twitter-news Profile 生效的阈值
+        "threshold": 6.0  
       }
     }
   },
