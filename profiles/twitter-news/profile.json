@@ -1,4 +1,11 @@
 {
-  "name": "twitter-news",
-  "description": "Profile specifically for Twitter/X content"
+  "id": "twitter-news",
+  "name": "Twitter News",
+  "display_names": {
+    "zh": "推特新闻",
+    "en": "Twitter News"
+  },
+  "match": {},
+  "analysis": {},
+  "enrichment": {}
 }
