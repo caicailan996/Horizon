@@ -166,6 +166,34 @@
         "enabled": true,
         "category": "ai-media",
         "profile": "tech-news"
+      },
+      {
+        "name": "Ahead of AI",
+        "url": "https://magazine.sebastianraschka.com/feed",
+        "enabled": true,
+        "category": "ai-tools",
+        "profile": "ai-creator"
+      },
+      {
+        "name": "The Batch",
+        "url": "https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/the-batch.xml",
+        "enabled": true,
+        "category": "ai-tools",
+        "profile": "ai-creator"
+      },
+      {
+        "name": "TLDR AI",
+        "url": "https://tldr.tech/api/rss/ai",
+        "enabled": true,
+        "category": "ai-tools",
+        "profile": "ai-creator"
+      },
+      {
+        "name": "Ben's Bites",
+        "url": "https://www.bensbites.com/feed",
+        "enabled": true,
+        "category": "ai-tools",
+        "profile": "ai-creator"
       }
     ],
     "reddit": {
@@ -212,6 +240,7 @@
     "max_items": null,
     "profile_order": [
       "tech-news",
+      "ai-creator",
       "tech-blog",
       "finance-news"
     ],
