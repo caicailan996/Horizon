@@ -132,7 +132,7 @@ class TwitterScraper(BaseScraper):
                 "source_mode": "profiles",
                 "profile_urls": users,
                 "search_sort": "Latest",
-                "max_items": max(100, self.config.fetch_limit),
+                "max_items": self.config.fetch_limit if self.config.fetch_limit else 10,
             },
         )
 
@@ -183,7 +183,7 @@ class TwitterScraper(BaseScraper):
         if max_replies == 0:
             return []
 
-        max_items = max(100, max_replies * 5)
+        max_items = max_replies * 3 if max_replies else 10
         payload = {
             "source_mode": "search",
             "search_query": f"conversation_id:{conversation_id}",
