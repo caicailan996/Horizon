@@ -38,20 +38,7 @@
         "users": [
             "karpathy",
             "lexfridman",
-            "lennysan",
-            "paulg",
-            "nikitabier",
-            "rrhoover",
-            "bgurley",
-            "levelsio",
-            "bobmcgrewai",
-            "deedydas",
-            "venturetwins",
-            "dongxi_nlp",
-            "op7418",
-            "dotey",
-            "vista8",
-            "ding_liam"
+            "lennysan"
         ],
         "fetch_replies": false,
         "max_tweets": 50
