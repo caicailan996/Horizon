@@ -41,6 +41,7 @@
             "GoogleAI",
             "MetaAI"
         ],
+        "actor_id": "apidojo/tweet-scraper",
         "fetch_replies": false,
         "max_tweets": 10
     },
