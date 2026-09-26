@@ -36,9 +36,10 @@
     "twitter": {
         "enabled": true,
         "users": [
-            "karpathy",
-            "lexfridman",
-            "lennysan"
+            "OpenAI",
+            "AnthropicAI",
+            "GoogleAI",
+            "MetaAI"
         ],
         "fetch_replies": false,
         "max_tweets": 5
