@@ -30,7 +30,7 @@ jobs:
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: |
           uv sync
-          uv run horizon --config data/config.github.json  --log-level DEBUG
+          uv run horizon --config data/config.github.json  
 
       - name: Commit and push generated summaries manually
         run: |
