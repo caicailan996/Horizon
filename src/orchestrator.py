@@ -723,6 +723,35 @@ class HorizonOrchestrator:
         for item in items:
             if self.passes_profile_filter(item, threshold):
                 threshold_items.append(item)
+            else:
+                # 新增：打印被剔除的原因
+                profile_id = (
+                    item.processing.classification.profile
+                    if item.processing and item.processing.classification
+                    else self.profiles.default_profile
+                )
+                settings = self.config.processing.profile_settings.get(profile_id)
+                effective_threshold = threshold if threshold is not None else (
+                    settings.threshold if settings else None
+                )
+                score = (
+                    item.processing.analysis.score
+                    if item.processing and item.processing.analysis
+                    else None
+                )
+                if score is None:
+                    reason = "no score (analysis failed or missing)"
+                elif effective_threshold is not None and score < effective_threshold:
+                    reason = f"score {score} < threshold {effective_threshold}"
+                else:
+                    reason = "unknown"
+                logger.info(
+                    "DISCARDED (threshold): %s | Source: %s | Profile: %s | Title: %s",
+                    reason,
+                    item.source_type.value,
+                    profile_id,
+                    (item.title or "")[:60],
+                )    
         threshold_items.sort(
             key=lambda item: (
                 item.processing.analysis.score
