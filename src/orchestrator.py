@@ -745,13 +745,12 @@ class HorizonOrchestrator:
                     reason = f"score {score} < threshold {effective_threshold}"
                 else:
                     reason = "unknown"
-                logger.info(
-                    "DISCARDED (threshold): %s | Source: %s | Profile: %s | Title: %s",
-                    reason,
-                    item.source_type.value,
-                    profile_id,
-                    (item.title or "")[:60],
-                )    
+                self.console.print(
+                    f"   [dim]DISCARDED (threshold): {reason} | "
+                    f"Source: {item.source_type.value} | "
+                    f"Profile: {profile_id} | "
+                    f"Title: {(item.title or '')[:60]}[/dim]"
+                )
         threshold_items.sort(
             key=lambda item: (
                 item.processing.analysis.score
