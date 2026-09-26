@@ -58,7 +58,7 @@
         ],
         "fetch_replies": false,
         "max_tweets": 50
-    }
+    },
     "github": [
       {
         "type": "user_events",
