@@ -1,14 +1,37 @@
 {
-  "id": "tech-news",
-  "name": "Tech News",
+  "id": "twitter-news",
+  "name": "Twitter News",
   "display_names": {
-    "zh": "科技新闻",
-    "en": "Tech News"
+    "zh": "推特新闻",
+    "en": "Twitter News"
   },
   "match": "match.md",
   "analysis": "analysis.md",
+  "content": {
+    "analysis_max_chars": 1000,
+    "enrichment_max_chars": 8000,
+    "sampling": "prefix"
+  },
   "enrichment": {
     "prompt": "enrichment.md",
-    "blocks": ["summary", "background", "community_discussion"]
+    "blocks": [
+      {
+        "id": "summary",
+        "type": "section",
+        "tools": [],
+        "primary": true
+      },
+      {
+        "id": "background",
+        "type": "section",
+        "tools": ["web_search", "history_search"]
+      },
+      {
+        "id": "community_discussion",
+        "type": "section",
+        "tools": [],
+        "optional": true
+      }
+    ]
   }
 }
