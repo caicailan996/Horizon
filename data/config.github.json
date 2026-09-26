@@ -59,7 +59,8 @@
         ],
         "actor_id": "61RPP7dywgiy0JPD0",
         "fetch_replies": false,
-        "max_tweets": 50
+        "max_tweets": 50,
+        "profile": "twitter-news",
     },
     "github": [
       {
@@ -185,6 +186,13 @@
           "profile": ["tech-news", "finance-news"]
         }
       ]
+    }
+  },
+  "processing": {
+    "profile_settings": {
+      "twitter-news": {
+        "threshold": 6.0  // 仅对 twitter-news Profile 生效的阈值
+      }
     }
   },
   "collection": {
