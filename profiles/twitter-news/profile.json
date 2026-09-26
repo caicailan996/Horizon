@@ -1,11 +1,14 @@
 {
-  "id": "twitter-news",
-  "name": "Twitter News",
+  "id": "tech-news",
+  "name": "Tech News",
   "display_names": {
-    "zh": "推特新闻",
-    "en": "Twitter News"
+    "zh": "科技新闻",
+    "en": "Tech News"
   },
-  "match": {},
-  "analysis": {},
-  "enrichment": {}
+  "match": "match.md",
+  "analysis": "analysis.md",
+  "enrichment": {
+    "prompt": "enrichment.md",
+    "blocks": ["summary", "background", "community_discussion"]
+  }
 }
