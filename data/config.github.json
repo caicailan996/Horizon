@@ -152,6 +152,20 @@
         "enabled": true,
         "category": "linux-kernel",
         "profile": "tech-news"
+      },
+      {
+        "name": "量子位",
+        "url": "https://www.qbitai.com/feed",
+        "enabled": true,
+        "category": "ai-media",
+        "profile": "tech-news"
+      },
+      {
+        "name": "新智元",
+        "url": "https://plink.anyfeeder.com/weixin/AI_era",
+        "enabled": true,
+        "category": "ai-media",
+        "profile": "tech-news"
       }
     ],
     "reddit": {
