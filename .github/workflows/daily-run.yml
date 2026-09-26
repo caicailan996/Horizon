@@ -26,6 +26,7 @@ jobs:
       - name: Run Horizon
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }} # <-- 确保添加了这一行
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: |
           uv sync
