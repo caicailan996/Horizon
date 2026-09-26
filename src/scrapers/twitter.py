@@ -46,7 +46,8 @@ class TwitterScraper(BaseScraper):
 
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
-        max_items = max(100, self.config.fetch_limit)
+        # max_items = max(100, self.config.fetch_limit)
+        max_items = self.config.fetch_limit if self.config.fetch_limit else 10
 
         if users:
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
