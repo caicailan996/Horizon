@@ -5,262 +5,320 @@ date: 2026-09-27
 lang: en
 ---
 
-> From 38 items, 13 important content pieces were selected
+> From 36 items, 15 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [US Appeals Court Upholds Pentagon Blacklist of Anthropic](#item-tech-news-1) ⭐️ 8.0/10
-2. [SemiAnalysis STEEL Teardown of Intel Panther Lake and 18A](#item-tech-news-2) ⭐️ 7.0/10
-3. [Interactive MLP visualization tool in NumPy with manual backprop and ablation lab](#item-tech-news-3) ⭐️ 7.0/10
-4. [DeepSeek Elastic Compute paper: large author list, claimed sandbox scale](#item-tech-news-4) ⭐️ 6.0/10
-5. [Reladraw: a text-based diagram DSL with explicit layout control](#item-tech-news-5) ⭐️ 6.0/10
-6. [Conversations Goes Free as Its Developer Leaves Google Play](#item-tech-news-6) ⭐️ 6.0/10
-7. [GDB 18.1 released with subprocess environment commands and Python API additions](#item-tech-news-7) ⭐️ 6.0/10
-8. [Decompose, Look, Reason: Reinforced latent-space reasoning for VLMs at EMNLP &\#x27;26](#item-tech-news-8) ⭐️ 6.0/10
-9. [Excel Now Allows Multiple Values in a Single Cell with Lists and Arrays](#item-tech-news-9) ⭐️ 6.0/10
-10. [LongCat-2.5-Preview Free for Two Weeks on OpenCode](#item-tech-news-10) ⭐️ 6.0/10
+1. [DeepSeek paper describes DSec elastic compute for massive sandboxes](#item-tech-news-1) ⭐️ 8.0/10
+2. [Reladraw: text-based diagramming with user-controlled relative placement](#item-tech-news-2) ⭐️ 7.0/10
+3. [SemiAnalysis Publishes Free Intel Panther Lake, 18A Teardown](#item-tech-news-3) ⭐️ 7.0/10
+4. [Report: AI Scores Perfect 151 on Mensa Norway IQ Test](#item-tech-news-4) ⭐️ 7.0/10
+5. [US appeals court upholds Pentagon blacklisting of Anthropic](#item-tech-news-5) ⭐️ 7.0/10
+6. [Excel adds lists and nested arrays, allowing multiple values per cell](#item-tech-news-6) ⭐️ 7.0/10
+7. [Conversations Leaves Google Play Over Support Frustrations, Goes Free](#item-tech-news-7) ⭐️ 6.0/10
+8. [GDB 18.1 debugger release adds environment, history, and Python changes](#item-tech-news-8) ⭐️ 6.0/10
+9. [NumPy MLP with GUI Shows Training Internals in Real Time](#item-tech-news-9) ⭐️ 6.0/10
+10. [A Little Guide to Distributed Algorithms Learning for LLM Training and Inference](#item-tech-news-10) ⭐️ 6.0/10
+11. [LongCat-2.5-Preview launches two-week free trial on OpenCode](#item-tech-news-11) ⭐️ 6.0/10
+12. [OpenAI reportedly expands Ultrafast API access around DevDay](#item-tech-news-12) ⭐️ 6.0/10
 
 **Financial News**
-1. [10-Year Treasury Yield Hits 19-Year High of 5.23% on Inflation and Bond Issuance](#item-finance-news-1) ⭐️ 9.0/10
-2. [Apple Faces Class Action Over Apple Pay Card-Issuer Fees](#item-finance-news-2) ⭐️ 7.0/10
-3. [Hong Kong Regulator Reaches HK$1 Billion Settlement with PwC Over Evergrande Audit](#item-finance-news-3) ⭐️ 7.0/10
+1. [10-year Treasury yield hits 5.23%, its highest since 2007](#item-finance-news-1) ⭐️ 8.0/10
+2. [Apple Faces Class Action Over Apple Pay Fees Charged to Card Issuers](#item-finance-news-2) ⭐️ 7.0/10
+3. [Users Report Suspected Overseas Fraud on Bank of China Mastercards](#item-finance-news-3) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [US Appeals Court Upholds Pentagon Blacklist of Anthropic](https://www.reuters.com/world/us-appeals-court-declines-block-pentagons-blacklisting-anthropic-2026-09-25/) ⭐️ 8.0/10
+### [DeepSeek paper describes DSec elastic compute for massive sandboxes](https://arxiv.org/abs/2609.22978) ⭐️ 8.0/10
 
-On September 25, the U.S. Court of Appeals for the D.C. Circuit ruled 2-1 to uphold the Pentagon&\#x27;s decision to list Anthropic as a national security supply chain risk, barring the company from military contracts. The majority found the Pentagon&\#x27;s concern reasonable because Anthropic refused to allow its AI products to be used in autonomous weapons and mass surveillance. Anthropic said it disagrees with the ruling and is considering asking the full appeals court to review the case. The decision reverses earlier progress for Anthropic, when a San Francisco federal judge had struck down the listing under a different law and blocked broader government restrictions.
+DeepSeek has published an arXiv paper describing DSec, an elastic compute system that, according to Hacker News discussion, can run hundreds of thousands of concurrent sandboxes on a compact cluster of 160 AMD Epyc server nodes. The listing presents the system&\#x27;s design as a preprint, so the claims are not independently verified and no shipped implementation is shown. Systems and security researchers evaluating large-scale sandboxing or AI-infrastructure designs are the main audience for the proposal.
 
-telegram · zaihuapd · Sep 26, 05:19
+hackernews · shenli3514 · Sep 26, 18:22 · [Discussion](https://news.ycombinator.com/item?id=49859112)
 
-**「Background」** The Pentagon placed Anthropic on its National Security Supply Chain risk list in 2025, barring the company from military contracts over its refusal to permit AI use in autonomous weapons and mass surveillance. A San Francisco federal judge later overturned that listing under a different legal statute, but the Washington D.C. appeals court has now reversed that decision, upholding the Pentagon&\#x27;s original determination.
+**「Background」** DeepSeek Elastic Compute \(DSec\), described in a recent arXiv report, is a production sandbox platform that exposes FnCall, container, microVM, and full-VM backends through a unified SDK. The report argues that agentic training workloads require an elastic execution platform rather than a single sandbox runtime.
 
-**「Impact」** The ruling keeps Anthropic excluded from U.S. military procurement despite its ethical restrictions on weapons and surveillance use, and signals that courts may defer to the Pentagon&\#x27;s national security risk determinations. Anthropic&\#x27;s next practical step is to seek en banc review by the full D.C. Circuit or adjust its usage policies to restore eligibility for defense contracts.
+**「Impact」** The paper reports that DSec achieves over 380,000 concurrent sandboxes and 3 million sandboxes per day using only 160 Epyc-based server nodes, with a creation rate exceeding 5,000 per second. This demonstrates that large-scale, high-throughput sandboxed execution for agentic reinforcement learning is feasible on a relatively compact cluster, which may influence how other organizations design their AI training infrastructure. The comparison to Google&\#x27;s AX project \(an early, unstable open-source release\) highlights that both organizations are pursuing similar declarative orchestration approaches but with different maturity levels.
 
-**Tags**: `#AI regulation`, `#national security`, `#Anthropic`, `#autonomous weapons`, `#supply chain risk`
+**「Community Discussion」** Commenters concentrated on the paper&\#x27;s unusually long author list, with one suggesting that listing many employees may be an asset-protection strategy to make poaching harder, while another wondered how 131 authors coordinated the work. Others compared DSec to Google&\#x27;s AX project and cited the unverified claim of 380,000 concurrent sandboxes on 160 Epyc nodes.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://arxiv.org/html/2609.22978v1">DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale</a></li>
+<li><a href="https://pandaily.com/deepseek-dsec-elastic-compute-agentic-training-sandbox-3m-day">DeepSeek Details DSec Elastic Compute : Agentic-Training... - Pandaily</a></li>
+<li><a href="https://arxiv.org/abs/2609.22978v1">[2609.22978v1] DeepSeek Elastic Compute (DSec): A Sandbox ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#deepseek`, `#elastic-compute`, `#ai-infrastructure`, `#sandboxing`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [SemiAnalysis STEEL Teardown of Intel Panther Lake and 18A](https://newsletter.semianalysis.com/p/intel-panther-lake-teardown) ⭐️ 7.0/10
+### [Reladraw: text-based diagramming with user-controlled relative placement](https://github.com/reladraw/reladraw) ⭐️ 7.0/10
 
-A free SemiAnalysis STEEL teardown of Intel&\#x27;s Panther Lake processor and Intel 18A process node was published on September 26, 2026, authored by Adith Shankar. The piece is presented as an examination of the chip and process, rather than an announced plan, but the supplied content does not include specific findings, measurements, or comparisons.
+Reladraw is a new open-source domain-specific language \(DSL\) for diagramming that lets users specify relative positions \(e.g., &quot;left of&quot;, &quot;right of&quot;\) while keeping diagrams text-based, unlike auto-placement tools such as Mermaid or Graphviz. It targets both humans and AI agents, and is available via a web playground, npm install, or as a skill for Claude. The approach bridges the gap between full manual layout and fully automated layout.
 
-rss · Semianalysis · Sep 26, 13:36
+hackernews · jpwalsh234 · Sep 26, 17:10 · [Discussion](https://news.ycombinator.com/item?id=49858513)
 
-**「Background」** Intel 18A is Intel&\#x27;s next-generation process node, and Panther Lake is the first client processor line built on it. Intel had slated Panther Lake for a late 2025 launch while partners tested early samples; this teardown examines a Core Ultra 7 365 sample to map the 18A structures, PowerVia routing, and tile-level process choices.
+**「Background」** Traditional text-based diagramming languages like Mermaid and Graphviz automatically position elements, often producing layouts that users cannot adjust. Manual tools like Draw.io give full control but are slow and difficult for AI agents to manipulate. Reladraw offers a middle ground by allowing relative positioning within a declarative language.
 
-**「Impact」** For semiconductor engineers and industry watchers, the SemiAnalysis teardown provides an early independent physical examination of Intel&\#x27;s 18A process in Panther Lake, the first client SoC built on that node, making it possible to test Intel&\#x27;s process and performance claims ahead of the chip&\#x27;s broader launch. The findings are especially relevant to those evaluating Panther Lake&\#x27;s AI-oriented performance and the Cougar Cove and Darkmont core architectures.
+**「Impact」** Developers and AI agents can now produce well-laid-out diagrams without manual tweaking, with the DSL designed to be efficient for AI coding assistants to generate and modify.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.neoteo.com/en/semianalysiss-panther-lake-teardown-maps-intel-18as-design">Intel Panther Lake 18 A teardown : what it found | NeoTeo</a></li>
-<li><a href="https://wccftech.com/intels-18a-process-shows-great-performance-as-panther-lake-socs-are-finally-up/">Intel &#x27;s 18 A Process Shows &quot;Great Performance&quot; As Initial Panther ....</a></li>
-<li><a href="https://www.linkedin.com/posts/enigma-security_intel-pantherlake-pctechnology-activity-7382348178563473408-WJUJ"># intel # pantherlake #pctechnology #advancedchips #aiinhardware...</a></li>
-<li><a href="https://newsletter.semianalysis.com/p/intel-panther-lake-teardown">Intel Panther Lake Teardown, 18 A , BSPD, GAAFET, SemiAnalysis...</a></li>
-<li><a href="https://www.linkedin.com/posts/nqobile-predict-maseko-78bbb0249_intel-pantherlake-ai-activity-7382096572819496960-1St8">Intel Unveils Panther Lake : AI PC Platform on 18 A Node | LinkedIn</a></li>
-<li><a href="https://wccftech.com/intel-panther-lake-confirmed-to-feature-cougar-cove-darkmont/">Intel &#x27;s Panther Lake SoCs Confirmed To Feature Cougar Cove...</a></li>
+**「Community Discussion」** Commenters noted that Reladraw addresses a key bottleneck in AI-assisted development, where visual alignment of mental models with agents is crucial \(apinstein\). One user appreciated that relative positioning is likely sufficient for most flowchart needs \(HeavyStorm\), while another reported a bug where edges did not render curved arrows as expected \(recroad\).
 
-</ul>
-</details>
-
-**Tags**: `#Intel`, `#Panther Lake`, `#Intel 18A`, `#semiconductor`, `#chip teardown`
+**Tags**: `#diagramming`, `#domain-specific-language`, `#developer-tools`, `#ai-agents`, `#open-source`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [Interactive MLP visualization tool in NumPy with manual backprop and ablation lab](https://www.reddit.com/r/MachineLearning/comments/1wqy1qd/p_a_small_mlp_from_scratch_in_numpy_with_a_gui_to/) ⭐️ 7.0/10
+### [SemiAnalysis Publishes Free Intel Panther Lake, 18A Teardown](https://newsletter.semianalysis.com/p/intel-panther-lake-teardown) ⭐️ 7.0/10
 
-An educational tool trains a small MLP on MNIST using only NumPy with manual backpropagation, SGD with momentum, dropout, and cosine decay, achieving ~98.5% accuracy. It visualizes weight distributions, gradient norms, PCA/t-SNE per layer, robustness curves, and allows real-time neuron ablation, pruning, and noise injection. The tool is aimed at students from high school to intro ML courses and self-learners, and is available on GitHub.
+SemiAnalysis published a free STEEL teardown looking inside Intel&\#x27;s 18A process technology and Panther Lake processors. The article is publicly available, but no specific technical findings or measurements are disclosed in the announcement.
 
-reddit · r/MachineLearning · /u/No-Brain-1655 · Sep 26, 18:38
+rss · Semianalysis · Sep 26, 13:36
 
-**「Background」** A multilayer perceptron \(MLP\) is a type of feedforward neural network. This tool implements the full training loop from scratch without autograd, making the internal mechanics transparent for learners.
-
-**「Impact」** Students and teachers can interactively observe how weight distributions evolve, which neurons are inactive, and how ablating a single neuron affects test accuracy, providing hands-on insight beyond textbook diagrams.
-
-**Tags**: `#machine learning`, `#educational tool`, `#visualization`, `#neural networks`, `#NumPy`
-
----
-
-<a id="item-tech-news-4"></a>
-### [DeepSeek Elastic Compute paper: large author list, claimed sandbox scale](https://arxiv.org/abs/2609.22978) ⭐️ 6.0/10
-
-DeepSeek has posted a paper titled &quot;DeepSeek Elastic Compute \(DSec\)&quot; to arXiv, describing the company&\#x27;s elastic compute infrastructure. The item itself supplies little technical detail, but commenters cite the work as running 380,000 concurrent sandboxes across 160 AMD Epyc-based server nodes and note the paper lists a very large author count, with one commenter saying 131 authors and 31 additional names not shown on the page.
-
-hackernews · shenli3514 · Sep 26, 18:22 · [Discussion](https://news.ycombinator.com/item?id=49859112)
-
-**「Background」** DeepSeek Elastic Compute \(DSec\) is a production sandbox platform designed for training agentic AI models that require execution in isolated environments. It exposes multiple sandbox backends—FnCall, container, microVM, and full-VM—through a unified SDK. According to the paper, a single production-scale unit spans around 160 nodes, supporting over 380,000 concurrent sandboxes and serving roughly 3 million sandboxes per day.
-
-**「Community discussion」** Commenters highlighted the claimed scale and the unusual author list, with some speculating that listing every employee on papers is an asset-protection strategy so competitors cannot tell whom to recruit. Others questioned how so many authors coordinated and asked whether the work is a kind of agent substrate; these remain commenter opinions, not established facts.
+**「Background」** Intel 18A is Intel&\#x27;s process node built around RibbonFET gate-all-around transistors and PowerVia backside power delivery \(BSPD\), and Panther Lake is a client chip produced on it. This teardown examines a Core Ultra 7 365 sample, tracing 18A structures and tile-level process choices such as PowerVia routing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arxiv.org/abs/2609.22978">[2609.22978] DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale</a></li>
-<li><a href="https://arxiv.org/html/2609.22978v1">DeepSeek Elastic Compute (DSec): A Sandbox Infrastructure for Effective Agentic Training at Scale</a></li>
+<li><a href="https://newsletter.semianalysis.com/p/intel-panther-lake-teardown">Intel Panther Lake Teardown , 18A, BSPD, GAAFET, SemiAnalysis ...</a></li>
+<li><a href="https://www.neoteo.com/en/semianalysiss-panther-lake-teardown-maps-intel-18as-design">Intel Panther Lake 18A teardown : what it found | NeoTeo</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#elastic-compute`, `#deepseek`, `#ai-infrastructure`, `#distributed-systems`, `#machine-learning`
+**Tags**: `#Intel`, `#semiconductors`, `#hardware`, `#process technology`, `#teardown`
+
+---
+
+<a id="item-tech-news-4"></a>
+### [Report: AI Scores Perfect 151 on Mensa Norway IQ Test](http://weixin.sogou.com/weixin?type=2&amp;query=%E6%96%B0%E6%99%BA%E5%85%83+%E9%97%A8%E8%90%A8%E6%99%BA%E5%95%86%E6%B5%8B%E8%AF%95%E8%A2%ABAI%E8%80%83%E7%88%86%E4%BA%86%EF%BC%81151%E6%BB%A1%E5%88%86%E7%99%BB%E9%A1%B6%EF%BC%8C99.97%25%E4%BA%BA%E7%B1%BB%E8%A2%AB%E7%A2%BE%E5%8E%8B) ⭐️ 7.0/10
+
+According to a New Intelligence report, Claude Fable 5.1 and the image-answering GPT-6 Astra answered all 35 pattern-reasoning questions on the Mensa Norway IQ test in 25 minutes, reaching the test&\#x27;s theoretical maximum of 151, reportedly in seven consecutive attempts. The article says 151 exceeds the 145 typically treated as the human ceiling and that about 98% of people fall below the 130 Mensa admission threshold. These are unverified media claims: the source provides no test methodology, model configuration, or independent replication, and an IQ-test score is not a direct measure of AI capability.
+
+rss · 新智元 · Sep 26, 08:06
+
+**「Background」** The Mensa Norway IQ test is a 25-minute, 35-item nonverbal test of fluid intelligence built around abstract figural reasoning, with a maximum score of 151 and a Mensa membership threshold near 130. In AI benchmarking, such visual tests are often verbalized into text for language models, while vision models can be given the original images directly, so the same test can be administered in different forms depending on the model being evaluated.
+
+**「Impact」** For AI evaluators, the reported result weakens the assumption that non-knowledge-based &\#x27;fluid intelligence&\#x27; tests remain a human-only strength. However, because the article lacks a controlled protocol and verification, the outcome should be treated as an unverified benchmark claim rather than evidence of general reasoning ability.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://trackingai.org/">IQ Test | Tracking AI</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI`, `#IQ test`, `#Mensa`, `#benchmarking`, `#artificial intelligence`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [Reladraw: a text-based diagram DSL with explicit layout control](https://github.com/reladraw/reladraw) ⭐️ 6.0/10
+### [US appeals court upholds Pentagon blacklisting of Anthropic](https://www.reuters.com/world/us-appeals-court-declines-block-pentagons-blacklisting-anthropic-2026-09-25/) ⭐️ 7.0/10
 
-Reladraw is a new open-source diagramming language that lets users specify relative positions \(e.g., &quot;left of&quot;, &quot;right of&quot;\) in a text file, combining the reproducibility of auto-layout DSLs like Mermaid with the layout control of manual tools like Draw.io. It is available today as a GitHub repository with an online playground, an npm package, and a Claude agent skill. The project aims to work well for both humans and AI agents, but early users report rough edges such as missing curved arrow support.
+A U.S. federal appeals court in Washington, D.C., ruled 2-1 on September 25 to uphold the Pentagon&\#x27;s decision to place Anthropic on a national security supply chain blacklist, barring the company from military contracts. The majority judges held that the Pentagon&\#x27;s concerns were reasonable because Anthropic refused to allow its AI to be used in autonomous weapons and mass surveillance. Anthropic said it disagrees with the ruling and is considering asking the full appeals court to review the case. The ruling follows an earlier decision by a San Francisco federal judge that overturned the listing under a separate law and blocked broader government restrictions on the company.
 
-hackernews · jpwalsh234 · Sep 26, 17:10 · [Discussion](https://news.ycombinator.com/item?id=49858513)
+telegram · zaihuapd · Sep 26, 05:19
 
-**「Background」** Text-based diagram languages such as Mermaid and Graphviz automatically determine element positions from a high-level description, which can produce layouts that do not match the author&\#x27;s intent. Manual diagram tools like Draw.io give full control but are time-consuming to edit and difficult for AI agents to modify programmatically. Reladraw attempts to occupy the middle ground by offering a declarative language that preserves placement directives.
+**「背景」** Anthropic is an AI safety company whose product-use policies prohibit applications such as autonomous weapons and mass surveillance. That policy led the U.S. Department of Defense to place Anthropic on a national-security supply-chain blacklist, barring it from military contracts. In an earlier stage of the dispute, a San Francisco federal judge had struck down the listing under a different law and blocked broader government restrictions, before the D.C. Circuit panel now upheld the Pentagon&\#x27;s action.
 
-**「Impact」** Developers and teams who rely on text-based diagrams for documentation, architecture reviews, or AI-assisted planning now have an option that retains layout control without abandoning a text workflow. Because the language is still early and has acknowledged bugs \(e.g., missing curved arrows\), users should expect to encounter incomplete features and should verify output for production use.
+**「Impact」** Anthropic remains excluded from U.S. military contracts while it decides whether to pursue further review, so its current operational status under the blacklist is unchanged for now. The company&\#x27;s next concrete step is seeking en banc review by the full appeals court.
 
-**「Community Discussion」** Several commenters expressed enthusiasm for a diagramming tool that balances simplicity and layout control, especially for AI agent integration and C4-model diagrams. One user reported that the language failed to produce a curved arrow when the source and target positions were specified explicitly, indicating that the implementation is not yet fully robust.
-
-**Tags**: `#diagramming`, `#DSL`, `#developer tools`, `#AI agents`, `#open source`
+**Tags**: `#Anthropic`, `#AI policy`, `#national security`, `#military contracts`, `#regulation`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [Conversations Goes Free as Its Developer Leaves Google Play](https://gultsch.de/posts/breaking-up-with-google-play/) ⭐️ 6.0/10
+### [Excel adds lists and nested arrays, allowing multiple values per cell](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395) ⭐️ 7.0/10
 
-According to a September 26, 2026 post by the developer, the open-source Android app Conversations is now free and is being separated from Google Play, with the post explaining the reasoning behind leaving the store. The announced change means users who previously obtained the app through Google Play will need to use another distribution channel, and the decision is presented as a response to Play Store fees and support rather than a technical update.
+Microsoft has introduced lists, in-cell arrays, and nested arrays to Excel, making it possible to store multiple values in a single cell for the first time in 40 years. The preview is rolling out to Windows and Mac Beta Channel users, who can enter comma- or semicolon-separated items with Ctrl+J or Insert &gt; List and filter or calculate by individual items. Four new array functions—FLATTEN, HAS, HASANY, and HASALL—accompany the feature. Because this is a preview, behavior may change before release, and Microsoft advises against using it in critical workbooks.
 
-hackernews · ezst · Sep 26, 10:55 · [Discussion](https://news.ycombinator.com/item?id=49855315)
+telegram · zaihuapd · Sep 26, 16:26
 
-**「Background」** Conversations, an open-source XMPP messaging app for Android, was previously sold as a paid app on Google Play even though free builds were also available on F-Droid; according to the developer, he initially did not advertise the free option and only began linking to F-Droid as his relationship with Google worsened, making F-Droid the app&\#x27;s primary distribution route. Horizon&\#x27;s September 25 digest reported the release of F-Droid 2.0, the alternative store&\#x27;s largest client update in a decade, which shipped with a rewritten interface around the same time as this announcement.
+**「Background」** Throughout Excel&\#x27;s 40-year history, each cell could contain only one value; users had to split related data across separate cells or combine them as text strings. This preview allows multiple values per cell via lists and nested arrays, with four new functions \(FLATTEN, HAS, HASANY, HASALL\) to process them.
 
-**「Impact」** Existing users should expect Conversations to be distributed outside Google Play from now on; anyone relying on Play Store installations will need to obtain the app through an alternative source such as the developer&\#x27;s site or F-Droid to continue receiving updates. This is the developer&\#x27;s stated intention from the post, not an independently observed listing change.
-
-**「Community discussion」** Commenters largely frame the issue as poor Play Store support rather than the fee, with pi-victor arguing Google&\#x27;s 15% cut would be acceptable if reviews and support were good. k1w1 reports being unable to list a product for a year because Google&\#x27;s phone verification rejects IVR numbers, and 999900000999 describes Play as having shifted from hobbyist-friendly uploads to a business platform that discourages sideloading.
+**「Impact」** Windows and Mac Beta Channel users can now experiment with multi-value cells, but they should avoid relying on this feature in critical workbooks until it reaches general availability, since Microsoft says the preview behavior may still change.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://f-droid.org/2026/09/24/f-droid-2.0-a-new-chapter-for-android-freedom.html">2026-09-25 — F-Droid 2.0 launches Android app store overhaul and new UI</a></li>
+<li><a href="https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395">Put multiple values in one cell with lists and arrays in Excel | Microsoft Community Hub</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Excel`, `#Microsoft 365`, `#spreadsheet`, `#data management`, `#arrays`
+
+---
+
+<a id="item-tech-news-7"></a>
+### [Conversations Leaves Google Play Over Support Frustrations, Goes Free](https://gultsch.de/posts/breaking-up-with-google-play/) ⭐️ 6.0/10
+
+The developer of the open-source XMPP client Conversations announced that the app is leaving Google Play, citing poor support and policy frustrations, and is now available for free. The move appears to shift distribution away from the store that previously charged for the app, though the post does not detail a specific replacement store or release process.
+
+hackernews · ezst · Sep 26, 10:55 · [Discussion](https://news.ycombinator.com/item?id=49855315)
+
+**「Background」** Conversations is a free and open-source XMPP instant messaging client for Android, written by Daniel Gultsch and first released in 2014. It was long sold as a paid app on Google Play, although it was also available free through the F-Droid store; Gultsch refrained from advertising the free alternative to steer users to the paid version. Gultsch now says he has left Google Play over support and policy frustrations and made Conversations free.
+
+**「Impact」** Users who relied on Google Play for Conversations will need to install it from another distribution source, and the app is now free rather than paid. Developers evaluating Play as a channel may see this as another example of store policy and support burden affecting independent apps.
+
+**「Community Discussion」** Commenters argued that Google&\#x27;s fee is less objectionable than its poor store support, with one describing a year-long failure to verify a business support phone number and another saying Play has shifted from hosting hobbyist projects to a business-oriented platform increasingly hostile to sideloading. These are commenters&\#x27; opinions and experiences, not confirmed facts about the app&\#x27;s removal.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Conversations_%28software%29">Conversations (software) - Wikipedia</a></li>
 <li><a href="https://gultsch.de/posts/breaking-up-with-google-play/">Daniel Gultsch | Breaking Up with Google Play: Why Conversations Is Now Free</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Android`, `#Google Play`, `#open source`, `#app distribution`, `#developer experience`
-
----
-
-<a id="item-tech-news-7"></a>
-### [GDB 18.1 released with subprocess environment commands and Python API additions](https://lwn.net/Articles/1096897/) ⭐️ 6.0/10
-
-GDB 18.1, the latest minor release of the GNU interactive debugger, is now available. It adds commands to manipulate the environment of the debugged subprocess, the ability to save command history to a file, support for several new targets, and Python API additions. The full change list is in the project&\#x27;s NEWS file.
-
-rss · LWN.net · Sep 26, 15:03
-
-**「Background」** GDB is the GNU Project&\#x27;s interactive debugger, commonly used to run programs under controlled conditions and inspect their behavior. Version 18.1 is an incremental update to that debugger, with the NEWS file serving as the authoritative list of new commands and features.
-
-**Tags**: `#gdb`, `#debugger`, `#open-source`, `#software-development`, `#gnu`
+**Tags**: `#android`, `#google play`, `#open source`, `#app distribution`, `#developer experience`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [Decompose, Look, Reason: Reinforced latent-space reasoning for VLMs at EMNLP &\#x27;26](http://weixin.sogou.com/weixin?type=2&amp;query=%E6%96%B0%E6%99%BA%E5%85%83+%E9%9D%A2%E5%90%91%E8%A7%86%E8%A7%89%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BC%BA%E5%8C%96%E9%9A%90%E7%A9%BA%E9%97%B4%E6%8E%A8%E7%90%86%EF%BC%9A%E5%85%88%E5%88%86%E8%A7%A3%E3%80%81%E7%9C%8B%EF%BC%8C%E5%86%8D%E6%8E%A8%E7%90%86%7CEMNLP%2726) ⭐️ 6.0/10
+### [GDB 18.1 debugger release adds environment, history, and Python changes](https://lwn.net/Articles/1096897/) ⭐️ 6.0/10
 
-Researchers at Emory University introduced Decompose, Look, and Reason \(DLR\), a reinforced latent-space reasoning approach for vision-language models, accepted at the EMNLP 2026 Main Conference. DLR targets the problem that multimodal chain-of-thought often drifts toward long text reasoning while visual evidence fades, by repeatedly decomposing the question, looking at the image for the current subproblem, and reasoning from that visual evidence. The authors position it against three prior lines of work—text-only multimodal CoT, interleaved CoT with image patches or tools, and latent visual reasoning with local ROIs or single visual injection—and argue DLR can support evidence needed at different stages of a reasoning trajectory. The paper is available on arXiv \(2604.07518\); the announcement does not report benchmark results.
+GDB 18.1, the new version of the interactive debugger, has been released. It adds commands to manipulate the environment of the subprocess, the ability to save command history to a file, support for a couple of new targets, and several Python API additions, with the complete list in the NEWS file.
 
-rss · 新智元 · Sep 26, 14:00
+rss · LWN.net · Sep 26, 15:03
 
-**「Background」** Vision-language models can produce long reasoning chains, but multimodal reasoning requires repeated interaction between discrete language tokens and high-dimensional continuous visual representations. Existing approaches either compress visual information into text and lose detail, interleave explicit image evidence such as patches, boxes, crops, or zoom at extra tool cost, or project visual information into latent space but often only inject it once or rely on local ROIs that do not match the semantics needed at a given reasoning step.
+**「Background」** GDB \(the GNU Debugger\) is the standard interactive debugger for many compiled languages, particularly C and C++. This release follows the initial 18.x branch and adds incremental improvements and new features.
 
-**「Impact」** For researchers building long-horizon multimodal reasoning systems, DLR offers a latent-space alternative that avoids repeated external tool calls while keeping visual evidence available throughout the chain; because the source provides no evaluation numbers, any claimed gains should be checked against the full paper.
-
-**Tags**: `#vision-language models`, `#reinforcement learning`, `#latent space reasoning`, `#EMNLP`, `#AI research`
+**Tags**: `#gdb`, `#debugging`, `#developer-tools`, `#release`, `#python-api`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [Excel Now Allows Multiple Values in a Single Cell with Lists and Arrays](https://techcommunity.microsoft.com/blog/microsoft365insiderblog/put-multiple-values-in-one-cell-with-lists-and-arrays-in-excel/4559395) ⭐️ 6.0/10
+### [NumPy MLP with GUI Shows Training Internals in Real Time](https://www.reddit.com/r/MachineLearning/comments/1wqy1qd/p_a_small_mlp_from_scratch_in_numpy_with_a_gui_to/) ⭐️ 6.0/10
 
-Microsoft has previewed support for storing multiple values in a single Excel cell using lists, cell-internal arrays, and nested arrays, rolling out first to Windows and Mac Beta Channel users. This is the first time in Excel&\#x27;s 40-year history that a cell can hold more than one value, with entries separated by commas or semicolons via Ctrl+J or Insert &gt; List, and each item can be individually filtered and calculated. Four new functions—FLATTEN, HAS, HASANY, and HASALL—are also introduced for array handling. All features are preview capabilities subject to change before general availability, and Microsoft advises against using them in critical workbooks.
+The project is an educational implementation of a small multilayer perceptron in plain NumPy, with manual backpropagation, SGD with momentum, L2, dropout, cosine decay, and four activation functions; on the full MNIST training set it reaches about 98.5% accuracy according to the author. Its GUI shows per-batch and per-epoch loss, per-layer gradient norms with inactive-neuron percentages, current-versus-initial weight distributions, and first-layer receptive fields. It also provides layer-by-layer PCA/t-SNE of the test set with wrong-prediction links, robustness curves for noise and rotation, and an interactive lab for ablating, pruning, rescaling, or adding noise to neurons and changing softmax temperature with immediate test-accuracy feedback. The code is available on GitHub and is aimed at students, self-learners, and teachers.
 
-telegram · zaihuapd · Sep 26, 16:26
+reddit · r/MachineLearning · /u/No-Brain-1655 · Sep 26, 18:38
 
-**「Background」** Traditionally, each Excel cell stores exactly one data point \(e.g., a single number or text string\), and operations like filtering and calculation treat the entire cell content as a single unit. This preview introduces a fundamental change to that model by allowing a cell to contain a list of independently accessible values, enabling new data organization patterns within the existing grid interface.
+**「Background」** A multilayer perceptron \(MLP\) is a basic feedforward neural network often taught on MNIST, a dataset of handwritten digits. This project implements the network from scratch in NumPy without autograd, meaning the backward pass is derived manually, making the mechanics of training visible instead of hidden behind a deep-learning framework.
 
-**「Impact」** Because the feature is in preview and its behavior may change, users should avoid relying on it for important workbooks until it reaches general availability. Beta Channel subscribers on Windows and Mac can test the new functionality, but compatibility with older Excel versions and file formats is not yet guaranteed.
+**「Impact」** For ML instructors, the repository offers a framework-free demo that can be run in class or explored individually, letting students directly see how gradient norms, inactive neurons, weight distributions, and neuron ablations change during training and how robustness varies with noise or rotation. Because the accuracy figure is the author&\#x27;s own result set in the GitHub description, users should treat it as a reported outcome rather than an independently benchmarked claim.
 
-**Tags**: `#Excel`, `#Microsoft 365`, `#spreadsheet`, `#arrays`, `#productivity tools`
+**Tags**: `#educational tool`, `#NumPy`, `#MLP`, `#visualization`, `#neural network training`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [LongCat-2.5-Preview Free for Two Weeks on OpenCode](https://x.com/Meituan_LongCat/status/2103844449550020816) ⭐️ 6.0/10
+### [A Little Guide to Distributed Algorithms Learning for LLM Training and Inference](https://www.reddit.com/r/MachineLearning/comments/1wqk0x2/a_little_guide_to_learning_distributed_algorithms/) ⭐️ 6.0/10
 
-Meituan made LongCat-2.5-Preview available for a two-week free trial on OpenCode starting September 26, 2026. The preview model supports a 1M-token context, multimodal input, and zero data retention, according to the announcement. The offer covers the preview release only, and the announcement does not specify pricing or availability after the trial window.
+A Reddit user shared a curated guide for learning distributed algorithms used in LLM training and inference, centered on a list of papers the author read over three months and on a GitHub repository named smolcluster with basic reference implementations. The post also links an Alphaxiv shared folder containing the papers. It is a community forum starting point rather than an authoritative technical analysis, and the author says the repository is still being maintained and open to feedback.
+
+reddit · r/MachineLearning · /u/East-Muffin-6472 · Sep 26, 07:10
+
+**「Background」** Distributed LLM training and inference rely on multiple forms of parallelism—commonly data, tensor, pipeline, and model parallelism—so learners typically need both distributed-systems fundamentals and implementation practice before running or optimizing large models. This guide targets that gap by pairing selected papers with reference code.
+
+**「Impact」** For people new to the area, the practical consequence is a concrete, code-backed entry point: read the selected papers and experiment with the provided reference implementations instead of reading broadly across the field.
+
+**Tags**: `#distributed systems`, `#LLM training`, `#LLM inference`, `#distributed parallelism`, `#machine learning education`
+
+---
+
+<a id="item-tech-news-11"></a>
+### [LongCat-2.5-Preview launches two-week free trial on OpenCode](https://x.com/Meituan_LongCat/status/2103844449550020816) ⭐️ 6.0/10
+
+Meituan&\#x27;s LongCat account announced on September 26, 2026 that LongCat-2.5-Preview is available for a free two-week trial on OpenCode. The announcement claims support for a 1M-token context, multimodal input, and zero data retention. As of now this is a vendor announcement from a single social media post, with no independent confirmation of availability or measured performance.
 
 telegram · zaihuapd · Sep 27, 01:41
 
-**「Background」** LongCat is a series of multimodal AI models developed by Meituan. OpenCode is a platform that hosts AI models for free trials and deployment.
+**「Background」** LongCat-2.5-Preview is Meituan&\#x27;s long-context multimodal model, listed on Meituan&\#x27;s LongCat API platform on 25 September 2026 with a 1,000,000-token context window, 131,072-token maximum output, image input, an optional thinking mode, and a $0.006 cached-input rate. OpenCode already tracks the model&\#x27;s usage data, so the announced two-week free trial makes the model available through that platform at no charge.
 
-**「Impact」** Developers using OpenCode can test the 1M-context multimodal preview at no cost within the two-week window; after that, access terms are not stated in the announcement.
+**「Impact」** Developers on OpenCode can trial LongCat-2.5-Preview free for an announced two-week window, with a 1M-token context, multimodal input, and zero data retention, making it feasible for long-horizon agent workloads. Since reporting differs on whether the free access is time-limited or has no published end date, teams should confirm current availability and retention terms before relying on it.
 
-**Tags**: `#AI`, `#Large Language Model`, `#Multimodal`, `#OpenCode`, `#Model Preview`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://ahmetbalaman.com/en/blog/how-to-install-longcat-2-5-preview-en/">How to Install LongCat 2 . 5 Preview (Guide)</a></li>
+<li><a href="https://www.orcarouter.ai/blog/longcat-2-5-preview-vs-minimax-m3">LongCat - 2 . 5 - Preview vs MiniMax M3: identical rate cards</a></li>
+<li><a href="https://x.com/opencode/status/2103841640171614322">OpenCode on X: &quot;LongCat-2.5-Preview is now free on OpenCode for two weeks - 1M Context - Multi-modal - Zero Data Retention&quot; / X</a></li>
+<li><a href="https://huggingnews.com/ai/update-opencode-makes-meituan-16t-parameter-longcat-25-free-for-2-weeks-85004eb5">OpenCode Makes Meituan 1.6T Parameter LongCat 2.5 Free for 2 Weeks | HuggingNews</a></li>
+<li><a href="https://www.orcarouter.ai/blog/longcat-2-5-preview-free-opencode">LongCat-2.5-Preview free on OpenCode: 1M tokens, no end date</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI models`, `#multimodal`, `#long context`, `#Meituan`, `#OpenCode`
+
+---
+
+<a id="item-tech-news-12"></a>
+### [OpenAI reportedly expands Ultrafast API access around DevDay](https://www.testingcatalog.com/openai-prepares-to-expand-ultrafast-api-to-more-users/) ⭐️ 6.0/10
+
+According to TestingCatalog, OpenAI plans to broaden access to its Ultrafast API around the September 29 DevDay, expanding the mode beyond its current invite-only customers. The mode, previewed with GPT-5.6 Sol, is reported to reach up to 750 tokens per second and run 14x faster inference than the Standard tier. Developers might then choose Standard, Fast, or Ultrafast in the Playground, although OpenAI has not officially confirmed the rollout and GPT-6 support remains uncertain.
+
+telegram · zaihuapd · Sep 27, 02:06
+
+**「Background」** OpenAI has already officially previewed Ultrafast as a limited invitation-only service tier for GPT-5.6 Sol, with reporting describing claimed speeds of up to 750 output tokens per second and up to 14× faster inference than the Standard tier, a comparison based on GPT-5.6 Sol processing on GPU clusters. The current report concerns a planned wider rollout of that preview around OpenAI&\#x27;s September 29 DevDay.
+
+**「Impact」** Developers building on GPT-5.6 Sol should not assume Ultrafast throughput is generally available until OpenAI confirms the expanded rollout, and those planning around GPT-6 should treat Ultrafast support as unverified.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.testingcatalog.com/openai-prepares-to-expand-ultrafast-api-to-more-users/">OpenAI prepares to expand Ultrafast API to more users</a></li>
+<li><a href="https://www.orcarouter.ai/blog/gpt-5-6-sol-ultrafast-vs-gpt-5-6-sol">GPT-5.6 Sol Ultrafast vs Sol: same model, one missing price</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#OpenAI`, `#API`, `#performance`, `#GPT`, `#AI infrastructure`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [10-Year Treasury Yield Hits 19-Year High of 5.23% on Inflation and Bond Issuance](https://www.cnbc.com/2026/09/26/10-year-treasury-yield-is-at-its-highest-in-19-years-how-we-got-here.html) ⭐️ 9.0/10
+### [10-year Treasury yield hits 5.23%, its highest since 2007](https://www.cnbc.com/2026/09/26/10-year-treasury-yield-is-at-its-highest-in-19-years-how-we-got-here.html) ⭐️ 8.0/10
 
-The 10-year Treasury yield, which influences mortgages, rose to 5.23% on September 26, 2026, its highest level since 2007, as investors priced in higher inflation and a possible Federal Reserve rate hike in October.
+The 10-year Treasury yield—the interest rate on US government bonds that influences mortgages—climbed to 5.23% on Friday, its highest since 2007, reflecting sticky inflation, expectations of more Federal Reserve rate hikes, and heavy bond issuance from government deficits and AI-related corporate borrowing.
 
 rss · CNBC Finance · Sep 26, 13:30
 
-**「Background」** Yields move opposite to bond prices. The jump reflects both stubborn inflation—year-ahead expectations hit 4.6%—and a surge in bond issuance by the government and companies borrowing to fund AI infrastructure, which Vanguard says could reach $300–570 billion this year.
+**「Background」** The yield was just below 4.8% earlier this month; bond prices move inversely to yields, and traders now price a 64% chance of an October Fed rate hike, according to the CME FedWatch tool, as one-year consumer inflation expectations rose to 4.6% in September from 4% in August.
 
-**「Impact」** Higher yields can weigh on company profits and stocks by raising borrowing costs, and they make bonds more attractive to income investors, potentially pulling money from equities.
+**「Impact」** Higher yields raise borrowing costs for households and companies and can drag on stocks by making bonds more attractive to income-seeking investors.
 
-**Tags**: `#Treasury yields`, `#Federal Reserve`, `#Inflation`, `#Bond issuance`, `#AI investment`
+**Tags**: `#Treasury yields`, `#Federal Reserve`, `#bond issuance`, `#inflation`, `#AI investment`
 
 ---
 
 <a id="item-finance-news-2"></a>
-### [Apple Faces Class Action Over Apple Pay Card-Issuer Fees](https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/) ⭐️ 7.0/10
+### [Apple Faces Class Action Over Apple Pay Fees Charged to Card Issuers](https://9to5mac.com/2026/09/25/apple-faces-class-action-over-apple-pay-fees-charged-to-card-issuers/) ⭐️ 7.0/10
 
-A U.S. federal judge has certified a class action lawsuit alleging Apple charges payment card issuers anticompetitive fees for Apple Pay transactions: 0.15% on credit cards and $0.005 on debit cards. The plaintiffs, who seek refunds and an injunction, claim Apple collects up to $1 billion a year and blocks rivals from making competing mobile wallets.
+A U.S. federal judge certified an antitrust class action accusing Apple of overcharging payment card issuers for Apple Pay transactions. The lawsuit alleges Apple charges 0.15% on credit card payments and half a cent per debit transaction, taking up to $1 billion a year, and the plaintiffs are seeking refunds and an injunction.
 
 telegram · zaihuapd · Sep 26, 03:32
 
-**「Background」** Apple Pay is Apple&\#x27;s mobile wallet service, and card issuers are the banks and credit unions that provide the payment cards added to it. The lawsuit says Android phone wallets do not charge issuers these fees, which is the basis of the antitrust claim.
-
-**「Impact」** The certified class covers U.S. institutions that issue Apple Pay-compatible cards and paid the fees, meaning those issuers could recover past fees if the plaintiffs win the case.
-
-**Tags**: `#Apple`, `#Apple Pay`, `#class action`, `#antitrust`, `#mobile payments`
-
----
-
-<a id="item-finance-news-3"></a>
-### [Hong Kong Regulator Reaches HK$1 Billion Settlement with PwC Over Evergrande Audit](https://wallstreetcn.com/articles/3782573) ⭐️ 7.0/10
-
-Hong Kong&\#x27;s securities regulator settled with PwC Hong Kong for HK$1 billion over audit failures at property developer Evergrande. PwC did not admit liability but agreed to pay that amount to compensate independent small shareholders, though the settlement is being challenged in court by Evergrande&\#x27;s liquidators.
-
-telegram · zaihuapd · Sep 26, 07:18
-
-**「Background」** Evergrande, once one of China&\#x27;s largest property developers, collapsed under massive debt and is now being wound up. Regulators said its financial statements contained false information, and Hong Kong&\#x27;s securities regulator investigated PwC Hong Kong, which had audited those statements; in April 2026, PwC Hong Kong agreed to set aside HK$1 billion to compensate certain minority shareholders.
-
-**「Impact」** If approved, the settlement would provide direct compensation to small retail investors hit by Evergrande&\#x27;s collapse, but the court challenge introduces uncertainty and could delay or alter any payout.
+**「Background」** Apple Pay is Apple&\#x27;s mobile wallet service that lets iPhone users pay by tapping their devices; card issuers pay Apple a fee for each Apple Pay transaction, and Apple controls the iPhone&\#x27;s tap-to-pay technology, which plaintiffs say blocks rival wallets. In September 2026, U.S. District Judge Jeffrey White certified a class of U.S. card issuers in the antitrust lawsuit, allowing them to proceed together against Apple.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://eu.36kr.com/zh/p/3780065714148610">8点1氪： 华 谊兄弟被申请破产重整， 普 华 永 道 因 恒 大 审 计 赔偿 10 ...</a></li>
-<li><a href="https://news.qq.com/rain/a/20260424A01VGD00">普 华 永 道 将支付 10 ...</a></li>
+<li><a href="https://macdailynews.com/2026/09/25/federal-judge-certifies-class-in-apple-pay-fee-antitrust-case-brought-by-credit-union/">Federal judge certifies class in Apple Pay fee antitrust case brought...</a></li>
+<li><a href="https://www.macrumors.com/2026/09/25/apple-pay-antitrust-lawsuit-advances/">Banks and Credit Unions to Team Up Against Apple Pay Fees</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#香港证监会`, `#普华永道`, `#恒大`, `#审计监管`, `#和解`
+**Tags**: `#Apple`, `#Apple Pay`, `#antitrust`, `#class action`, `#payment fees`
+
+---
+
+<a id="item-finance-news-3"></a>
+### [Users Report Suspected Overseas Fraud on Bank of China Mastercards](https://finance.sina.com.cn/jryx/2026-09-26/doc-initcyza0450311.shtml) ⭐️ 7.0/10
+
+On Sept. 26, multiple users said on social media that their Bank of China Mastercards were apparently involved in large-scale overseas fraud, with one reporting an overnight Apple Pay card-lock notice and a Brazilian charge despite never carrying the physical card; users said they were locking their cards. The reports say affected cards were mostly British pound cards, with some dollar cards also involved.
+
+telegram · zaihuapd · Sep 26, 12:27
+
+**「Background」** The suspected cause is problems in the issuing bank&\#x27;s card-issuing logic and network authentication; last September, SPD Bank Mastercard users reported a similar incident that also involved Apple Pay-bound cards and Brazilian/Latin American currency.
+
+**Tags**: `#Bank of China`, `#Mastercard fraud`, `#cybersecurity`, `#card security`, `#China`
 
 ---
