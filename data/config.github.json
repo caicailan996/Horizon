@@ -176,28 +176,28 @@
         "url": "https://magazine.sebastianraschka.com/feed",
         "enabled": true,
         "category": "ai-tools",
-        "profile": "ai-creator"
+        "profile": "tech-news"
       },
       {
         "name": "The Batch",
         "url": "https://raw.githubusercontent.com/alan-turing-institute/ai-rss-feeds/refs/heads/main/feeds/the-batch.xml",
         "enabled": true,
         "category": "ai-tools",
-        "profile": "ai-creator"
+        "profile": "tech-news"
       },
       {
         "name": "TLDR AI",
         "url": "https://tldr.tech/api/rss/ai",
         "enabled": true,
         "category": "ai-tools",
-        "profile": "ai-creator"
+        "profile": "tech-news"
       },
       {
         "name": "Ben's Bites",
         "url": "https://www.bensbites.com/feed",
         "enabled": true,
         "category": "ai-tools",
-        "profile": "ai-creator"
+        "profile": "tech-news"
       }
     ],
     "reddit": {
