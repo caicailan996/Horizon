@@ -57,7 +57,7 @@ class TwitterScraper(BaseScraper):
                     "profile_urls": users,
                     "search_sort": "Latest",
                     "max_items": max_items,
-                    "since": since.isoformat(),  # 使用 ISO 8601 格式，最精确
+                    "since": since.strftime("%Y-%m-%d_%H:%M:%S_UTC"),
                 },
                 since,
                 items,
@@ -74,7 +74,7 @@ class TwitterScraper(BaseScraper):
                         "search_query": keyword,
                         "search_sort": "Latest",
                         "max_items": max_items,
-                        "since": since.isoformat(),  # 使用 ISO 8601 格式，最精确
+                        "since": since.strftime("%Y-%m-%d_%H:%M:%S_UTC"),
                     },
                     since,
                     items,
