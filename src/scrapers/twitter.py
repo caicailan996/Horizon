@@ -64,6 +64,7 @@ class TwitterScraper(BaseScraper):
                     "sort": "Latest",
                     "includeNativeRetweets": False,
                     "getReplies": False,
+                    "since": since.strftime("%Y-%m-%d"),  # 新增：传递起始日期
                 },
                 since,
                 items,
