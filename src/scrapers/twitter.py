@@ -1,4 +1,4 @@
-"""Twitter scraper using Apify apidojo/tweet-scraper actor."""
+"""Twitter scraper using Apify altimis/scweet actor."""
 
 import asyncio
 import logging
@@ -19,18 +19,13 @@ _APIFY_BASE = "https://api.apify.com/v2"
 _POLL_INTERVAL = 3.0
 _MAX_WAIT = 180
 
-_DEFAULT_ACTOR_ID = "apidojo/tweet-scraper"
-
 
 class TwitterScraper(BaseScraper):
-    """Fetch tweets via the Apify apidojo/tweet-scraper actor."""
+    """Fetch tweets via the Apify altimis/scweet actor."""
 
     def __init__(self, config: TwitterConfig, http_client: httpx.AsyncClient):
         super().__init__(config, http_client)
         self.config = config
-        # 从配置中读取 actor_id，如果没有则使用默认值
-        self.actor_id = getattr(config, "actor_id", _DEFAULT_ACTOR_ID)
-        logger.info(f"TwitterScraper initialized with actor_id: {self.actor_id}")
 
     async def fetch(self, since: datetime) -> List[ContentItem]:
         if not self.config.enabled:
@@ -51,20 +46,17 @@ class TwitterScraper(BaseScraper):
 
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
-        # 使用配置中的 fetch_limit，不再强制 100 条
-        max_items = self.config.fetch_limit if self.config.fetch_limit else 50
+        max_items = max(100, self.config.fetch_limit)
 
         if users:
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
             await self._collect_from_payload(
                 token,
                 {
-                    "twitterHandles": users,
-                    "maxItems": max_items,
-                    "sort": "Latest",
-                    "includeNativeRetweets": False,
-                    "getReplies": False,
-                    "since": since.strftime("%Y-%m-%d"),  # 新增：传递起始日期
+                    "source_mode": "profiles",
+                    "profile_urls": users,
+                    "search_sort": "Latest",
+                    "max_items": max_items,
                 },
                 since,
                 items,
@@ -77,11 +69,10 @@ class TwitterScraper(BaseScraper):
                 await self._collect_from_payload(
                     token,
                     {
-                        "searchTerms": [keyword],
-                        "maxItems": max_items,
-                        "sort": "Latest",
-                        "includeNativeRetweets": False,
-                        "getReplies": False,
+                        "source_mode": "search",
+                        "search_query": keyword,
+                        "search_sort": "Latest",
+                        "max_items": max_items,
                     },
                     since,
                     items,
@@ -118,7 +109,7 @@ class TwitterScraper(BaseScraper):
     async def _start_run_with_payload(
         self, token: str, payload: dict
     ) -> tuple[Optional[str], Optional[str]]:
-        url = f"{_APIFY_BASE}/acts/{self.actor_id}/runs?token={token}"
+        url = f"{_APIFY_BASE}/acts/{self.config.actor_id}/runs?token={token}"
         try:
             resp = await self.client.post(url, json=payload, timeout=30.0)
             resp.raise_for_status()
@@ -130,6 +121,19 @@ class TwitterScraper(BaseScraper):
         except Exception as exc:
             logger.error(f"Failed to start Apify run: {exc}")
             return None, None
+
+    async def _start_run(
+        self, token: str, users: List[str]
+    ) -> tuple[Optional[str], Optional[str]]:
+        return await self._start_run_with_payload(
+            token,
+            {
+                "source_mode": "profiles",
+                "profile_urls": users,
+                "search_sort": "Latest",
+                "max_items": max(100, self.config.fetch_limit),
+            },
+        )
 
     async def _wait_for_run(self, token: str, run_id: str) -> bool:
         url = f"{_APIFY_BASE}/actor-runs/{run_id}?token={token}"
@@ -162,7 +166,7 @@ class TwitterScraper(BaseScraper):
             return []
 
     async def fetch_replies_for_item(self, item: ContentItem) -> List[str]:
-        """Fetch reply texts for one tweet using apidojo/tweet-scraper search mode."""
+        """Fetch reply texts for one tweet using scweet search mode."""
         if not self.config.fetch_reply_text:
             return []
 
@@ -178,12 +182,12 @@ class TwitterScraper(BaseScraper):
         if max_replies == 0:
             return []
 
-        max_items = max_replies * 3 if max_replies else 50
+        max_items = max(100, max_replies * 5)
         payload = {
-            "conversationIds": [conversation_id],
-            "maxItems": max_items,
-            "sort": "Latest",
-            "includeNativeRetweets": False,
+            "source_mode": "search",
+            "search_query": f"conversation_id:{conversation_id}",
+            "search_sort": "Latest",
+            "max_items": max_items,
         }
 
         run_id, dataset_id = await self._start_run_with_payload(token, payload)
@@ -197,7 +201,7 @@ class TwitterScraper(BaseScraper):
         return self._extract_reply_lines(item, rows, max_replies)
 
     def _extract_reply_lines(self, item: ContentItem, rows: list, max_replies: int) -> List[str]:
-        """Convert apidojo/tweet-scraper rows into compact reply lines."""
+        """Convert scweet rows into compact reply lines."""
         min_likes = max(self.config.reply_min_likes, 0)
         tweet_id = str(item.metadata.get("tweet_id") or "")
         own_author = (item.author or "").lstrip("@")
@@ -208,11 +212,18 @@ class TwitterScraper(BaseScraper):
                 continue
 
             row_id = str(row.get("id") or "")
+            if row_id.startswith("tweet-"):
+                row_id = row_id[6:]
             if tweet_id and row_id == tweet_id:
                 continue
 
-            author = row.get("author") or {}
-            handle = author.get("userName") or row.get("handle") or "unknown"
+            user = row.get("user") or {}
+            handle = (
+                user.get("handle")
+                or row.get("handle")
+                or user.get("username")
+                or "unknown"
+            )
             if handle and own_author and handle.lower() == own_author.lower():
                 continue
 
@@ -220,8 +231,8 @@ class TwitterScraper(BaseScraper):
             if not text:
                 continue
 
-            likes = int(row.get("likeCount") or 0)
-            replies = int(row.get("replyCount") or 0)
+            likes = int(row.get("favorite_count") or 0)
+            replies = int(row.get("reply_count") or 0)
             if likes < min_likes:
                 continue
 
@@ -255,10 +266,8 @@ class TwitterScraper(BaseScraper):
         return True
 
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
-        """Parse a tweet item from apidojo/tweet-scraper output."""
         try:
-            # 适配 apidojo/tweet-scraper 的时间字段
-            created_at_str = item.get("createdAt") or item.get("created_at")
+            created_at_str = item.get("created_at")
             if not created_at_str:
                 return None
 
@@ -267,10 +276,7 @@ class TwitterScraper(BaseScraper):
                     created_at_str, "%a %b %d %H:%M:%S %z %Y"
                 )
             except ValueError:
-                try:
-                    published_at = isoparse(created_at_str)
-                except Exception:
-                    return None
+                published_at = isoparse(created_at_str)
 
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
@@ -278,62 +284,70 @@ class TwitterScraper(BaseScraper):
             if published_at < since:
                 return None
 
-            # 适配 apidojo/tweet-scraper 的 ID 字段
-            tweet_id = str(item.get("id") or item.get("id_str") or "")
+            tweet_id = str(item.get("id_str") or item.get("id") or "")
             if not tweet_id:
                 return None
 
-            # 从 apidojo/tweet-scraper 输出中提取 conversation_id
+            # Normalize tweet_id: scweet prefixes with "tweet-"
+            raw_id = item.get("id") or ""
+            numeric_id = (
+                str(raw_id).replace("tweet-", "")
+                if str(raw_id).startswith("tweet-")
+                else tweet_id
+            )
             conversation_id = str(
-                item.get("conversationId")
-                or item.get("conversation_id")
-                or tweet_id
+                item.get("conversation_id")
+                or item.get("tweet", {}).get("conversation_id")
+                or numeric_id
             )
 
-            # 适配 apidojo/tweet-scraper 的作者字段
-            author_data = item.get("author") or {}
+            user = item.get("user") or {}
             screen_name = (
-                author_data.get("userName")
-                or author_data.get("username")
+                user.get("screen_name")
+                or user.get("username")
+                or user.get("handle")
+                or item.get("handle")
                 or item.get("username")
                 or "unknown"
             )
-            author_name = author_data.get("name") or screen_name
+            author = user.get("name") or screen_name
 
-            # 适配 apidojo/tweet-scraper 的正文字段
-            text = item.get("text") or item.get("full_text") or ""
+            text = item.get("full_text") or item.get("text") or ""
             if not text:
                 return None
             text = unescape(text)
 
-            # 适配 apidojo/tweet-scraper 的 URL 字段
-            url = item.get("url") or item.get("twitterUrl")
+            url = item.get("url")
             if not url:
-                url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
+                permalink = item.get("permalink")
+                if permalink and screen_name != "unknown":
+                    url = f"https://twitter.com/{screen_name}{permalink}"
+                else:
+                    url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
             title_body = text[:50].replace("\n", " ").strip()
             if len(text) > 50:
                 title_body += "..."
 
             return ContentItem(
-                id=self._generate_id(SourceType.TWITTER.value, "tweet", tweet_id),
+                id=self._generate_id(SourceType.TWITTER.value, "tweet", numeric_id),
                 source_type=SourceType.TWITTER,
                 title=f"@{screen_name}: {title_body}",
                 url=url,
                 content=text,
-                author=author_name,
+                author=author,
                 published_at=published_at,
                 profile=self.config.profile,
                 metadata={
-                    "tweet_id": tweet_id,
+                    "tweet_id": numeric_id,
                     "conversation_id": conversation_id,
-                    "favorite_count": item.get("likeCount", 0),
-                    "retweet_count": item.get("retweetCount", 0),
-                    "reply_count": item.get("replyCount", 0),
-                    "view_count": item.get("viewCount"),
-                    "is_reply": item.get("isReply", False),
-                    "in_reply_to_status_id": item.get("inReplyToStatusId"),
-                    "in_reply_to_screen_name": item.get("inReplyToScreenName"),
+                    "favorite_count": item.get("favorite_count", 0),
+                    "retweet_count": item.get("retweet_count", 0),
+                    "reply_count": item.get("reply_count", 0),
+                    "view_count": item.get("view_count"),
+                    "is_reply": item.get("is_reply", False),
+                    "in_reply_to_status_id": item.get("in_reply_to_status_id"),
+                    "in_reply_to_screen_name": item.get("in_reply_to_screen_name"),
                     "category": self.config.category,
                 },
             )
