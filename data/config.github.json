@@ -66,7 +66,8 @@
         ],
         "fetch_replies": false,
         "max_tweets": 100,
-        "profile": "twitter-news"
+        "profile": "twitter-news",
+        "actor_id": "altimis/scweet"
     },
     "github": [
       {
