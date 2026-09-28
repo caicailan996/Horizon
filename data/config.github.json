@@ -65,7 +65,7 @@
             "ding_liam"
         ],
         "fetch_replies": false,
-        "max_tweets": 50,
+        "max_tweets": 100,
         "profile": "twitter-news"
     },
     "github": [
