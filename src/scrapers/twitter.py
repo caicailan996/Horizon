@@ -268,8 +268,10 @@ class TwitterScraper(BaseScraper):
         return True
 
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
+        """Parse a tweet item from Scweet flat output."""
         try:
-            created_at_str = item.get("created_at")
+            # 适配 Scweet 扁平字段
+            created_at_str = item.get("tweet.created_at")
             if not created_at_str:
                 return None
 
@@ -286,53 +288,31 @@ class TwitterScraper(BaseScraper):
             if published_at < since:
                 return None
 
-            tweet_id = str(item.get("id_str") or item.get("id") or "")
+            tweet_id = str(item.get("tweet.rest_id") or "")
             if not tweet_id:
                 return None
 
-            # Normalize tweet_id: scweet prefixes with "tweet-"
-            raw_id = item.get("id") or ""
-            numeric_id = (
-                str(raw_id).replace("tweet-", "")
-                if str(raw_id).startswith("tweet-")
-                else tweet_id
-            )
-            conversation_id = str(
-                item.get("conversation_id")
-                or item.get("tweet", {}).get("conversation_id")
-                or numeric_id
-            )
+            # conversation_id 在 Scweet 中不直接提供，使用 tweet_id 代替
+            conversation_id = tweet_id
 
-            user = item.get("user") or {}
-            screen_name = (
-                user.get("screen_name")
-                or user.get("username")
-                or user.get("handle")
-                or item.get("handle")
-                or item.get("username")
-                or "unknown"
-            )
-            author = user.get("name") or screen_name
+            screen_name = item.get("user.handle") or "unknown"
+            author = screen_name
 
-            text = item.get("full_text") or item.get("text") or ""
+            text = item.get("tweet.text") or ""
             if not text:
                 return None
             text = unescape(text)
 
-            url = item.get("url")
+            url = item.get("tweet.tweet_url")
             if not url:
-                permalink = item.get("permalink")
-                if permalink and screen_name != "unknown":
-                    url = f"https://twitter.com/{screen_name}{permalink}"
-                else:
-                    url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
+                url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
             title_body = text[:50].replace("\n", " ").strip()
             if len(text) > 50:
                 title_body += "..."
 
             return ContentItem(
-                id=self._generate_id(SourceType.TWITTER.value, "tweet", numeric_id),
+                id=self._generate_id(SourceType.TWITTER.value, "tweet", tweet_id),
                 source_type=SourceType.TWITTER,
                 title=f"@{screen_name}: {title_body}",
                 url=url,
@@ -341,15 +321,14 @@ class TwitterScraper(BaseScraper):
                 published_at=published_at,
                 profile=self.config.profile,
                 metadata={
-                    "tweet_id": numeric_id,
+                    "tweet_id": tweet_id,
                     "conversation_id": conversation_id,
-                    "favorite_count": item.get("favorite_count", 0),
-                    "retweet_count": item.get("retweet_count", 0),
-                    "reply_count": item.get("reply_count", 0),
-                    "view_count": item.get("view_count"),
-                    "is_reply": item.get("is_reply", False),
-                    "in_reply_to_status_id": item.get("in_reply_to_status_id"),
-                    "in_reply_to_screen_name": item.get("in_reply_to_screen_name"),
+                    "favorite_count": item.get("tweet.favorite_count", 0),
+                    "retweet_count": item.get("tweet.retweet_count", 0),
+                    "reply_count": item.get("tweet.reply_count", 0),
+                    "quote_count": item.get("tweet.quote_count", 0),
+                    "bookmark_count": item.get("tweet.bookmark_count", 0),
+                    "lang": item.get("tweet.lang"),
                     "category": self.config.category,
                 },
             )
