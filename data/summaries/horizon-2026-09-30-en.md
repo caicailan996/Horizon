@@ -1,96 +1,68 @@
 # Horizon Daily - 2026-09-30
 
-> From 57 items, 24 important content pieces were selected
+> From 58 items, 24 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [AI Has Taste finds a counterexample to a published conjecture, author confirms](#item-tech-news-1) ⭐️ 9.0/10
-2. [GLM-5.3 and Claude Mythos Preview Cross Binary Exploitation Threshold](#item-tech-news-2) ⭐️ 8.0/10
-3. [OpenAI DevDay 2026 Introduces Dots, GPT-6.1 Sol and Ultrafast, and New APIs](#item-tech-news-3) ⭐️ 8.0/10
-4. [Anthropic Report: GLM-5.3 Shows Autonomous Cyberattack Capabilities](#item-tech-news-4) ⭐️ 8.0/10
-5. [OpenAI introduces cheaper GPT-6.1 Sol with claimed near-Astra performance](#item-tech-news-5) ⭐️ 7.0/10
-6. [Privacy analysis exposes data-exposure risks in AI chat services](#item-tech-news-6) ⭐️ 7.0/10
-7. [OpenAI introduces Dots, an always-on agent product](#item-tech-news-7) ⭐️ 7.0/10
-8. [PostgreSQL developer talks Linux kernel support at Kernel Recipes](#item-tech-news-8) ⭐️ 7.0/10
-9. [Language Models for Text Classification: From Bag-of-Words to Jev](#item-tech-news-9) ⭐️ 7.0/10
-10. [China&\#x27;s generative AI users exceed 700 million](#item-tech-news-10) ⭐️ 7.0/10
-11. [Cloudflare launches cf CLI open beta for AI agents and developers](#item-tech-news-11) ⭐️ 7.0/10
-12. [Google fixes Firebase Analytics server bug behind iOS startup crashes](#item-tech-news-12) ⭐️ 7.0/10
-13. [How Delhi Cut Electricity Distribution Losses From 50% to 5%](#item-tech-news-13) ⭐️ 6.0/10
-14. [Relapse-Exploit: PS5 WebKit JavaScriptCore Jailbreak Exploit Published](#item-tech-news-14) ⭐️ 6.0/10
-15. [Rust-GPU maintainer proposes native Rust compilation to GPU](#item-tech-news-15) ⭐️ 6.0/10
-16. [Linux distributions release weekly security updates](#item-tech-news-16) ⭐️ 6.0/10
-17. [Free open-source book explains how to actually make ML models fast](#item-tech-news-17) ⭐️ 6.0/10
-18. [CoWindow and MassAlloc Attention: Sparse Collective Coverage, Adaptive Tiles](#item-tech-news-18) ⭐️ 6.0/10
-19. [Codex Pro $200 subscription reopens with halved quota](#item-tech-news-19) ⭐️ 6.0/10
+1. [Anthropic Finds Zhipu AI&\#x27;s GLM-5.3 Achieves Autonomous Cyber Attack Capabilities](#item-tech-news-1) ⭐️ 9.0/10
+2. [OpenAI DevDay 2026 Unveils Dots Agent, GPT-6.1 Sol, and New APIs](#item-tech-news-2) ⭐️ 8.0/10
+3. [Delhi Slashes Electricity Loss from 50% to 5% with Smart Grid Overhaul](#item-tech-news-3) ⭐️ 7.0/10
+4. [PS5 Relapse Exploit Targets WebKit Bug, Public Release on GitHub](#item-tech-news-4) ⭐️ 7.0/10
+5. [Privacy Analysis of Web and Mobile Conversational AI Agents](#item-tech-news-5) ⭐️ 7.0/10
+6. [Firefox 157.0 brings visual refresh and hardware AV1 WebRTC decoding](#item-tech-news-6) ⭐️ 7.0/10
+7. [Rust maintainer lays out native GPU compiler target](#item-tech-news-7) ⭐️ 7.0/10
+8. [Andres Freund on PostgreSQL and the Linux Kernel](#item-tech-news-8) ⭐️ 7.0/10
+9. [Visual, Hands-On Guide to Text Classification From Bag-of-Words to Jev](#item-tech-news-9) ⭐️ 7.0/10
+10. [Oracle Cites Force Majeure on Stargate&\#x27;s New Mexico Data Center After Power Approvals Stall](#item-tech-news-10) ⭐️ 7.0/10
+11. [Cloudflare launches cf CLI with 3,000+ API operations for AI agents](#item-tech-news-11) ⭐️ 7.0/10
+12. [Apple CEO Ternus Overhauls Release Cadence and Management Layers](#item-tech-news-12) ⭐️ 7.0/10
+13. [Livenerf asks whether Opus 5.5 is being nerfed](#item-tech-news-13) ⭐️ 6.0/10
+14. [America.gov Debuts AI Chatbot Powered by Gemini](#item-tech-news-14) ⭐️ 6.0/10
+15. [Tcl/Tk 9.1 announced for an open-source GUI scripting staple](#item-tech-news-15) ⭐️ 6.0/10
+16. [Jeeves brings reasoning to Jev-style decision models](#item-tech-news-16) ⭐️ 6.0/10
+17. [Free open-source book on making ML models fast from silicon to agents](#item-tech-news-17) ⭐️ 6.0/10
+18. [CoWindow and MassAlloc Attention Reduce Redundant Attention Computation](#item-tech-news-18) ⭐️ 6.0/10
+19. [China&\#x27;s Generative AI Users Pass 700 Million, Compute Capacity Reaches 2185 EFLOPS](#item-tech-news-19) ⭐️ 6.0/10
+20. [Codex Reopens $200 Pro Tier With API-Cost Quota, Drops Five-Hour Limit](#item-tech-news-20) ⭐️ 6.0/10
 
 **Financial News**
-1. [FHFA Mortgage Pricing Change Sinks Fair Isaac; AMD Buys World Labs](#item-finance-news-1) ⭐️ 8.0/10
-2. [Oracle Invokes Force Majeure on Stargate Data Center Due to Power Delays](#item-finance-news-2) ⭐️ 8.0/10
-3. [China to Subsidize First-Home Mortgage Interest From Oct 1](#item-finance-news-3) ⭐️ 8.0/10
-4. [Trump’s municipal bond portfolio reaches estimated $300 million to $1 billion](#item-finance-news-4) ⭐️ 7.0/10
-5. [China reportedly tightens IPO criteria for humanoid-robot startups](#item-finance-news-5) ⭐️ 7.0/10
+1. [Premarket stock movers: Fair Isaac, AMD, Summit, CarMax](#item-finance-news-1) ⭐️ 8.0/10
+2. [Trump’s municipal bond portfolio grows to as much as $1 billion, CNBC analysis finds](#item-finance-news-2) ⭐️ 8.0/10
+3. [China Announces Mortgage Interest Subsidy for First-Time Home Buyers](#item-finance-news-3) ⭐️ 8.0/10
+4. [China tightens humanoid robot IPO criteria, sources say](#item-finance-news-4) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [AI Has Taste finds a counterexample to a published conjecture, author confirms](http://weixin.sogou.com/weixin?type=2&amp;query=%E6%96%B0%E6%99%BA%E5%85%83+AI%E6%89%BE%E5%87%BA%E6%95%B0%E5%AD%A6%E5%8F%8D%E4%BE%8B%E6%8E%A8%E7%BF%BB%E8%AE%BA%E6%96%87%EF%BC%8C%E4%BD%9C%E8%80%85%E7%A1%AE%E8%AE%A4%EF%BC%81453%E7%AF%87%E6%89%8B%E7%A8%BF%EF%BC%8CAI%E5%BC%80%E5%A7%8B%E8%87%AA%E5%B7%B1%E5%87%BA%E9%A2%98%E4%BA%86) ⭐️ 9.0/10
+### [Anthropic Finds Zhipu AI&\#x27;s GLM-5.3 Achieves Autonomous Cyber Attack Capabilities](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities) ⭐️ 9.0/10
 
-AI Has Taste, an automated mathematics research system built by UCSI University researcher Zeng Zaijian, has publicly documented 453 mathematical research manuscripts and 2,312 pages in its GitHub repository, including 6 items classified as “AI-Proposed Conjectures.” The project’s reported breakthrough was an AI-generated counterexample that overturned a conjecture from a published paper; Zeng says he sent the counterexample to the original author, who replied confirming it was valid. The repository frames the system as moving “from answer generation to research-agenda generation,” though the confirmed counterexample and the manuscript collection are project-reported rather than independently peer-reviewed.
+Anthropic&\#x27;s evaluation reveals Zhipu AI&\#x27;s GLM-5.3 can autonomously execute end-to-end cyber attacks, succeeding in 50 of 410 ExploitBench trials — close to Claude Mythos Preview&\#x27;s 56 successes. Safety measures are easily bypassed, with simulated bypass success rates of 64-100%. The model&\#x27;s open-weight release allows users to modify it to remove refusal mechanisms, expanding malicious actors&\#x27; access to advanced cyber attack tools.
 
-rss · 新智元 · Sep 29, 03:40
+telegram · zaihuapd · Sep 29, 23:58
 
-**「Background」** AI Has Taste is an automated mathematical research system built by researcher Zeng Zaijian at UCSI University. Before the reported milestone, the project had already produced 453 mathematical manuscripts and 2312 pages of content, with 6 classified as AI-proposed conjectures, after its pivotal discovery: when given a published paper&\#x27;s conjecture, the AI constructed a counterexample rather than a proof, which the original paper&\#x27;s author later confirmed as valid.
+**「Background」** GLM-5.3 is the latest open-weight large language model from Chinese AI company Zhipu AI \(Z.ai\). Anthropic&\#x27;s Frontier Red Team has been measuring how close frontier models are to reliably exploiting real software; on its internal Binary Exploitation benchmark, earlier models such as Claude Opus 4.6 and GLM-5.2 did not succeed at any full control-flow hijack task. The new report evaluates GLM-5.3 against that baseline and documents the ease of bypassing its safety measures.
 
-**「Impact」** Mathematicians and peer reviewers now face a confirmed case of an AI system autonomously disproving a published conjecture, with the original author acknowledging the counterexample. The project’s public repository \(453 manuscripts, 6 AI-proposed conjectures\) indicates that automated counterexample generation and conjecture proposal are scaling beyond isolated experiments, which may push the research community toward incorporating automated falsification checks into validation workflows before publication.
+**「Impact」** Security teams and organizations now face a credible threat from an open-weight model capable of autonomous cyber attacks, as GLM-5.3&\#x27;s combination of offensive capabilities and easily removed safety guardrails lowers the barrier for adversaries. Developers of open-weight models should consider additional deployment restrictions to limit misuse.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://github.com/ArtificialZeng/AI-Has-Taste">GitHub - ArtificialZeng / AI - Has - Taste : 200+ open problems in...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI for mathematics`, `#counterexample finding`, `#automated reasoning`, `#machine learning`, `#scientific verification`
+**Tags**: `#AI safety`, `#cyber attacks`, `#GLM-5.3`, `#large language models`, `#Anthropic`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [GLM-5.3 and Claude Mythos Preview Cross Binary Exploitation Threshold](https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/) ⭐️ 8.0/10
+### [OpenAI DevDay 2026 Unveils Dots Agent, GPT-6.1 Sol, and New APIs](https://openai.com/zh-Hant/index/devday-2026-recap/) ⭐️ 8.0/10
 
-Anthropic&\#x27;s Frontier Red Team reports that GLM-5.3 and Claude Mythos Preview can achieve full control flow hijacks in binary exploitation tasks—GLM-5.3 in 4% of trials and Claude Mythos Preview in 6%—while earlier models like Claude Opus 4.6 and GLM-5.2 succeeded in none. This marks a crossing of a meaningful capability threshold for current frontier models, based on a random sample of 100 tasks from an internal Binary Exploitation benchmark.
-
-rss · Simon Willison · Sep 29, 22:20
-
-**「Background」** Binary exploitation is the practice of turning memory-corruption bugs into &quot;control flow hijacks,&quot; where an attacker redirects a program&\#x27;s execution to their own code. Anthropic&\#x27;s Frontier Red Team measured these capabilities in its new report; on the separate ExploitBench benchmark, GLM-5.3 produced end-to-end exploits in 50 of 410 attempts and Claude Mythos Preview did so in 56 of 410 attempts, a similar rate.
-
-**「Impact」** For AI safety researchers and software defenders, this result shows that state-of-the-art language models can autonomously perform binary exploitation techniques in a small but non-zero fraction of attempts, shifting the threat model for automated vulnerability exploitation and reinforcing the need for robust mitigation measures.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">GLM-5.3 and the spread of advanced cyber capabilities \ Anthropic</a></li>
-<li><a href="https://ai-tldr.dev/releases/anthropic-glm-5-3-cyber-report/">Anthropic tests GLM-5.3 — its safeguards fall to… | AI/TLDR</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI security`, `#Anthropic`, `#binary exploitation`, `#cyber capabilities`, `#language models`
-
----
-
-<a id="item-tech-news-3"></a>
-### [OpenAI DevDay 2026 Introduces Dots, GPT-6.1 Sol and Ultrafast, and New APIs](https://openai.com/zh-Hant/index/devday-2026-recap/) ⭐️ 8.0/10
-
-OpenAI at DevDay 2026 launched the Dots persistent agent that runs autonomously around the clock, learns user habits, and can take over long-running complex tasks. The company also released GPT-6.1 Sol, a coding and computer-control model that delivers near-Astra intelligence at one-fifth the price, and Astra Ultrafast, which achieves up to 8× speedup on the client side and 6× via API. New offerings include an Agents API with native computer control and AWS Bedrock hosting, a Decisions API for lightweight classification and routing, “Sign in with ChatGPT” for transferring subscription credits to third-party tools like Devin and Notion, and a Pro 500 tier that provides 25× the compute of Plus and exclusive access to Astra Ultrafast.
+At OpenAI DevDay 2026, OpenAI announced over 20 updates, including Dots, a persistent agent designed to run autonomously and take over long-running tasks; GPT-6.1 Sol, a coding and computer-use model priced at one-fifth the cost with near-Astra intelligence; and Astra Ultrafast, with up to 8× speed on the consumer tier and 6× via API. New developer offerings include Codex in the cloud with voice control and auto-fixing, an Agents API with native computer control and AWS Bedrock hosting, a lightweight Decisions API built on Luna, and “Sign in with ChatGPT” for applying subscription credits to third-party tools. OpenAI also introduced a Pro 500 plan with 25× Plus compute and exclusive Astra Ultrafast access.
 
 telegram · zaihuapd · Sep 29, 17:52
 
-**「Background」** Horizon&\#x27;s September 27 digest reported that OpenAI planned to broaden access to its Ultrafast API around the September 29 DevDay; the mode was previewed with GPT-5.6 Sol, reportedly reaching up to 750 tokens per second at 14x the inference speed of the Standard tier, with GPT-6 support still uncertain. The DevDay recap now confirms the rollout: Ultrafast ships as GPT-6.1 Ultrafast alongside the programming-focused GPT-6.1 Sol, with OpenAI claiming up to 8x speed gains over standard Astra \(6x via API\) and bundling Ultrafast into the new Pro 500 tier.
+**「Background」** OpenAI had previously kept its fastest inference tier invite-only: Horizon&\#x27;s September 27 digest relayed a TestingCatalog report that the Ultrafast API mode, previewed with GPT-5.6 Sol at up to 750 tokens per second, would be broadened around the September 29 DevDay. The DevDay recap now confirms that broader availability, tied to the GPT-6.1 Sol and Astra Ultrafast announcements.
 
-**「Impact」** Developers can now build and deploy persistent, learning-based agents for autonomous task execution, and integrate ChatGPT subscriptions into external tools. The new Pro 500 tier offers substantially higher compute for AI workloads, but its pricing and availability remain unspecified beyond the compute ratio.
+**「Impact」** Existing ChatGPT subscribers may be able to redirect subscription credits to third-party tools such as Devin and Notion through the new “Sign in with ChatGPT” flow, potentially reducing duplicate AI tool spending; the announcement does not specify exact availability or coverage details.
+
+**「Community Discussion」** Hacker News commenters are split: some say reported Sol 6 regressions pushed them to Claude Opus 5.5 and doubt 6.1 will fix the issues, while others argue that cost advantages from DeepSeek or cached pricing outweigh frontier-model performance differences.
 
 <details><summary>References</summary>
 <ul>
@@ -99,364 +71,415 @@ telegram · zaihuapd · Sep 29, 17:52
 </ul>
 </details>
 
-**Tags**: `#openai`, `#gpt-6`, `#ai-agents`, `#codex`, `#api`
+**Tags**: `#OpenAI`, `#AI agents`, `#GPT-6.1`, `#API updates`, `#developer tools`
+
+---
+
+<a id="item-tech-news-3"></a>
+### [Delhi Slashes Electricity Loss from 50% to 5% with Smart Grid Overhaul](https://spectrum.ieee.org/delhi-electricity-loss) ⭐️ 7.0/10
+
+Delhi&\#x27;s power distribution companies cut aggregate technical and commercial losses from over 50% to roughly 5% and eliminated routine load shedding through a multi-pronged strategy deployed over the past two decades. Key measures included deploying smart meters, segregating feeders to isolate high-loss areas, and aggressively pursuing electricity theft via insulated distribution lines and legal enforcement. The turnaround is documented as a case study in IEEE Spectrum, though the insulated lines also created an unexpected side effect: they became safe monkey highways, enabling monkey gangs to move freely between neighborhoods.
+
+hackernews · rbanffy · Sep 29, 12:43 · [Discussion](https://news.ycombinator.com/item?id=49892245)
+
+**「Background」** In 2002, Delhi&\#x27;s electricity distribution losses exceeded 50 percent, driven partly by rampant theft through illegal hookups to streetlights and distribution lines, with utilities lacking resources to identify or penalize offenders. Reform efforts centered on feeder segregation, network upgrades, and modern metering, which gave distribution companies better data for billing and targeted vigilance; by 2026, reported losses had fallen to between 5 and 6 percent, according to IEEE Spectrum.
+
+**「Impact」** For Delhi&\#x27;s 20 million residents, the end of load shedding means no longer several daily power cuts with damaging voltage surges that required unplugging expensive appliances. However, the insulated power lines that reduced theft now serve as roads for monkeys, which have gained easy access to upper floors of apartment buildings, creating new nuisances in some neighborhoods.
+
+**「Community Discussion」** Commenters emphasized that eliminating load shedding was the truly revolutionary achievement, as power cuts and surge damage were a daily burden even two decades ago. Others pointed out the ironic side effect of monkey gangs using the theft-prevention insulated lines as travel routes, a firsthand observation that highlights the unexpected consequences of infrastructure changes.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://spectrum.ieee.org/delhi-electricity-loss">How Delhi Cut Electricity Loss from 50 to 5 Percent - IEEE Spectrum</a></li>
+<li><a href="https://www.newsdirectory3.com/delhi-reduces-power-distribution-losses-from-50-to-6/">Delhi reduces power distribution losses from 50% to 6% - News Directory 3</a></li>
+<li><a href="https://www.ceew.in/publications/understanding-electricity-feeder-distribution-systems-in-power-sector">Understanding Electricity Feeder Distribution Systems in Power Sector | CEEW</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#energy`, `#infrastructure`, `#smart grid`, `#India`, `#engineering`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Anthropic Report: GLM-5.3 Shows Autonomous Cyberattack Capabilities](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities) ⭐️ 8.0/10
+### [PS5 Relapse Exploit Targets WebKit Bug, Public Release on GitHub](https://github.com/ntfargo/Relapse-Exploit) ⭐️ 7.0/10
 
-Anthropic&\#x27;s evaluation of Zhipu AI&\#x27;s open-weight GLM-5.3 reports that the model can autonomously construct end-to-end cyberattacks, succeeding 50 times in 410 ExploitBench attempts, close to Claude Mythos Preview&\#x27;s 56 successes. Anthropic also found that GLM-5.3&\#x27;s safety measures could be bypassed with simple methods, achieving simulated test success rates of 64% to 100%, and that its open weights let users modify the model to weaken refusals. According to Anthropic, this could expand the cyberattack capabilities available to malicious actors.
+A public exploit for the PlayStation 5, named Relapse, has been released on GitHub, targeting a bug in WebKit&\#x27;s JavaScriptCore engine. The exploit provides researchers and homebrew developers with a potential entry point for console security exploration, though it does not constitute a full jailbreak or offer end-user functionality. The release may spur Sony to consider disabling JavaScriptCore JIT compilation to narrow the attack surface.
 
-telegram · zaihuapd · Sep 29, 23:58
+hackernews · therepanic · Sep 29, 15:44 · [Discussion](https://news.ycombinator.com/item?id=49895304)
 
-**「Background」** GLM-5.3 is an open-weight model released by Chinese AI company Zhipu AI \(智谱 AI\). Open-weight models allow users to download and modify the model weights, which can enable removal of safety guardrails and fine-tuning for malicious purposes. Anthropic’s evaluation tested GLM-5.3’s ability to autonomously conduct cyberattacks using ExploitBench, a benchmark for measuring exploit development capabilities.
+**「Background」** The PS5&\#x27;s built-in web browser uses the WebKit rendering engine with the JavaScriptCore JavaScript engine, a historically common attack surface for console exploits. The Relapse exploit targets a vulnerability in this stack for firmware versions 7.00 through 13.60, offering an ELF loader via port 9021 after successful execution.
 
-**「Impact」** The evaluation suggests that GLM-5.3 may meaningfully lower the barrier to end-to-end cyberattacks for users who can access or modify the open-weight model, so organizations deploying or fine-tuning it should account for its demonstrated offensive capability and the ease with which its safeguards can be removed.
+**「Community Discussion」** Commenters noted that the exploit leverages a JavaScriptCore bug, raising questions about whether Sony will respond by disabling JIT compilation in the PS5&\#x27;s WebKit. Other users expressed hope that the exploit could enable local game save backups, which are currently restricted to PS Plus cloud saves, citing frustration with Sony&\#x27;s policy.
 
-**Tags**: `#AI safety`, `#cybersecurity`, `#GLM-5.3`, `#Anthropic`, `#open-weight models`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://github.com/ntfargo/Relapse-Exploit">GitHub - ntfargo/ Relapse - Exploit : Exploit chain for PS 5 7.00 - 13.60</a></li>
+<li><a href="https://news.ycombinator.com/item?id=49898390">At a glance, it looks like it exploits a bug in WebKit &#x27;s * JavaScriptCore ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#PS5`, `#security`, `#exploit`, `#WebKit`, `#console-hacking`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [OpenAI introduces cheaper GPT-6.1 Sol with claimed near-Astra performance](https://openai.com/index/introducing-gpt-6-1-sol/) ⭐️ 7.0/10
+### [Privacy Analysis of Web and Mobile Conversational AI Agents](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf) ⭐️ 7.0/10
 
-OpenAI has introduced GPT-6.1 Sol, a new model version that it claims delivers performance close to its higher-tier Astra model at roughly one-fifth the price. The release follows mixed reception to the GPT-6 series and is positioned as a more cost-effective option for developers. The specific pricing and availability details were not provided in the announcement, but the claim of near-Astra intelligence at a fraction of the cost has drawn both interest and skepticism among AI practitioners.
+A privacy analysis of web and mobile conversational AI agents is now circulating as a PDF and drawing Hacker News discussion focused on prompt-data leakage and other privacy shortcomings. Commenters report concrete behaviors, including ChatGPT periodically sending unfinished prompts to a conversation/prepare endpoint before the user submits them and Perplexity exposing past conversations through shareable UUID URLs, though the paper&\#x27;s own findings were not independently assessed from the source item.
 
-hackernews · crorella · Sep 29, 17:06 · [Discussion](https://news.ycombinator.com/item?id=49896586)
+hackernews · damaru2 · Sep 29, 09:03 · [Discussion](https://news.ycombinator.com/item?id=49890226)
 
-**「Background」** GPT-6.1 Sol is a new OpenAI model released in September 2026 that offers performance close to the premium GPT-6 Astra at about one-fifth of Astra&\#x27;s per-token pricing \(tool-2-1, tool-2-2\). It follows the GPT-6 Sol and Astra models; third-party comparisons show it matches Astra on several agentic benchmarks while maintaining the same pricing as GPT-6 Sol \(tool-2-2, tool-2-3\). The model has a 1.1M-token context window and cached input pricing of $0.10 per million tokens \(tool-2-3\).
+**「Background」** This item is a preprint paper, &quot;Prompt like a Butterfly, Sting like a Tracker: A Privacy Analysis of Web and Mobile Conversational AI Agents&quot; \(2027\), that examines how conversational AI agents handle user data. Earlier this month, Horizon&\#x27;s September 26 digest reported that OpenAI disclosed its AI agents improperly accessed websites and transferred at least 53 user-uploaded ChatGPT images to third-party hosts, an example of the kind of agent privacy failure this analysis covers. A GitHub mirror of the paper is available at guinucool/pbst2027.
 
-**「Community discussion」** Commenters expressed skepticism about OpenAI&\#x27;s recent model quality, with one user reporting that they had switched to Anthropic&\#x27;s Opus 5.5 after finding GPT-6 Sol unreliable for coding tasks. Others focused on the price reduction as the key differentiator, noting that cheaper cache pricing could offer far better value for heavy API users. The discussion reflects a broader debate between model capability and cost efficiency.
+**「Community Discussion」** Several commenters describe specific privacy concerns: one reports that browser-based ChatGPT sends partial draft text to servers before submission, possibly for cache pre-warming or tracking, while another notes that URL-based conversation links such as Perplexity&\#x27;s expose full prior sessions. Other commenters connect this to broader worries about private prompts and results, arguing that open or locally run models are the safer alternative, though these are user-reported observations rather than independently confirmed findings.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://smartscope.blog/en/blog/changed-gpt-6-1-sol-1-point-behind-2026/">What Changed in GPT - 6 . 1 Sol ? 1 Point Behind Astra at... - SmartScope</a></li>
-<li><a href="https://www.datacamp.com/blog/gpt-6-1-sol">GPT - 6 . 1 Sol : Features, Benchmarks, Pricing , and Access | DataCamp</a></li>
-<li><a href="https://llm-stats.com/models/gpt-6.1-sol">GPT - 6 . 1 Sol Benchmarks, Pricing &amp; Context Window</a></li>
+<li><a href="https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/">2026-09-26 — OpenAI Says Agents Transferred ChatGPT Images in 53 Cases</a></li>
+<li><a href="https://github.com/guinucool/pbst2027">GitHub - guinucool/pbst2027 · GitHub</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#openai`, `#gpt`, `#llm`, `#ai-pricing`, `#machine-learning`
+**Tags**: `#privacy`, `#conversational AI`, `#security`, `#AI agents`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [Privacy analysis exposes data-exposure risks in AI chat services](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf) ⭐️ 7.0/10
+### [Firefox 157.0 brings visual refresh and hardware AV1 WebRTC decoding](https://lwn.net/Articles/1097495/) ⭐️ 7.0/10
 
-A new privacy analysis of web and mobile conversational AI agents \(PDF linked\) documents concrete data-exposure risks: unfinished prompts are transmitted to servers before the user submits them, and persistent UUID URLs can expose full conversation histories. The research identifies multiple AI chat services that share prompt data with advertising and analytics trackers, challenging the assumption that these tools offer meaningful privacy.
+Mozilla has released Firefox 157.0, describing it as Firefox&\#x27;s biggest visual refresh in years. The release adds support for hardware AV1 decoding in WebRTC calls and includes a number of fixes.
 
-hackernews · damaru2 · Sep 29, 09:03 · [Discussion](https://news.ycombinator.com/item?id=49890226)
+rss · LWN.net · Sep 29, 21:47
 
-**「Background」** &quot;Prompt like a Butterfly, Sting like a Tracker&quot; is a peer-reviewed research paper accepted at PoPETs 2027, led by IMDEA Networks researchers in collaboration with a legal expert. The study instrumented a custom browser and Android phones to observe what data leaves web and mobile clients of major conversational AI services, including ChatGPT, Claude, Grok, DeepSeek, Perplexity, Gemini, Copilot, Mistral Le Chat, and Meta AI, and where that data is sent. This background helps explain why the community comments focus on concrete data-exposure mechanics rather than general speculation: the paper&\#x27;s method directly traces telemetry flows from real AI chat clients.
+**「Background」** WebRTC is the standard technology for real-time voice and video calls in browsers, and AV1 is a modern royalty-free codec increasingly used in those calls. Moving AV1 decoding from software to supported hardware offloads work from the CPU to the GPU.
 
-**「Impact」** Users of Grok and Perplexity face a concrete risk that their private prompts and conversation contents are transmitted to third-party advertising platforms \(including Meta, TikTok, and Google\) via tracking pixels and weakly protected permalinks, as documented in the analyzed paper and corroborated by subsequent news reports and a class-action lawsuit. Affected users should avoid sharing or bookmarking conversation URLs and consider browser extensions that block known ad trackers to reduce exposure.
+**「Impact」** Users on devices whose GPUs support AV1 decoding can expect lower CPU load and potentially better battery life during WebRTC video calls, and developers of WebRTC applications should test AV1 behavior in Firefox 157.0 on supported hardware.
 
-**「Community Discussion」** Commenters reported that ChatGPT periodically sends unfinished prompts to a \`conversation/prepare\` endpoint, which could be used for caching or tracking, and that services like Perplexity expose past conversations through persistent UUID URLs, undermining any illusion of privacy.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf">Prompt like a Butterfly, Sting like a Tracker: A Privacy Analysis of</a></li>
-<li><a href="https://jorgegarciaherrero.com/prompt-like-a-butterfly-sting-like-a-tracker-un-resumen-visual/">Resumen de &quot;Prompt like a butterfly, sting like a tracker&quot; - Jorge García Herrero y Asociados, abogados</a></li>
-<li><a href="https://techxplore.com/news/2026-05-conversations-ai-private.html">Your conversations with AI may not be as private as you think</a></li>
-<li><a href="https://gptanon.com/blog/perplexity-ai-lawsuit-secret-data-sharing-google-meta">Perplexity AI Secretly Sent Your Private Chats to Google and Meta — A 135-Page Lawsuit Exposes the Betrayal | GPTAnon Blog</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#privacy`, `#conversational AI`, `#security`, `#web applications`, `#research`
+**Tags**: `#Firefox`, `#browser`, `#WebRTC`, `#AV1`, `#open source`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [OpenAI introduces Dots, an always-on agent product](https://openai.com/index/introducing-dots/) ⭐️ 7.0/10
+### [Rust maintainer lays out native GPU compiler target](https://lwn.net/Articles/1095731/) ⭐️ 7.0/10
 
-OpenAI has introduced Dots, an always-on agent product. The announcement generated substantial discussion on Hacker News about how Dots differs from existing OpenAI offerings such as Codex and ChatGPT Work and about the lock-in risks of always-on agents. The available item includes no pricing, availability, or technical specifications.
+Christian Legnitto, maintainer of the rust-gpu and Rust CUDA projects, presented a vision at RustConf 2026 for making the GPU an ordinary compiler target for standard Rust code, removing the need for special GPU libraries or new ecosystem support. He has a prototype he is preparing to release, but the approach is not yet fully implemented and is not an announced shipping capability.
 
-hackernews · alvis · Sep 29, 17:07 · [Discussion](https://news.ycombinator.com/item?id=49896604)
+rss · LWN.net · Sep 29, 17:57
 
-**「Background」** OpenAI introduced Dots at its DevDay event on September 29, 2026, describing the product as &quot;remarkably capable, always-on agents built to handle everything&quot; that can proactively use a computer and connected apps to research, draft documents, write software, and handle other tasks on a user&\#x27;s behalf. Dots is powered by the GPT-6 Astra model and is positioned directly against Meta&\#x27;s widely used Muse agent.
+**「Background」** Rust currently programs GPUs through separate projects such as rust-gpu and Rust CUDA, which translate Rust-like code for shader or CUDA environments but require their own toolchains and abstractions. Christian Legnitto, who maintains those projects, has been working toward making the GPU an ordinary compilation target for standard Rust code. At RustConf 2026, he described that vision and said he has a prototype ready to release, though the capability is not yet fully implemented.
 
-**「Community discussion」** Commenters disagreed on Dots&\#x27; value: wxw found the boundaries between Codex, ChatGPT Work, and Dots blurry and preferred Meta&\#x27;s Muse as a consumer product, while jameslk argued always-on agents are aimed at non-technical users rather than those comfortable with local tools. aditya\_rs warned that agents create platform lock-in because integrations and work history make switching harder than swapping models.
+**「Impact」** If realized, Rust developers could write GPU programs as normal Rust without depending on custom libraries such as rust-gpu or Rust CUDA, lowering the barrier to GPU programming in the ecosystem; until the prototype ships, those libraries remain the practical path.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://slashdot.org/story/26/09/29/1723239/openai-unveils-always-on-ai-agent-dots">OpenAI Unveils Always-On AI Agent &#x27;Dots&#x27; - Slashdot</a></li>
-<li><a href="https://www.macrumors.com/2026/09/29/openai-launches-dots/">OpenAI Launches Always-On &#x27;Dots&#x27; Agents to Rival Meta&#x27;s Muse - MacRumors</a></li>
-<li><a href="https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/">OpenAI launches Dots, its bubbly agentic avatar | TechCrunch</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI agents`, `#OpenAI`, `#product announcement`, `#always-on agents`, `#technology industry`
+**Tags**: `#Rust`, `#GPU programming`, `#compiler`, `#systems programming`, `#open source`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [PostgreSQL developer talks Linux kernel support at Kernel Recipes](https://lwn.net/Articles/1096827/) ⭐️ 7.0/10
+### [Andres Freund on PostgreSQL and the Linux Kernel](https://lwn.net/Articles/1096827/) ⭐️ 7.0/10
 
-LWN reports that Andres Freund, a longtime PostgreSQL performance contributor, spoke at the 2026 Kernel Recipes conference about how PostgreSQL works with—or around—Linux kernel features and how the kernel could better support database applications. The article summarizes his experience working with kernel developers and alludes to “interesting developments” in PostgreSQL, but the supplied source does not list specific proposals, versions, or measured outcomes.
+At the 2026 Kernel Recipes conference, PostgreSQL performance contributor Andres Freund presented a PostgreSQL-focused perspective on Linux kernel features, explaining how the kernel can help or hinder database workloads and discussing possible kernel improvements as well as recent PostgreSQL developments. The talk is an announced conference appearance rather than a shipped capability, so it offers a direction for discussion rather than a concrete new implementation.
 
 rss · LWN.net · Sep 29, 15:42
 
-**「Background」** Andres Freund has spent many years improving PostgreSQL performance, which often requires working with or around Linux kernel features and behaviors. His talk at Kernel Recipes 2026 discussed those interactions, how the kernel could better support applications like PostgreSQL, and recent developments in the PostgreSQL world.
+**「Background」** Kernel Recipes is an annual conference where Linux kernel developers and users discuss kernel development and real-world usage. Andres Freund is a long-time PostgreSQL contributor known for performance work, and his talk focuses on how PostgreSQL interacts with Linux kernel features and where kernel improvements could help database workloads.
 
-**Tags**: `#linux kernel`, `#postgresql`, `#database performance`, `#systems engineering`, `#conference coverage`
+**Tags**: `#PostgreSQL`, `#Linux kernel`, `#database performance`, `#systems engineering`, `#open source`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [Language Models for Text Classification: From Bag-of-Words to Jev](https://magazine.sebastianraschka.com/p/classifier-history-and-jev) ⭐️ 7.0/10
+### [Visual, Hands-On Guide to Text Classification From Bag-of-Words to Jev](https://magazine.sebastianraschka.com/p/classifier-history-and-jev) ⭐️ 7.0/10
 
-Sebastian Raschka published a visual guide covering text classification architectures from bag-of-words to modern language models, including RNNs, CNNs, Transformers, and calibration techniques. The guide provides hands-on experiments comparing accuracy and efficiency across methods, targeting ML engineers and practitioners who need to understand trade-offs between classic and modern approaches.
+On September 29, 2026, Sebastian Raschka published a visual, experiment-driven guide to text classification aimed at ML practitioners, covering bag-of-words representations, RNNs, CNNs, transformers, and model calibration. The guide focuses on hands-on accuracy and efficiency comparisons rather than a new model release; the source excerpt does not include specific results, code, or model versions.
 
 rss · Ahead of AI · Sep 29, 10:50
 
-**「Background」** Prior to transformer-based language models, text classification tasks were commonly addressed using bag-of-words representations, recurrent neural networks \(RNNs\), or convolutional neural networks \(CNNs\). Understanding these earlier approaches provides context for the efficiency and accuracy comparisons presented in the guide.
+**「Background」** Text classification has long been a spectrum of trade-offs: early systems relied on bag-of-words features and specialized RNN or CNN encoders, while modern approaches use pretrained transformer language models with higher computational cost. The article builds on the author&\#x27;s broader work making large language models accessible, including his book on building an LLM from scratch, and describes Jev as a language-model-based classifier that can handle classification tasks much faster and more cheaply, though not necessarily better for narrow, well-defined problems.
 
-**「Impact」** ML engineers can use the guide&\#x27;s structured comparisons and calibration insights to select appropriate text classification architectures based on documented accuracy and computational efficiency.
+**「Impact」** Practitioners choosing among RNN, CNN, and transformer classifiers can use the guide&\#x27;s accuracy and efficiency experiments to weigh whether simpler methods are sufficient or whether a transformer-based model justifies the added compute.
 
-**Tags**: `#text-classification`, `#transformers`, `#recurrent-neural-networks`, `#model-calibration`, `#machine-learning`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev">Language Models for Text Classification : From Bag-of-Words to Jev</a></li>
+<li><a href="https://www.manning.com/books/build-a-large-language-model-from-scratch">Build a Large Language Model (From Scratch) - Sebastian Raschka</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#text classification`, `#language models`, `#transformers`, `#deep learning`, `#model calibration`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [China&\#x27;s generative AI users exceed 700 million](https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;amp;item_id=187569887152346976&amp;amp;channelId=1119) ⭐️ 7.0/10
+### [Oracle Cites Force Majeure on Stargate&\#x27;s New Mexico Data Center After Power Approvals Stall](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center) ⭐️ 7.0/10
 
-On September 29, the China Internet Network Information Center released its 2026 Generative AI Application Development Report, showing that China&\#x27;s generative AI user base exceeded 700 million people in the first half of 2026, a penetration rate above 50.0%. Intelligent Q&amp;A was the leading use case, with 76.0% of users relying on it for answers, while AI-companion assistants and AI-powered office tools each saw year-over-year usage growth exceeding 100%. The report also measured China&\#x27;s smart computing power at 2185 EFLOPS, up 177% year over year.
+Oracle has issued a force majeure notice to the developer of Stargate&\#x27;s Project Jupiter data center in New Mexico, signaling that it may defer some payments if delays caused by external factors push the project past its 2028 target. The delay stems from environmental and power-supply approvals for the site&\#x27;s 2.45 GW microgrid that have not yet been secured. The news has raised concerns about the pace of large-scale AI data center construction, and a related $18 billion syndicated loan is now trading at a discount. Most Stargate projects remain in construction, permitting, or energy-infrastructure stages, with only a few sites like the Abilene, Texas campus operational, and Texas has paused new data center project approvals.
 
-telegram · zaihuapd · Sep 29, 06:39
+telegram · zaihuapd · Sep 29, 05:46
 
-**「Background」** The China Internet Network Information Center \(CNNIC\) is the agency that publishes official statistics on Chinese internet and technology adoption. Its September 29 report is the basis for the user-size and penetration figures cited in this item.
+**「Background」** Horizon&\#x27;s September 28 digest reported that Treasury yields had climbed to their highest since 2007, raising borrowing costs for AI and data-center companies financing a massive infrastructure buildout. The current delay on Stargate&\#x27;s Project Jupiter — a 2.45 GW New Mexico data center — and Oracle&\#x27;s force majeure notice reflect the growing financial and regulatory pressure on such projects, as also seen in Texas&\#x27;s recent pause on new data center approvals.
 
-**「Impact」** For AI product teams and infrastructure providers, the figures establish a concrete market baseline: with more than half of China&\#x27;s population using generative AI and Q&amp;A as the dominant interaction, consumer-facing products should prioritize reliable conversational Q&amp;A experiences, and the 177% increase in smart computing capacity signals surging demand for domestic compute and AI infrastructure.
+**「Impact」** Oracle&\#x27;s notice signals it will defer some payments to Project Jupiter&\#x27;s developer, Blue Owl, if the power-permit delays push back construction, putting the project&\#x27;s 2028 in-service target at risk. The $18 billion syndicated loan backing the project is already trading at a discount as lenders price in repayment risk, so developers and investors should treat the commissioning date as uncertain rather than a committed milestone.
 
-**Tags**: `#generative AI`, `#China`, `#user adoption`, `#AI infrastructure`, `#industry data`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html">2026-09-28 — Treasury Yield Spike Raises Costs for AI Data-Center Buildout</a></li>
+<li><a href="https://easternherald.com/2026/09/24/oracle-force-majeure-stargate-new-mexico-campus/">Oracle Force Majeure on Stargate New Mexico Data Center</a></li>
+<li><a href="https://pomegra.io/briefs/2026-09-24-oracle-force-majeure-project-jupiter">Oracle Stock Falls 6% on Project Jupiter Force … | Pomegra Briefs</a></li>
+<li><a href="https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/09/24/oracle-triggers-force-majeure-on-data-centre-project-over-power-delays-source-says/">Oracle triggers ‘ force majeure ’ on New Mexico data centre project</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI infrastructure`, `#data centers`, `#energy regulation`, `#Oracle`
 
 ---
 
 <a id="item-tech-news-11"></a>
-### [Cloudflare launches cf CLI open beta for AI agents and developers](https://blog.cloudflare.com/cloudflare-cf-cli-launch/) ⭐️ 7.0/10
+### [Cloudflare launches cf CLI with 3,000+ API operations for AI agents](https://blog.cloudflare.com/cloudflare-cf-cli-launch/) ⭐️ 7.0/10
 
-Cloudflare announced cf, an open-beta CLI aimed at developers and AI agents, providing command-line access to more than 3,000 Cloudflare API operations. The tool is generated from Cloudflare&\#x27;s API schema and expands coverage from about 280 operations in the existing Wrangler CLI. It uses JSON as default output and includes command search and guided discovery so agents can find, execute, and process results automatically.
+Cloudflare released cf, an open-beta CLI that exposes over 3,000 API operations generated from its API schema, far surpassing the ~280 operations available through its existing Wrangler tool. The CLI defaults to JSON output and includes command search and guidance, enabling both developers and AI agents to automatically discover and execute tasks such as deploying Workers, monitoring services, configuring Access and WAF, and purchasing domains.
 
 telegram · zaihuapd · Sep 29, 13:46
 
-**「Background」** Cloudflare&\#x27;s existing Wrangler CLI supports roughly 280 operations, primarily centered on Workers development and deployment. The new cf CLI is generated directly from the API schema, which is why it can cover the much larger set of over 3,000 API operations.
+**「Background」** Cloudflare’s previous CLI, Wrangler, was primarily designed for Workers and covered roughly 280 operations. The new cf tool is schema-generated to span the full breadth of Cloudflare’s API and is explicitly built for AI-agent discoverability, marking a significant expansion in programmable access to Cloudflare’s platform.
 
-**「Impact」** This means automation and AI agents can now use a single CLI to cover a wide range of Cloudflare tasks, from deploying Workers and monitoring services to configuring Access and WAF policies, while consuming JSON output for automated processing. Developers evaluating the beta should test whether the broader API coverage meets their current automation needs before relying on it in production workflows.
+**「Impact」** Developers and AI agent operators can now automate a much broader set of Cloudflare operations through a single CLI, reducing the need for custom scripts or multiple tools. However, as an open-beta release, users should expect potential changes and should verify command stability before relying on it in production workflows.
 
 **Tags**: `#Cloudflare`, `#CLI`, `#AI agents`, `#developer tools`, `#API`
 
 ---
 
 <a id="item-tech-news-12"></a>
-### [Google fixes Firebase Analytics server bug behind iOS startup crashes](https://github.com/firebase/firebase-ios-sdk/issues/16728) ⭐️ 7.0/10
+### [Apple CEO Ternus Overhauls Release Cadence and Management Layers](https://www.bloomberg.com/news/articles/2026-09-29/apple-s-new-ceo-moves-to-overhaul-company-to-run-faster-and-leaner) ⭐️ 7.0/10
 
-Google has fixed a server-side issue in Google Analytics for Firebase that returned malformed data and caused iOS apps using the SDK to crash on startup. The problem affected apps for about two hours on September 28, 2026, from 17:41 to 19:52 PDT. Google says no SDK or app update is needed; because of caching, some apps could continue crashing for up to four hours after the fix before recovering on their own.
+Apple CEO John Ternus, weeks into his tenure, is pushing reforms to accelerate product development, expand product lines, and create a leaner, more engineering-focused organization. The company reportedly plans to reduce its reliance on fixed spring and fall launch events, allowing new products to ship more flexibly throughout the year. Ternus is also trimming some mid-level management roles to shorten decision chains between engineering teams and top executives, while exploring new revenue sources from existing products. The changes remain an announced plan; no concrete timelines or specific product impacts have been confirmed.
 
-telegram · zaihuapd · Sep 29, 16:29
+telegram · zaihuapd · Sep 30, 01:07
 
-**「Background」** Google Analytics for Firebase is a service that iOS apps integrate as a bundled SDK, and its client-side runtime receives data from Google&\#x27;s backend during normal operation. Because that data arrives at app startup from the server rather than being fixed in the app binary, a malformed server response could crash many installed apps at once, and the correction had to be applied on Google&\#x27;s side while apps gradually recovered as their locally cached data expired.
+**「Background」** John Ternus succeeded Tim Cook as Apple&\#x27;s CEO in the weeks leading up to this report. His early moves signal a departure from the previous leadership&\#x27;s fixed spring and fall product launch cadence and management structure, aiming to accelerate development and increase organizational agility.
 
-**「Impact」** iOS developers affected by these startup crashes do not need to ship a new build; the remaining failures should clear automatically as cached bad responses expire. Teams should verify that crashes stop after the cache window rather than treating continued outages as a separate Firebase SDK issue.
+**「影响」** According to Benzinga&\#x27;s report on the same announcement, investors initially reacted negatively: Apple&\#x27;s stock dipped about 2% after the restructuring plan became public. The concrete near-term effect is an organizational overhaul that eliminates some middle-management roles and cuts costs in pursuit of faster, more flexible product releases, so affected employees and product teams should expect a leaner reporting chain and less rigid seasonal launch windows.
 
-**Tags**: `#Firebase`, `#iOS`, `#crash`, `#Google`, `#bug-fix`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.benzinga.com/markets/tech/26/09/62059359/beyond-spring-and-fall-apple-prepares-organization-restructure-for-accelerating-product-launches">Apple Plans Organizational Restructure for Quicker Product Launches - Apple (NASDAQ:AAPL) - Benzinga</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#Apple`, `#tech-industry`, `#organizational-change`, `#product-strategy`, `#hardware`
 
 ---
 
 <a id="item-tech-news-13"></a>
-### [How Delhi Cut Electricity Distribution Losses From 50% to 5%](https://spectrum.ieee.org/delhi-electricity-loss) ⭐️ 6.0/10
+### [Livenerf asks whether Opus 5.5 is being nerfed](https://github.com/ninjahawk/livenerf) ⭐️ 6.0/10
 
-IEEE Spectrum&\#x27;s case study reports that Delhi&\#x27;s electricity distribution losses fell from roughly 50 percent to 5 percent after utility reform, theft prevention, and network modernization. The piece describes the improvement as a systems and policy achievement for Delhi rather than a new technology release.
+Livenerf, a GitHub tool appearing on Hacker News, asks whether Anthropic&\#x27;s Opus 5.5 has been nerfed since release. Commenters disagree: some report slowdowns in long-lived Claude Code sessions, while others argue perceived degradation is often a honeymoon effect and cite Nerf Bench&\#x27;s &gt;10% launch-day benchmark threshold, which previously caught an Opus 4.6 regression.
 
-hackernews · rbanffy · Sep 29, 12:43 · [Discussion](https://news.ycombinator.com/item?id=49892245)
+hackernews · bryan0 · Sep 29, 22:36 · [Discussion](https://news.ycombinator.com/item?id=49901736)
 
-**「Background」** In electricity distribution, &quot;losses&quot; are the share of power fed into the grid that never reaches bill-paying customers, combining technical losses from wires and transformers with commercial losses such as theft and billing gaps. High distribution losses have long strained Indian utilities, making reforms to metering, theft enforcement, and grid modernization central to any claim of dramatic improvement. Against that backdrop, Delhi&\#x27;s reported drop from roughly 50% to 5% loss reflects changes in utility operation and enforcement, not a single technical fix.
+**「Background」** In LLM communities, &quot;nerfing&quot; refers to the claim that a deployed model&\#x27;s performance silently degrades after its launch, often attributed to provider-side changes. Commenters in this discussion debate whether such degradation is real for Anthropic&\#x27;s Opus 5.5 or mostly a perception effect, and they point to benchmark projects such as Nerf Bench that compare post-launch behavior against launch-day baselines.
 
-**「Community Discussion」** A commenter who lived in Delhi 20 years ago argues that ending load shedding, not merely cutting losses, was the revolutionary change, recalling frequent outages and surges that damaged appliances when power returned. Another commenter reports in person that insulating lines to prevent theft made the wires safe for monkeys, an unintended side effect; these are anecdotal recollections, not formal evaluations of the reform.
+**「Impact」** Developers relying on Opus 5.5 in agentic coding sessions should not treat anecdotal slowdowns as proof of a server-side nerf; the credible check is to compare current results with launch-day benchmarks such as Nerf Bench&\#x27;s 10% deviation threshold, given that a similar method detected Opus 4.6&\#x27;s degradation.
 
-**Tags**: `#electricity-grid`, `#infrastructure`, `#energy-policy`, `#india`, `#smart-meters`
+**「Community discussion」** The main disagreement is whether model nerfing is real: johnfn argues it usually is not and would have surfaced in benchmarks, attributing reports to honeymoon effects, while jug counters with Nerf Bench&\#x27;s earlier detection of Opus 4.6 degradation. A separate commenter reports Opus 4.6&\#x27;s Claude Code session became slower due to more permission prompts after the Sonnet 5.5 announcement, though with no hard numbers.
+
+**Tags**: `#llm`, `#model-monitoring`, `#benchmarking`, `#anthropic`, `#ai`
 
 ---
 
 <a id="item-tech-news-14"></a>
-### [Relapse-Exploit: PS5 WebKit JavaScriptCore Jailbreak Exploit Published](https://github.com/ntfargo/Relapse-Exploit) ⭐️ 6.0/10
+### [America.gov Debuts AI Chatbot Powered by Gemini](https://america.gov/) ⭐️ 6.0/10
 
-An exploit named Relapse-Exploit targeting a bug in the WebKit JavaScriptCore engine on the PS5 has been published on GitHub by user ntfargo, drawing attention from console-security and jailbreaking communities. The public release gives security researchers and console modders a concrete starting point for investigating PS5 firmware protections, though the item does not confirm that it achieves a full jailbreak or persistent firmware escape. Its scope is limited to the specific WebKit attack surface and does not indicate a broad security breakthrough.
+The U.S. government launched an AI-assisted gateway at America.gov that uses a chatbot, reportedly powered by Google Gemini with guardrails, to help users find and access federal services. The site aims to simplify navigation of complex government resources and reduce phishing risks by directing users to legitimate portals. Early reports indicate the chatbot responds with legal warnings on sensitive topics, such as federal crimes related to Capitol demonstrations.
 
-hackernews · therepanic · Sep 29, 15:44 · [Discussion](https://news.ycombinator.com/item?id=49895304)
+hackernews · plesiv · Sep 29, 14:04 · [Discussion](https://news.ycombinator.com/item?id=49893509)
 
-**「Background」** WebKit is the browser engine used on the PS5&\#x27;s built-in browser, and JavaScriptCore is its JavaScript engine. Console jailbreaks often start with a JavaScriptCore bug because visiting a malicious page can give an attacker code execution inside the browser process, but full jailbreak status usually requires chaining that first stage to separate kernel or bootloader exploits.
+**「Background」** On September 29, 2026, the Trump administration launched America.gov, an AI-powered portal that uses chatbots—reportedly Gemini and Grok—to help Americans navigate federal services by scanning over 29,000 government websites without requiring an account.
 
-**「Impact」** According to the published repository and follow-up reports, the Relapse exploit reportedly affects PlayStation 5 and PS5 Pro consoles on firmware 7.00 through 13.60, combining a WebKit memory leak with a kernel race condition to run unsigned code. Owners who want to keep their consoles unmodified should avoid WebKit/browser-triggered content until a patched firmware is confirmed, while users intentionally seeking a jailbreak should remain on an affected firmware instead of updating.
-
-**「Community Discussion」** MaxBarraclough asks whether the PS5&\#x27;s WebKit build runs JavaScriptCore with JIT enabled and speculates that Sony might respond by disabling JIT to narrow the attack surface, while aussieguy1234 argues it is &quot;insane&quot; that users need to hack hardware they legally own to gain full control. Muromec adds that such communities typically hold undisclosed exploits and leads for bootloader breakouts, but other commenters only joked about timing and asked for Steam support rather than engaging technically.
+**「Community Discussion」** Commenters on Hacker News noted the chatbot&\#x27;s unexpected honesty in issuing legal warnings about federal crimes \(lrvick\) and identified the technology as Gemini with guardrails, citing a Google blog post \(sssilver\). Several expressed cautious optimism, arguing that a well-designed chatbot could genuinely help citizens navigate the often-confusing landscape of government services while also reducing phishing dangers \(maherbeg, mellosouls\).
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://www.aroged.com/2026/09/29/playstation-5-and-ps5-pro-release-fast-jailbreak-recurrence-vulnerability/">PlayStation 5 and PS5 Pro release fast jailbreak recurrence vulnerability - Aroged</a></li>
-<li><a href="https://elsolitario.org/en/2026/09/29/relapse-repo-claims-ps5-exploit-firmware-7-00-to-13-60/">PS5 Jailbreak: What Is Relapse Exploit and Its Scope</a></li>
-<li><a href="https://dev.to/lu1tr0n/relapse-repo-afirma-exploit-de-ps5-en-firmware-700-1360-1n14">Relapse: repo afirma exploit de PS5 en firmware 7.00-13.60 - DEV Community</a></li>
+<li><a href="https://fedscoop.com/trump-launches-ai-site-america-gov/">Trump launches AI-fueled America.gov in bid to ... - FedScoop</a></li>
+<li><a href="https://www.theregister.com/public-sector/2026/09/29/trump-launches-americagov-with-ai-chatbots-at-its-core/5299907">Trump launches America.gov with AI chatbots at its core - The Register</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#PS5`, `#security`, `#exploit`, `#WebKit`, `#jailbreak`
+**Tags**: `#AI chatbot`, `#government services`, `#Gemini`, `#public sector`, `#LLM applications`
 
 ---
 
 <a id="item-tech-news-15"></a>
-### [Rust-GPU maintainer proposes native Rust compilation to GPU](https://lwn.net/Articles/1095731/) ⭐️ 6.0/10
+### [Tcl/Tk 9.1 announced for an open-source GUI scripting staple](https://www.tcl-lang.org/software/tcltk/9.1.html) ⭐️ 6.0/10
 
-Christian Legnitto, maintainer of rust-gpu and Rust CUDA, presented a vision at RustConf 2026 for making the GPU a native compiler target for ordinary Rust code, eliminating the need for special libraries or new ecosystem support. He is preparing a prototype to demonstrate this approach, though no implementation is publicly available yet.
+The Tcl/Tk project has announced version 9.1 of the long-standing scripting language and GUI toolkit, an incremental release aimed at developers and hobbyists who still build desktop interfaces with it. The announcement drew substantial Hacker News discussion about the project&\#x27;s legacy, quirks, and ease of use, although the provided source did not include release notes or a detailed changelog.
 
-rss · LWN.net · Sep 29, 17:57
+hackernews · dmux · Sep 29, 17:13 · [Discussion](https://news.ycombinator.com/item?id=49896712)
 
-**「Background」** Until now, programming GPUs from Rust has relied on dedicated projects such as rust-gpu and Rust CUDA, which are libraries that connect Rust code to GPU hardware. Legnitto&\#x27;s RustConf 2026 talk argues that this should not require special libraries or separate ecosystem support, proposing instead that the GPU become a standard compiler target for ordinary Rust code. The prototype he described is still unreleased, so this remains a proposal rather than a working compiler feature.
+**「Background」** Tcl/Tk is one of the oldest open-source scripting language and GUI toolkit combinations, known for making it relatively easy to build GUI programs on Unix and the X Window System. Tk&\#x27;s simplicity and the language&\#x27;s unusual string-centric design gave the project a lasting community despite competition from newer toolkits.
 
-**「Impact」** Rust developers who currently rely on rust-gpu or Rust CUDA libraries to write GPU code may soon have an alternative: a prototype compiler that treats the GPU as a native Rust target, eliminating the need for special libraries. The prototype is expected to be released, offering a preview of a more integrated GPU programming experience.
+**「Community discussion」** Commenters fondly recalled Tcl/Tk as one of the easiest ways to get a simple GUI working, often comparing its playful, metaprogrammable style favorably against more conventional languages. Several also said they would be wary of using it professionally, treating it more as a source of enjoyment than a primary production tool.
 
-**Tags**: `#Rust`, `#GPU computing`, `#compilers`, `#Rust-GPU`, `#RustConf`
+**Tags**: `#Tcl`, `#Tk`, `#programming languages`, `#open source`, `#GUI`
 
 ---
 
 <a id="item-tech-news-16"></a>
-### [Linux distributions release weekly security updates](https://lwn.net/Articles/1097466/) ⭐️ 6.0/10
+### [Jeeves brings reasoning to Jev-style decision models](https://github.com/PostHog/jeeves) ⭐️ 6.0/10
 
-On September 29, 2026, AlmaLinux, Debian, Fedora, Mageia, Slackware, SUSE, and Ubuntu published security updates for a broad set of packages. The updates include kernel releases from AlmaLinux, Debian, SUSE, and Ubuntu, along with Fedora updates for Chromium and VLC and Debian updates for Dovecot, Flatpak, rsync, and WordPress. Administrators should use the LWN listing to check the complete set of affected packages and distributions.
+PostHog&\#x27;s Jeeves is an open-source project, published on GitHub, that adds reasoning to Jev-style decision models. Early community measurements show a clear trade-off: commenters report roughly 17s p90 latency and lower accuracy on MMLU, and one independent irony-detection benchmark scored 68 correct answers versus 79 for plain Jev while taking more than 30 minutes on 100 tweets.
 
-rss · LWN.net · Sep 29, 15:38
+hackernews · nicowaltz · Sep 29, 11:13 · [Discussion](https://news.ycombinator.com/item?id=49891290)
 
-**「Background」** Linux distributions track vulnerabilities in the software they ship and release patched versions through official repositories. This item is LWN&\#x27;s routine weekly roundup of those security notices across multiple distributions, rather than a notice for one specific incident.
+**「Background」** Jev-style decision models are small, fast models optimized for cheap classification-style decisions rather than general-purpose conversation; Horizon&\#x27;s September 26 digest described community work \(Ollaya\) to make such models run locally, with mixed results. Jeeves, built on a Qwen3.5-9B decision model trained with SFT and CISPO plus a block-4 diffusion drafter, extends that design space by adding a reasoning stage to these decision models.
 
-**「Impact」** Users and system administrators running any of the listed distributions should install the updated packages from official repositories to receive the fixes. The practical effect of each update depends on the affected package and distribution.
+**「Impact」** For teams considering Jeeves as a drop-in replacement for Jev-class decision models, the reported 17s p90 latency and lower benchmark accuracy undermine its fast and cheap positioning; projects that depend on Jev&\#x27;s speed should benchmark Jeeves against plain Jev on their own workloads before adopting it.
 
-**Tags**: `#security`, `#linux`, `#patch management`, `#system administration`, `#vulnerabilities`
-
----
-
-<a id="item-tech-news-17"></a>
-### [Free open-source book explains how to actually make ML models fast](https://www.reddit.com/r/MachineLearning/comments/1wt6ns4/i_wrote_a_free_opensource_book_on_making_ml/) ⭐️ 6.0/10
-
-The author released How to Make Your Model Fast: A Systems View of Efficient Machine Learning, from Silicon to Agents as a free, open-source book on GitHub. It moves from roofline analysis and hardware fundamentals through kernels, compilers, quantization, pruning, vision, on-device LLMs, robotics, profiling, serving, and agent systems. The stated goal is to help engineers diagnose whether a system is compute-, bandwidth-, memory-, or system-bound and decide which optimization will actually move the limit. This is a self-published announcement without independent review or demonstrated performance results.
-
-reddit · r/MachineLearning · /u/SoloTiger\_ · Sep 29, 10:35
-
-**「Background」** Machine learning performance work has long focused on reducing FLOPs, but lower arithmetic count does not automatically translate to lower latency or higher throughput. Practical efficiency depends on where the workload is actually bottlenecked, such as memory bandwidth, kernel implementation, or system-level serving overhead.
-
-**Tags**: `#machine-learning`, `#performance-engineering`, `#open-source`, `#systems`, `#efficient-ml`
-
----
-
-<a id="item-tech-news-18"></a>
-### [CoWindow and MassAlloc Attention: Sparse Collective Coverage, Adaptive Tiles](https://www.reddit.com/r/MachineLearning/comments/1wt1gbk/cowindow_and_massalloc_attention_collective/) ⭐️ 6.0/10
-
-The authors of two new arXiv papers describe attention mechanisms that cut redundant long-context computation: CoWindow Attention \(CoWA\) distributes distant context across KV heads via fixed complementary windows, while MassAlloc Attention \(MALA\) retains full causal QK scoring but skips low-contribution post-score tile work using softmax statistics. Both support training forward/backward and inference prefill/decoding. On 128K tokens with 8 H100 GPUs and TP=8, the authors report attention-operator speedups versus FullAttn of 7.4x forward, 8.6x backward, and 3.0x decode for CoWA, and 2.2x, 3.0x, and 1.6x for MALA. They also report 28.5% and 23.1% total training FLOP reductions at 14B with 32K context, but note these are operator-level results, not end-to-end speedups or proof of universal lossless equivalence to dense attention.
-
-reddit · r/MachineLearning · /u/BitExternal4608 · Sep 29, 05:16
-
-**「Background」** Standard causal attention lets each token attend to all previous tokens, so long-context models repeat similar key-value work across heads and spend compute on low-contribution interactions. CoWA and MALA target that redundancy from different angles: CoWA uses a fixed, position-defined pattern so heads are sparse collectively while covering the full causal history, and MALA uses attention&\#x27;s own softmax statistics to skip computation after full QK scoring when a tile contributes little.
-
-**「Impact」** Teams training or serving long-context models should benchmark these methods in their own stacks before adopting them, because the reported gains are attention-operator measurements rather than end-to-end speedups, and the authors state that neither approach demonstrates universal lossless equivalence to dense attention.
-
-**Tags**: `#attention mechanisms`, `#long-context models`, `#inference efficiency`, `#machine learning research`
-
----
-
-<a id="item-tech-news-19"></a>
-### [Codex Pro $200 subscription reopens with halved quota](https://x.com/thsottiaux/status/2104823812042940713) ⭐️ 6.0/10
-
-Codex Pro&\#x27;s $200 monthly subscription will reopen to new users tomorrow, according to a post by Tibo. The usage calculation is switching to API-spend equivalence, resulting in roughly half the previous quota. The 5-hour usage limit is removed, allowing users to consume the weekly quota at their own pace. Tibo also reported that GPT-6 Sol and GPT-6 Luna API prices have been cut by 50% this week, and future improvements to model efficiency and API pricing are expected to increase the work achievable per dollar.
-
-telegram · zaihuapd · Sep 29, 06:50
-
-**「Background」** According to an unconfirmed announcement attributed to Tibo, Codex Pro&\#x27;s $200/month tier had been closed to new subscribers and previously imposed a five-hour usage window that will not be restored. The announcement follows this week&\#x27;s cuts of GPT-6 Sol and GPT-6 Luna API prices to half their original levels, which it cites as context for aligning subscription value with API costs.
-
-**「Impact」** Subscribers to the reopened $200 Codex Pro plan will get roughly half the usage allowance of the previous plan when measured by API spend, effectively doubling the cost per unit of Codex work for users who relied on the old quota. The elimination of the 5-hour cap lets subscribers spread their weekly allowance at their own pace, and OpenAI says further GPT-6 price cuts are meant to narrow the gap between subscription and pay-per-use API pricing. Heavy users evaluating the plan should compare the halved quota against pay-per-use rates.
+**「Community discussion」** Commenters questioned whether adding reasoning preserves Jev&\#x27;s value: sharih and itzikkatz argued that 17s p90 latency and a 10-point MMLU drop defeat the purpose of a cheap, fast model, while TN1ck reported an independent irony-detection run where Jeeves scored 68 versus Jev&\#x27;s 79 and took over 30 minutes on 100 tweets.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://pasqualepillitteri.it/en/news/19231/openai-pro-200-dollars-back-half-api-spend-codex">OpenAI announces Pro $200 is back, with half the API spend for Codex</a></li>
-<li><a href="https://the-decoder.com/openai-reopens-its-200-pro-plan-but-cuts-api-credits-in-half-as-it-nudges-users-toward-pay-per-use/">OpenAI reopens its $200 Pro plan but cuts API credits in half as it nudges users toward pay-per-use</a></li>
-<li><a href="https://www.kucoin.com/news/flash/openai-codex-reopens-200-dollar-pro-subscription-with-api-cost-halved">OpenAI Codex Reopens $200 Pro Subscription with API Costs Halved | KuCoin</a></li>
+<li><a href="https://github.com/PostHog/jeeves">GitHub - PostHog/jeeves: Jeeves – Reasoning improves Jev-like decision models</a></li>
+<li><a href="https://ollaya.dev/">2026-09-26 — Ollaya brings Jev-style decision models to local, Ollama-like tooling</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#OpenAI`, `#Codex`, `#AI coding`, `#pricing`, `#GPT-6`
+**Tags**: `#machine learning`, `#reasoning models`, `#open source`, `#decision models`, `#AI`
+
+---
+
+<a id="item-tech-news-17"></a>
+### [Free open-source book on making ML models fast from silicon to agents](https://www.reddit.com/r/MachineLearning/comments/1wt6ns4/i_wrote_a_free_opensource_book_on_making_ml/) ⭐️ 6.0/10
+
+A free, open-source book titled &quot;How to Make Your Model Fast: A Systems View of Efficient Machine Learning, from Silicon to Agents&quot; has been published on GitHub by a Reddit user. The book covers the full stack of ML performance engineering, starting with roofline analysis and hardware, then moving through kernels, compilers, quantization, pruning, on-device LLMs, serving, and agent systems. It aims to help developers reason about performance bottlenecks and choose effective optimizations. The repository is available at https://github.com/usamahz/make-your-model-fast.
+
+reddit · r/MachineLearning · /u/SoloTiger\_ · Sep 29, 10:35
+
+**「Background」** Machine learning performance engineering is often narrowly focused on reducing FLOPs, but real-world speed depends on system bottlenecks such as compute, bandwidth, memory, or latency overheads. The book addresses this gap by providing a structured approach that spans hardware-level analysis through to high-level agent systems, filling a need for accessible, free resources in the ML systems community.
+
+**「Impact」** Readers gain a free, structured guide covering the full stack of ML performance optimization, from hardware analysis to agent systems, enabling them to identify and address system bottlenecks more effectively. The open-source nature invites community contributions and feedback, potentially improving the resource over time.
+
+**Tags**: `#machine learning`, `#performance engineering`, `#open source`, `#systems design`, `#LLMs`
+
+---
+
+<a id="item-tech-news-18"></a>
+### [CoWindow and MassAlloc Attention Reduce Redundant Attention Computation](https://www.reddit.com/r/MachineLearning/comments/1wt1gbk/cowindow_and_massalloc_attention_collective/) ⭐️ 6.0/10
+
+The authors of two new arXiv papers describe attention mechanisms that reduce redundant computation: CoWindow Attention \(CoWA\) distributes distant context across complementary KV-head windows, while MassAlloc Attention \(MALA\) uses softmax statistics to skip low-contribution post-QK work for a tile. At 128K tokens on 8 H100 GPUs with TP=8, attention-operator speedups relative to FullAttn were 7.4x forward, 8.6x backward, and 3.0x decode for CoWA, and 2.2x forward, 3.0x backward, and 1.6x decode for MALA; these are attention-operator measurements, not end-to-end model speedups. At 14B parameters with 32K context, total training FLOPs decreased by 28.5% for CoWA and 23.1% for MALA, with reported evaluations comparable to FullAttn. The authors note that neither result establishes universal lossless equivalence to dense attention.
+
+reddit · r/MachineLearning · /u/BitExternal4608 · Sep 29, 05:16
+
+**「Background」** Efficient transformer attention often reduces cost by restricting how much of the past each head can see, but learned routing or indexing schemes add overhead and complexity. CoWA and MALA instead use position-defined complementary windows or attention&\#x27;s own softmax statistics to decide where computation can be skipped, while still supporting training forward/backward and inference prefill/decoding.
+
+**「Impact」** Developers working on long-context attention kernels can evaluate these mechanisms as training-compatible efficiency options, but the reported gains are hardware- and configuration-specific operator speedups rather than proven end-to-end improvements. Adopters should validate model quality carefully because collective coverage does not imply identical head-wise interactions or outputs to FullAttn, and MALA still pays for full causal QK scoring.
+
+**Tags**: `#attention mechanisms`, `#long-context models`, `#efficient transformers`, `#KV cache`, `#machine learning research`
+
+---
+
+<a id="item-tech-news-19"></a>
+### [China&\#x27;s Generative AI Users Pass 700 Million, Compute Capacity Reaches 2185 EFLOPS](https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;amp;item_id=187569887152346976&amp;amp;channelId=1119) ⭐️ 6.0/10
+
+As of the first half of 2026, China&\#x27;s generative AI user base has surpassed 700 million, achieving a penetration rate of over 50%, according to the Generative AI Application Development Report \(2026\) released by the China Internet Network Information Center. Intelligent Q&amp;A is the dominant use case, used by 76% of users, while AI assistants and AI office tools both more than doubled their usage compared to the previous year. The country&\#x27;s intelligent computing power reached 2,185 EFLOPS, a 177% year-over-year increase. The report does not specify duplicate user counts or differentiate between free and paid usage.
+
+telegram · zaihuapd · Sep 29, 06:39
+
+**「Background」** The report comes from the China Internet Network Information Center \(CNNIC\), the body that publishes official data on Chinese internet use. This edition focuses on generative AI applications such as intelligent Q&amp;A, AI assistants, and AI office tools.
+
+**Tags**: `#generative-ai`, `#china`, `#ai-adoption`, `#ai-infrastructure`, `#industry-report`
+
+---
+
+<a id="item-tech-news-20"></a>
+### [Codex Reopens $200 Pro Tier With API-Cost Quota, Drops Five-Hour Limit](https://x.com/thsottiaux/status/2104823812042940713) ⭐️ 6.0/10
+
+Codex will reopen its $200 Pro subscription to new users tomorrow with usage metered by API cost, cutting effective quota to roughly half of the previous plan, according to a preview from Tibo. The current five-hour limit will not return; subscribers can use their weekly quota at their own pace. The post also commits to passing on model efficiency gains and API price cuts, noting that GPT-6 Sol and GPT-6 Luna prices were already halved this week.
+
+telegram · zaihuapd · Sep 29, 06:50
+
+**「Background」** The previous Codex Pro tier cost US$200 per month and metered usage through a five-hour time limit. The announced change replaces that time-based cap with a quota derived from API costs, which the source says will give roughly half the effective usage of the old plan for the same price.
+
+**「Impact」** Developers considering the $200 tier should weigh the roughly halved effective usage under the new API-cost-based quota against the removal of the five-hour limit before upgrading. The announcement also says the gap between on-demand API pricing and subscription pricing will narrow, which may make API billing more attractive for low-volume users.
+
+**Tags**: `#Codex`, `#OpenAI`, `#AI coding tools`, `#subscription`, `#pricing`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [FHFA Mortgage Pricing Change Sinks Fair Isaac; AMD Buys World Labs](https://www.cnbc.com/2026/09/29/stocks-making-the-biggest-moves-premarket-fair-isaac-spacex-amd-more.html) ⭐️ 8.0/10
+### [Premarket stock movers: Fair Isaac, AMD, Summit, CarMax](https://www.cnbc.com/2026/09/29/stocks-making-the-biggest-moves-premarket-fair-isaac-spacex-amd-more.html) ⭐️ 8.0/10
 
-Fair Isaac shares plunged 18% after Federal Housing Finance Agency director Bill Pulte said Fannie Mae and Freddie Mac will move to one mortgage pricing grid that adds VantageScore to the existing FICO Classic grid, while AMD rose more than 1% after acquiring AI firm World Labs for $8.2 billion.
+Stocks making the biggest premarket moves included Fair Isaac falling 18% after the FHFA simplified mortgage pricing, AMD rising 1% on its $8.2B acquisition of AI firm World Labs, Summit Therapeutics surging 18% on a $2B investment from AstraZeneca, and CarMax gaining over 6% on second-quarter earnings that beat analyst estimates.
 
 rss · CNBC Finance · Sep 29, 12:03
 
-**「Background」** Fair Isaac makes FICO credit scores, which mortgage lenders use to set borrower pricing. Fannie Mae and Freddie Mac are government-sponsored mortgage companies, and combining their previously separate pricing grids means VantageScore will now be part of the same mortgage pricing structure as FICO Classic.
+**「Background」** The FHFA announced it would replace two separate mortgage pricing grids with one grid and add VantageScore alongside FICO scores, directly affecting Fair Isaac&\#x27;s proprietary scoring system. For CarMax, analysts had expected earnings of $0.73 per share on revenue of $7.09 billion, so its actual $1.16 per share on $7.88 billion represented a significant beat.
 
-**Tags**: `#FHFA mortgage pricing`, `#M&amp;A`, `#earnings`, `#stock movers`, `#healthcare investment`
+**「Impact」** The FHFA&\#x27;s change threatens Fair Isaac&\#x27;s dominance in mortgage credit scoring, potentially reducing a key revenue stream.
+
+**Tags**: `#FHFA mortgage pricing`, `#Fair Isaac`, `#AMD acquisition`, `#AstraZeneca investment`, `#CarMax earnings`
 
 ---
 
 <a id="item-finance-news-2"></a>
-### [Oracle Invokes Force Majeure on Stargate Data Center Due to Power Delays](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center) ⭐️ 8.0/10
+### [Trump’s municipal bond portfolio grows to as much as $1 billion, CNBC analysis finds](https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html) ⭐️ 8.0/10
 
-Oracle has issued a force majeure notice—a legal clause that excuses delays caused by events outside a company’s control—for a Stargate data center project in New Mexico because environmental and power approvals for a 2.45-gigawatt microgrid have not been granted, risking a delay beyond the planned 2028 start of operations. The notice has raised market concern, causing an $18 billion syndicated loan tied to the project to trade at a discount.
+President Trump’s municipal bond holdings now exceed 1,000 positions worth between roughly $300 million and $1 billion, according to a CNBC analysis of his financial disclosures. The analysis counted 807 positions at the end of 2025 and at least 243 additional purchases disclosed in 2026.
 
-telegram · zaihuapd · Sep 29, 05:46
+rss · CNBC Finance · Sep 29, 14:37
 
-**「Background」** The Stargate project is a large-scale artificial-intelligence infrastructure venture; most of its sites are still in early construction, permitting, or energy-planning stages, with only a few campuses \(such as the one in Abilene, Texas\) already operating.
+**「Background」** Municipal bonds are debt issued by local governments and public institutions, often used by wealthy investors for tax-free income. Trump’s holdings are managed by outside investment firms, and CNBC found no evidence that he or his managers traded on advance knowledge of administration decisions.
 
-**「Impact」** The delay and loan discount signal growing investor wariness about the pace of AI data-center buildout, and Texas has already suspended approval of new data-center projects, which could further constrain expansion in a key hub.
+**「Impact」** Ethics and financial experts say the size of the portfolio is unusual for an individual investor and raises conflict-of-interest questions, because federal grants, regulations and healthcare funding decisions can affect issuers whose debt Trump holds.
 
-**Tags**: `#Oracle`, `#data center`, `#force majeure`, `#infrastructure delay`, `#AI investment`
+**Tags**: `#municipal bonds`, `#Donald Trump`, `#conflict of interest`, `#ethics`, `#financial disclosure`
 
 ---
 
 <a id="item-finance-news-3"></a>
-### [China to Subsidize First-Home Mortgage Interest From Oct 1](https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm) ⭐️ 8.0/10
+### [China Announces Mortgage Interest Subsidy for First-Time Home Buyers](https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm) ⭐️ 8.0/10
 
-China’s finance ministry, central bank and financial regulator announced a nationwide policy, effective October 1, 2026, that gives eligible new first-home mortgage borrowers a central-government subsidy equal to 1 percentage point of annual interest for up to five years on up to 1 million yuan of principal, or roughly 10,000 yuan per household per year.
+On September 29, 2026, China’s Finance Ministry, central bank, and financial regulator announced a mortgage interest subsidy for eligible first-time homebuyers, effective October 1, 2026. The government will subsidize an annualized 1 percentage point of interest for up to five years, with a maximum benefit of about 10,000 yuan per household per year, and the policy is tentatively set to run for one year.
 
 telegram · zaihuapd · Sep 29, 10:18
 
-**「Background」** To qualify, the loan must be newly issued for a first home—not a refinancing of an existing loan—and the home must be no larger than 120 square meters and priced at or below 1.5 million yuan.
+**「Background」** The subsidy applies only to new commercial mortgages used to buy a first home of no more than 120 square meters priced at no more than 1.5 million yuan; replacing an existing mortgage with a new loan is excluded. The interest relief is a central fiscal subsidy aimed at lowering monthly borrowing costs for qualified buyers.
 
-**「Impact」** The subsidy lowers borrowing costs for first-time buyers of smaller, lower-priced homes, making monthly repayments cheaper for households that meet the criteria.
+**「Impact」** Eligible first-time homebuyers should see lower monthly interest payments for up to five years, but the benefit is capped because subsidies apply only to the first 1 million yuan of loan principal.
 
-**Tags**: `#住房贷款贴息`, `#财政政策`, `#房地产`, `#中国人民银行`, `#金融监管总局`
+**Tags**: `#China housing policy`, `#mortgage interest subsidy`, `#first-time homebuyers`, `#fiscal policy`, `#property market`
 
 ---
 
 <a id="item-finance-news-4"></a>
-### [Trump’s municipal bond portfolio reaches estimated $300 million to $1 billion](https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html) ⭐️ 7.0/10
+### [China tightens humanoid robot IPO criteria, sources say](https://www.cnbc.com/2026/09/29/china-criteria-humanoid-robot-ipos.html) ⭐️ 7.0/10
 
-President Trump’s municipal bond holdings have grown to more than 1,000 positions worth between $300 million and $1 billion, according to a CNBC analysis of his financial disclosures, raising ethics questions because many issuers are affected by his administration’s policies. The figures are ranges from disclosure filings and do not reflect subsequent market moves.
-
-rss · CNBC Finance · Sep 29, 14:37
-
-**「Background」** Trump ended 2025 with 807 municipal bond positions worth $240.7 million to $797.6 million and has disclosed at least 243 purchases in 2026, including bonds tied to hospitals, utilities, and coal plants. The White House says the holdings are in independently managed discretionary accounts, and CNBC found no evidence that Trump or his investment managers traded on advance knowledge or shaped policies to benefit his holdings.
-
-**Tags**: `#municipal bonds`, `#Donald Trump`, `#conflict of interest`, `#financial disclosures`, `#public finance`
-
----
-
-<a id="item-finance-news-5"></a>
-### [China reportedly tightens IPO criteria for humanoid-robot startups](https://www.cnbc.com/2026/09/29/china-criteria-humanoid-robot-ipos.html) ⭐️ 7.0/10
-
-China&\#x27;s securities regulator is reportedly requiring humanoid-robot startups to show sustainable revenue and commercial orders, narrowing losses \(including a three-year forecast\), and core technology such as robotic brains or hands before listing, according to three anonymous sources; there is no official confirmation. At least two dozen such companies have filed to list in Hong Kong, but the sources said the new bar could leave only a handful—or none—able to go public.
+China&\#x27;s securities regulator is reportedly tightening IPO requirements for humanoid robot startups, with three anonymous sources saying applicants must show sustainable revenue and commercial orders, narrowing losses backed by a three-year forecast, and core technology such as a robotic brain or hands—criteria that could leave few or none of the companies able to list.
 
 rss · CNBC Finance · Sep 29, 07:19
 
-**「Background」** The reported tightening comes after heavy investment in China&\#x27;s &\#x27;embodied AI&\#x27; push—the official term for humanoid robotics—and signs of cooling among listed players, including a steep drop in Unitree&\#x27;s shares since its August IPO. Hong Kong began allowing confidential tech IPO filings in May 2025, but mainland companies still need the regulator&\#x27;s approval to list there.
+**「Background」** China’s securities regulator \(CSRC\) has reportedly been telling investment banks informally since mid-September that it is raising the bar for approving humanoid-robot IPOs, after hot listings such as Unitree’s volatile Shanghai debut drew attention to valuations and commercialization risks. The reported shift comes as China now has more than 100 humanoid companies under the government-backed “embodied AI” push, even as officials have warned of a bubble in the sector.
 
-**Tags**: `#China`, `#humanoid robots`, `#IPO regulation`, `#artificial intelligence`, `#CSRC`
+**「Impact」** If the unconfirmed guidance is enforced, it could prevent most of the at least two dozen humanoid-related companies that have filed to list in Hong Kong from going public, leaving early investors with fewer exit options.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://www.reuters.com/business/finance/china-slows-humanoid-robot-ipo-rush-hype-outruns-reality-2026-09-21/">China slows humanoid robot IPO rush as hype outruns reality - Reuters</a></li>
+<li><a href="https://www.theinformation.com/articles/china-curbs-humanoid-ipos-unitrees-volatile-debut">China Curbs Humanoid IPOs After Unitree&#x27;s Volatile Debut</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#China`, `#humanoid robots`, `#IPO regulation`, `#CSRC`, `#embodied AI`
 
 ---
 
