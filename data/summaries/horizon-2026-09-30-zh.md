@@ -1,49 +1,96 @@
 # Horizon 每日速递 - 2026-09-30
 
-> 从 54 条内容中筛选出 20 条重要资讯。
+> 从 57 条内容中筛选出 24 条重要资讯。
 
 ---
 
 **科技新闻**
-1. [OpenAI DevDay 2026：Dots 智能体等 20 余项更新](#item-tech-news-1) ⭐️ 9.0/10
-2. [Anthropic 评估：GLM-5.3 与 Claude 突破二进制利用门槛](#item-tech-news-2) ⭐️ 8.0/10
-3. [从 PostgreSQL 视角看 Linux 内核：Andres Freund 谈性能改进](#item-tech-news-3) ⭐️ 8.0/10
-4. [从词袋到 JEV：文本分类模型演进图解指南](#item-tech-news-4) ⭐️ 8.0/10
-5. [CoWindow 与 MassAlloc 注意力：集体覆盖与自适应计算分配](#item-tech-news-5) ⭐️ 8.0/10
-6. [A Privacy Analysis of Web and Mobile Conversational AI Agents \[pdf\]](#item-tech-news-6) ⭐️ 7.0/10
-7. [星际之门数据中心延期 甲骨文发不可抗力通知](#item-tech-news-7) ⭐️ 7.0/10
-8. [CNNIC 报告：中国生成式 AI 用户破 7 亿](#item-tech-news-8) ⭐️ 7.0/10
-9. [Cloudflare 发布面向 AI Agent 的 CLI 工具 cf](#item-tech-news-9) ⭐️ 7.0/10
-10. [谷歌修复 Firebase iOS 崩溃问题](#item-tech-news-10) ⭐️ 7.0/10
-11. [PS5 Relapse Exploit 瞄准 WebKit JavaScriptCore 漏洞](#item-tech-news-11) ⭐️ 6.0/10
-12. [Tcl/Tk 9.1 发布：轻量级脚本语言与 GUI 工具包更新](#item-tech-news-12) ⭐️ 6.0/10
-13. [Rust 原生 GPU 目标愿景：无需专用库](#item-tech-news-13) ⭐️ 6.0/10
-14. [AI Has Taste 推翻数学论文猜想获原作者确认](#item-tech-news-14) ⭐️ 6.0/10
-15. [开源新书：从芯片到智能体的 ML 性能优化指南](#item-tech-news-15) ⭐️ 6.0/10
+1. [AI Has Taste：AI 反例推翻论文猜想，原作者确认](#item-tech-news-1) ⭐️ 9.0/10
+2. [GLM-5.3/Claude Mythos 实现控制流劫持](#item-tech-news-2) ⭐️ 8.0/10
+3. [OpenAI DevDay 2026 发布 Dots 智能体及多项新 API](#item-tech-news-3) ⭐️ 8.0/10
+4. [Anthropic 评估称 GLM-5.3 可自主发起网络攻击](#item-tech-news-4) ⭐️ 8.0/10
+5. [GPT-6.1 Sol：以五分之一价格宣称接近 Astra 性能](#item-tech-news-5) ⭐️ 7.0/10
+6. [对话式 AI 代理隐私分析发布，社区揭示数据泄露风险](#item-tech-news-6) ⭐️ 7.0/10
+7. [OpenAI 推出始终在线智能体 Dots](#item-tech-news-7) ⭐️ 7.0/10
+8. [PostgreSQL 视角下的 Linux 内核：Kernel Recipes 大会报道](#item-tech-news-8) ⭐️ 7.0/10
+9. [从词袋到 Jev：文本分类模型与校准的可视化指南](#item-tech-news-9) ⭐️ 7.0/10
+10. [中国生成式 AI 用户破 7 亿，普及率超 50%](#item-tech-news-10) ⭐️ 7.0/10
+11. [Cloudflare 发布面向 AI Agent 的命令行工具 cf](#item-tech-news-11) ⭐️ 7.0/10
+12. [谷歌修复 Firebase 致 iOS 应用启动崩溃问题](#item-tech-news-12) ⭐️ 7.0/10
+13. [德里如何将配电损耗从 50%降至 5%](#item-tech-news-13) ⭐️ 6.0/10
+14. [PS5 发布基于 WebKit JavaScriptCore 的漏洞利用](#item-tech-news-14) ⭐️ 6.0/10
+15. [Rust GPU 原生编译目标愿景与原型](#item-tech-news-15) ⭐️ 6.0/10
+16. [Linux 发行版发布新一批安全更新](#item-tech-news-16) ⭐️ 6.0/10
+17. [免费开源书：从芯片到智能体的 ML 性能优化指南](#item-tech-news-17) ⭐️ 6.0/10
+18. [CoWindow 和 MassAlloc 注意力：两种减少冗余计算的注意机制](#item-tech-news-18) ⭐️ 6.0/10
+19. [Codex Pro 订阅明日重开，额度约减半](#item-tech-news-19) ⭐️ 6.0/10
 
 **财经新闻**
-1. [特朗普市政债券持仓或高达 10 亿美元，引发利益冲突关注](#item-finance-news-1) ⭐️ 8.0/10
-2. [高盛 CEO 接班面临变数：所罗门迟疑，沃尔德伦等待有限](#item-finance-news-2) ⭐️ 7.0/10
-3. [盘前异动：Fair Isaac 跌 18%，AMD 宣布 820 亿美元收购 World Labs](#item-finance-news-3) ⭐️ 7.0/10
-4. [中国为人形机器人 IPO 设立三项新标准，多数初创企业或难达标](#item-finance-news-4) ⭐️ 7.0/10
-5. [三部门：10 月 1 日起首套房贷获财政贴息，年化 1%最长 5 年](#item-finance-news-5) ⭐️ 7.0/10
+1. [盘前：FHFA 调整房贷定价重创 Fair Isaac，AMD 与 Summit 公布交易](#item-finance-news-1) ⭐️ 8.0/10
+2. [甲骨文就星际之门新墨西哥数据中心电力审批延期发出不可抗力通知](#item-finance-news-2) ⭐️ 8.0/10
+3. [三部门：10 月 1 日起首套房贷可获年化 1 个百分点贴息](#item-finance-news-3) ⭐️ 8.0/10
+4. [特朗普市政债券持仓据估算最高达 10 亿美元，发行方与政府政策重叠](#item-finance-news-4) ⭐️ 7.0/10
+5. [中国据报收紧人形机器人企业 IPO 标准，达标者或寥寥无几](#item-finance-news-5) ⭐️ 7.0/10
 
 ---
 
 ## 科技新闻
 
 <a id="item-tech-news-1"></a>
-### [OpenAI DevDay 2026：Dots 智能体等 20 余项更新](https://openai.com/zh-Hant/index/devday-2026-recap/) ⭐️ 9.0/10
+### [AI Has Taste：AI 反例推翻论文猜想，原作者确认](http://weixin.sogou.com/weixin?type=2&amp;query=%E6%96%B0%E6%99%BA%E5%85%83+AI%E6%89%BE%E5%87%BA%E6%95%B0%E5%AD%A6%E5%8F%8D%E4%BE%8B%E6%8E%A8%E7%BF%BB%E8%AE%BA%E6%96%87%EF%BC%8C%E4%BD%9C%E8%80%85%E7%A1%AE%E8%AE%A4%EF%BC%81453%E7%AF%87%E6%89%8B%E7%A8%BF%EF%BC%8CAI%E5%BC%80%E5%A7%8B%E8%87%AA%E5%B7%B1%E5%87%BA%E9%A2%98%E4%BA%86) ⭐️ 9.0/10
 
-OpenAI 于 DevDay 2026 发布 20 余项更新，包括全天候自主运转的伴生智能体 Dots、专精编程与电脑操控的 GPT-6.1 Sol（价格仅为 Astra 的五分之一），以及速度最高提升 8 倍（API 提升 6 倍）的 Astra Ultrafast。同时推出 Codex 云端版（支持语音操控与自动修障）、Agents API（原生电脑操控与 AWS Bedrock 托管）、Decisions API、Sign in with ChatGPT 账户互通，以及算力额度为 Plus 25 倍的 Pro 500 套餐。缓存输入价格降至每百万 token 0.10 美元，较 GPT-6 Sol 的缓存价格再降 50%。
+思特雅大学研究员曾仔健公开的 AI 系统 AI Has Taste（GitHub 仓库：ArtificialZeng/AI-Has-Taste）目前已产出 453 份数学研究手稿、共 2312 页内容，其中 6 篇被明确标注为“AI-Proposed Conjectures”。据项目介绍，系统曾针对一篇论文中的猜想构造出反例并推翻该猜想，原作者回信确认反例成立；此后项目把选题、证明、反例搜索、失败管理、独立审查和写作逐步 Agent 化，定位从“生成答案”走向“生成研究议程”。上述数据与经过均来自项目自述及公开仓库状态，尚待独立验证。
+
+rss · 新智元 · 9月29日 03:40
+
+**「背景」** 过去大模型在数学领域的应用以解答题目和生成证明文本为主，本质上仍属于“生成答案”；本文报道的项目则尝试让 AI 进入“研究循环”，即对论文中的新猜想提出反例，或构造新的可证伪猜想。其关键转折是，AI 面对一篇论文中的猜想时没有顺着原思路继续证明，而是构造出一个反例，并得到原论文作者的书面确认，这成为后续将选题、证明、反例搜索和写作流程 Agent 化的基础。
+
+**「影响」** 对于数学研究者，AI Has Taste 已展示出自动构造反例并获原作者确认的能力，可能被用于论文审阅和猜想检验。该项目在 GitHub 开源，任何人可复现其工作流程，453 份手稿和 6 个 AI 提出的猜想表明系统已具备初步的研究议程生成能力。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://github.com/ArtificialZeng/AI-Has-Taste">GitHub - ArtificialZeng / AI - Has - Taste : 200+ open problems in...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI for mathematics`, `#counterexample finding`, `#automated reasoning`, `#machine learning`, `#scientific verification`
+
+---
+
+<a id="item-tech-news-2"></a>
+### [GLM-5.3/Claude Mythos 实现控制流劫持](https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/) ⭐️ 8.0/10
+
+Anthropic Frontier Red Team 在新报告中称，对内部 Binary Exploitation 基准随机抽取的 100 项任务进行评估后，GLM-5.3 在 4% 的试验中实现完整控制流劫持，Claude Mythos Preview 在 6% 的试验中实现；而较早的 Claude Opus 4.6 和 GLM-5.2 均没有任何成功。这说明前沿模型已经跨过此前不具备的二进制利用能力门槛，但成功率仍较低，且结果来自厂商自测。
+
+rss · Simon Willison · 9月29日 22:20
+
+**「背景」** 二进制利用（binary exploitation）指通过发现并利用内存布局、指针或控制流漏洞来劫持程序执行；控制流劫持是其中关键的一步。Anthropic 在其内部 Binary Exploitation 基准上随机选取 100 个任务评测多个模型，结果显示此前模型如 Claude Opus 4.6 和 GLM-5.2 未能在任何任务中成功，而 GLM-5.3 和 Claude Mythos Preview 已在部分试验中实现完整控制流劫持。
+
+**「影响」** 对 AI 安全评估的直接影响是：部署 GLM-5.3 或 Claude Mythos Preview 的团队需要将“模型可能在二进制利用任务中实现控制流劫持”纳入威胁模型，即使成功率只有个位数；基于 Claude Opus 4.6 或 GLM-5.2 的既有评估不能直接外推到这些新模型。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities">GLM-5.3 and the spread of advanced cyber capabilities \ Anthropic</a></li>
+<li><a href="https://ai-tldr.dev/releases/anthropic-glm-5-3-cyber-report/">Anthropic tests GLM-5.3 — its safeguards fall to… | AI/TLDR</a></li>
+
+</ul>
+</details>
+
+**标签**: `#AI security`, `#Anthropic`, `#binary exploitation`, `#cyber capabilities`, `#language models`
+
+---
+
+<a id="item-tech-news-3"></a>
+### [OpenAI DevDay 2026 发布 Dots 智能体及多项新 API](https://openai.com/zh-Hant/index/devday-2026-recap/) ⭐️ 8.0/10
+
+OpenAI 在 DevDay 2026 官方回顾中宣布 20 余项面向开发者与订阅用户的更新：推出可全天候自主运行的常驻智能体 Dots；发布专精编程与电脑操作的 GPT-6.1 Sol（以五分之一价格接近 Astra 智能水平）以及速度最高提升 8 倍、API 提升 6 倍的 Astra Ultrafast。API 方面新增原生支持电脑操控并可由 AWS Bedrock 托管的 Agents API，以及基于 Luna 模型的 Decisions API；同时推出 Sign in with ChatGPT，并新增算力为 Plus 25 倍的 Pro 500 档位。以上性能与价格数字均为官方宣布，尚未见独立第三方验证。
 
 telegram · zaihuapd · 9月29日 17:52
 
-**「背景信息」** 在 DevDay 2026 之前，OpenAI 的 Ultrafast 模式仅限受邀用户使用，预览时基于 GPT-5.6 Sol 可实现每秒 750 tokens、比标准层快 14 倍的推理速度。此次大会正式推出 Astra Ultrafast，速度提升最高达 8 倍（API 6 倍），并将该模式向更多开发者开放。
+**「背景」** 9 月 27 日的日报援引 TestingCatalog 报道，OpenAI 计划在 9 月 29 日 DevDay 前后将此前仅限邀请的 Ultrafast 推理模式开放给更多用户；该模式随 GPT-5.6 Sol 预览，据称可达每秒 750 token、比标准档快 14 倍，但当时官方尚未确认 GPT-6 支持。本次 DevDay 确认了该扩展：GPT-6.1 Astra Ultrafast 最高提速 8 倍（API 提升 6 倍），并纳入新的 Pro 500 档位。
 
-**「影响」** 缓存输入价格大幅降低 95%（较标准输入）使 Codex 成为对高缓存用量开发者更具成本优势的编码助手，此前 GPT-6 Sol 的质量问题已推动部分用户转向 Anthropic Opus 5.5，GPT-6.1 Sol 能否挽回声誉仍待验证。
-
-**「社区讨论」** 多位用户对比定价与模型质量：有用户认为 DeepSeek 在速度和性价比上均优于 OpenAI，无法 justify 每月 200–500 美元的订阅费；另有评论指出 Sol 6 表现大幅退步，转而使用 Opus 5.5，对 GPT-6.1 持怀疑态度。minimaxir 强调缓存降价 50% 才是本次实质性亮点，gradus\_ad 则担忧价格战对行业的冲击。
+**「影响」** 对开发者的直接影响是可组合的新接口：Agents API 已开放电脑操控并支持 AWS Bedrock 托管，使用 AWS 的团队可更直接地部署自动化 Agent；Decisions API 则为需要低成本实时分类、路由或动作决策的场景提供 Luna 模型入口。订阅用户可将 ChatGPT 额度划拨至 Devin、Notion 等第三方工具，但实际额度到账与兼容范围需以官方文档为准；在独立测试前，Sol 的性价比与 Ultrafast 的倍速数据应视为厂商宣称。
 
 <details><summary>参考链接</summary>
 <ul>
@@ -52,337 +99,372 @@ telegram · zaihuapd · 9月29日 17:52
 </ul>
 </details>
 
-**标签**: `#OpenAI`, `#GPT-6.1`, `#Dots agent`, `#AI agent`, `#DevDay`
-
----
-
-<a id="item-tech-news-2"></a>
-### [Anthropic 评估：GLM-5.3 与 Claude 突破二进制利用门槛](https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/) ⭐️ 8.0/10
-
-Anthropic Frontier Red Team 发布评估，称 GLM-5.3 与 Claude Mythos Preview 在内部二进制利用基准测试中分别有 4% 和 6% 的试验成功实现控制流劫持，而之前的 Claude Opus 4.6 与 GLM-5.2 则完全无法达成。这一结果出自 100 个随机选取的测试任务，标志着 AI 模型在自主漏洞利用能力上跨越了有意义的门槛——尽管成功率仍低，但此前该能力完全不存在。
-
-rss · Simon Willison · 9月29日 22:20
-
-**「背景」** 控制流劫持是二进制利用中的核心技术，攻击者通过篡改程序执行流程来劫持控制权。在此之前，前沿语言模型尚未在任何标准二进制利用任务中展示出该能力，因此 Anthropic 的测试结果被视为一项能力阈值突破。
-
-**「影响」** 该发现意味着 AI 已开始具备辅助自动化漏洞利用的实用能力。Anthropic 同时指出，GLM-5.3 的开放权重可被用户修改以绕过安全拒答，且其安全防护在模拟测试中可被简单方法绕过（成功率 64%–100%），可能扩大恶意行为者可用的网络攻击工具范围。安全团队应警惕低门槛自动化利用工具的潜在风险。
-
-**标签**: `#anthropic`, `#AI security`, `#cyber capabilities`, `#LLM capabilities`, `#binary exploitation`
-
----
-
-<a id="item-tech-news-3"></a>
-### [从 PostgreSQL 视角看 Linux 内核：Andres Freund 谈性能改进](https://lwn.net/Articles/1096827/) ⭐️ 8.0/10
-
-LWN 报道，PostgreSQL 主要贡献者 Andres Freund 在 2026 年 Kernel Recipes 会议上，从 PostgreSQL 的角度分享了他如何利用或绕开 Linux 内核特性来提升数据库性能，并讨论了内核未来可如何更好支持此类应用以及 PostgreSQL 领域的一些新进展。
-
-rss · LWN.net · 9月29日 15:42
-
-**「背景」** Andres Freund 是长期致力于提升 PostgreSQL 性能的核心贡献者，其优化工作常需应对或绕开 Linux 内核的特定行为与特性。在 2026 年 Kernel Recipes 会议上，他系统分享了内核与数据库交互的经验，并探讨内核如何更好地支持 PostgreSQL 这类应用。
-
-**「影响」** 对同时关注内核与数据库的开发者而言，这场报告梳理了 PostgreSQL 工作负载与 Linux 内核交互的实际经验，可作为评估数据库性能优化方向以及潜在内核改进思路的参考。
-
-**标签**: `#PostgreSQL`, `#Linux kernel`, `#database performance`, `#kernel development`, `#systems engineering`
+**标签**: `#openai`, `#gpt-6`, `#ai-agents`, `#codex`, `#api`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [从词袋到 JEV：文本分类模型演进图解指南](https://magazine.sebastianraschka.com/p/classifier-history-and-jev) ⭐️ 8.0/10
+### [Anthropic 评估称 GLM-5.3 可自主发起网络攻击](https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities) ⭐️ 8.0/10
 
-Sebastian Raschka 于 9 月 29 日发布《Language Models for Text Classification: From Bag-of-Words to Jev》，这是一篇面向文本分类工程师与研究者的可视化指南。文章从词袋模型讲到 JEV，覆盖 RNN、CNN、Transformer 与校准方法，并配有关于准确性和效率的动手实验；内容属于作者的教学性评测，而非产品发布或第三方基准。
+Anthropic 发布评估称，智谱 AI 的 GLM-5.3 已具备自主构建端到端网络攻击的能力：在 ExploitBench 上 410 次尝试中成功 50 次，低于 Claude Mythos Preview 的 56 次。Anthropic 还发现，简单方法即可让该模型的安全防护失效，模拟测试绕过成功率为 64% 至 100%；开放权重也允许用户修改模型以削弱拒答。该结果来自 Anthropic 的测试，并非独立验证。
 
-rss · Ahead of AI · 9月29日 10:50
+telegram · zaihuapd · 9月29日 23:58
 
-**「背景」** Jev 是近期发布的 AI 模型。在 Raschka 约一周前的文章中，他指出长期以来用于分类的编码器式模型多为专用模型、能力有限，而 Jev 的突破在于泛化能力——同一模型可处理邮件分类、玩游戏、交易股票等不同任务。本文则是在此基础上，以图文形式梳理文本分类方法从词袋模型到 Jev 的演进，并配合准确率与效率的动手实验。
+**「背景」** GLM-5.3 是智谱 AI（Z.ai）发布的开放权重模型，开放权重意味着用户可以获取并修改模型参数，因此也能削弱其安全拒答机制。Anthropic 本次评估正针对这类模型被改造后可能带来的网络攻击风险，并将 GLM-5.3 与自家的闭源模型 Claude Mythos Preview 放在同一基准上做对比。
 
-**「影响」** 希望选择文本分类架构的读者可直接参考文中实验，对比不同模型在准确性与效率上的表现；但应将这些结果视为作者个人实验，并在自己的数据集和任务上复核后再做技术选型。
+**「影响」** 对于部署或依赖开放权重模型的组织，该评估意味着不能把内置安全拒答视为可靠边界；攻击者可以移除或绕过防护，因此防御者应假设 GLM-5.3 及其衍生模型可能以未被限制的形式运行，并据此调整监控、访问控制与隔离策略。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://sebastianraschka.com/blog/2026/jev-classification-generalization.html">Jev and Generalization | Sebastian Raschka, PhD</a></li>
-
-</ul>
-</details>
-
-**标签**: `#text classification`, `#language models`, `#machine learning`, `#transformers`, `#tutorial`
+**标签**: `#AI safety`, `#cybersecurity`, `#GLM-5.3`, `#Anthropic`, `#open-weight models`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [CoWindow 与 MassAlloc 注意力：集体覆盖与自适应计算分配](https://www.reddit.com/r/MachineLearning/comments/1wt1gbk/cowindow_and_massalloc_attention_collective/) ⭐️ 8.0/10
+### [GPT-6.1 Sol：以五分之一价格宣称接近 Astra 性能](https://openai.com/index/introducing-gpt-6-1-sol/) ⭐️ 7.0/10
 
-CoWindow Attention（CoWA）与 MassAlloc Attention（MALA）是作者提出的两种新注意力机制：CoWA 把远处上下文分散到不同 KV 头、以互补窗口实现全历史覆盖；MALA 保留完整因果 QK 打分，再用 softmax 统计决定是否继续执行后续分块计算。作者报告在 8×H100、TP=8、128K 上下文下，与 FullAttn 相比注意力算子加速：CoWA 前向 7.4×、反向 8.6×、解码 3.0×；MALA 前向 2.2×、反向 3.0×、解码 1.6×。在 14B、32K 上下文继续训练中，总训练 FLOPs 分别下降 28.5% 和 23.1%，报告评估中能力与 FullAttn 相当。需注意这些是注意力算子而非端到端加速，作者也明确表示两种方法都没有证明与密集注意力普遍无损等价。
+OpenAI 发布了 GPT-6.1 Sol，这是一个声称在智能上接近其高端 Astra 模型、但价格仅为后者五分之一的新模型。具体来说，缓存输入价格降至每百万 tokens 0.10 美元，比标准输入定价低 95%，比此前的 GPT-6 Sol 缓存定价低 50%。该模型于 2026 年 9 月 29 日公布，但未附带详细基准测试，社区对其实际性能持怀疑态度。
 
-reddit · r/MachineLearning · /u/BitExternal4608 · 9月29日 05:16
+hackernews · crorella · 9月29日 17:06 · [社区讨论](https://news.ycombinator.com/item?id=49896586)
 
-**「背景」** 标准因果注意力在每个位置都要对所有历史键做打分，长上下文时计算量随序列二次增长；许多稀疏注意力方法因此只保留局部、前缀或滑动窗口。CoWA 与 MALA 属于这类减少冗余计算的探索，但分别从“集体覆盖的位置模式”和“按 softmax 统计自适应分配后计算”两条路径切入。
+**「背景」** OpenAI 的产品线中，GPT-6 Astra 是面向最高性能的旗舰模型，GPT-6 Sol 则是价格更低的替代型号。此次发布的 GPT-6.1 Sol 是 Sol 系列的增量点版本更新，沿用上代定价（输入每百万 token 2.00 美元、缓存输入 0.10 美元、输出 10.00 美元），并按第三方汇总在多项 agentic 基准上接近甚至追平 Astra，而非推出全新旗舰。
 
-**「影响」** 对长上下文内核开发者而言，若注意力分布常有低贡献分块，MALA 的自适应跳过可能更合用，但仍需承担完整因果 QK 打分；若希望使用不依赖学习路由的固定稀疏覆盖，CoWA 的位置定义模式更易移植。采用前应在目标负载上独立复现算子级加速，再评估端到端收益。
+**「影响」** 对于依赖高缓存命中率的代码或重复任务用户，缓存降价 50% 可显著降低使用成本，可能促使部分用户从 GPT-6 Sol 迁移。然而，部分长期用户因 Sol 6 的可靠性问题已转向竞品，新模型能否逆转信任尚不确定。
 
-**标签**: `#attention mechanisms`, `#long-context`, `#efficiency`, `#transformer`, `#sparse attention`
+**「社区讨论」** 用户 minimaxir 指出缓存降价才是真正的重大公告，认为这比性能声称更实用；而 the\_duke 则表示 Sol 6 的糟糕体验已让自己彻底转向 Opus 5.5，对 6.1 不抱信心。另有用户认为 token 价格成为竞争焦点对行业可能不利。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://smartscope.blog/en/blog/changed-gpt-6-1-sol-1-point-behind-2026/">What Changed in GPT - 6 . 1 Sol ? 1 Point Behind Astra at... - SmartScope</a></li>
+<li><a href="https://www.datacamp.com/blog/gpt-6-1-sol">GPT - 6 . 1 Sol : Features, Benchmarks, Pricing , and Access | DataCamp</a></li>
+<li><a href="https://llm-stats.com/models/gpt-6.1-sol">GPT - 6 . 1 Sol Benchmarks, Pricing &amp; Context Window</a></li>
+
+</ul>
+</details>
+
+**标签**: `#openai`, `#gpt`, `#llm`, `#ai-pricing`, `#machine-learning`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [A Privacy Analysis of Web and Mobile Conversational AI Agents \[pdf\]](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf) ⭐️ 7.0/10
+### [对话式 AI 代理隐私分析发布，社区揭示数据泄露风险](https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf) ⭐️ 7.0/10
 
-A privacy analysis of conversational AI agents highlights emerging data-exposure and tracking risks across web and mobile chat platforms.
+Hacker News 上发布了一份题为《A Privacy Analysis of Web and Mobile Conversational AI Agents》的 PDF 隐私分析，针对网页与移动端对话式 AI 代理的数据收集和隐私风险展开研究，面向使用或开发这类代理的用户与工程人员。原始条目没有提供报告正文，因此报告的具体方法、样本范围与结论无法从当前信息中核实，只能依据标题及社区讨论了解其关注的问题。
 
 hackernews · damaru2 · 9月29日 09:03 · [社区讨论](https://news.ycombinator.com/item?id=49890226)
 
-**标签**: `#privacy`, `#conversational AI`, `#security`, `#tracking`, `#AI agents`
+**「背景」** 这项研究由 IMDEA Networks 团队完成，负责人为 Narseo Vallina-Rodríguez，覆盖 ChatGPT、Claude、Grok、DeepSeek、Perplexity、Gemini、Copilot、Mistral 的 Le Chat 和 Meta AI 等服务的网页版与 Android 应用。研究者使用定制的浏览器和手机追踪数据从设备发出后的去向，论文已通过同行评审并被隐私技术会议 PoPETs 2027 接收。
+
+**「实际影响」** 对 Perplexity 和 Grok 用户而言，实际后果是：不能假设对话内容只留存在自己设备上。独立分析指出，这两款服务会把访问控制较弱的对话永久链接（permalinks）发送给 Meta Pixel 等第三方跟踪器，Grok 甚至会通过 Open Graph 元数据向 TikTok 暴露逐字消息文本；针对 Perplexity 的集体诉讼也指控其内置跟踪器把私人聊天内容传给了 Google 和 Meta 的广告系统。因此，用户应把这类可分享的对话 URL 当作可能被外部读取的内容，避免在其中粘贴敏感信息，并优先考虑不依赖云端跟踪机制的本地或开源模型。
+
+**「社区讨论」** 评论区报告了多个具体的隐私暴露场景：pbasista 称 ChatGPT 网页端会在用户尚未提交前定期把未完成的提示发送到 conversation/prepare 接口，可能用于缓存预热，也可能用于追踪写作节奏和修改习惯；postalcoder 则指出 Perplexity 等服务的过往搜索链接只凭 URL 中的 UUID 就能展示完整对话。另有评论者据此主张开放模型应成为默认选择，并认为这些机制与 AI 公司公开的数据处理承诺相矛盾，但这些属于评论者的推断而非既定结论。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-%28clean%29.pdf">Prompt like a Butterfly, Sting like a Tracker: A Privacy Analysis of</a></li>
+<li><a href="https://jorgegarciaherrero.com/prompt-like-a-butterfly-sting-like-a-tracker-un-resumen-visual/">Resumen de &quot;Prompt like a butterfly, sting like a tracker&quot; - Jorge García Herrero y Asociados, abogados</a></li>
+<li><a href="https://anonyome.com/knowledge-center/ai-privacy/perplexity-ai-data-privacy/">Perplexity AI data privacy: What you need to know | Anonyome</a></li>
+<li><a href="https://techxplore.com/news/2026-05-conversations-ai-private.html">Your conversations with AI may not be as private as you think</a></li>
+<li><a href="https://gptanon.com/blog/perplexity-ai-lawsuit-secret-data-sharing-google-meta">Perplexity AI Secretly Sent Your Private Chats to Google and Meta — A 135-Page Lawsuit Exposes the Betrayal | GPTAnon Blog</a></li>
+
+</ul>
+</details>
+
+**标签**: `#privacy`, `#conversational AI`, `#security`, `#web applications`, `#research`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [星际之门数据中心延期 甲骨文发不可抗力通知](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center) ⭐️ 7.0/10
+### [OpenAI 推出始终在线智能体 Dots](https://openai.com/index/introducing-dots/) ⭐️ 7.0/10
 
-甲骨文已就星际之门在新墨西哥州的 Project Jupiter 数据中心向项目开发方发出不可抗力通知，计划在因外部因素导致延期时推迟部分付款。该项目配套 2.45GW 微电网的环境与供电审批尚未落地，2028 年投运面临延期风险。市场由此担忧超大型 AI 数据中心建设进度，相关 180 亿美元银团贷款已出现折价交易；星际之门多数项目仍处土建、审批和能源配套阶段，得州也已暂停新数据中心项目审批。
+OpenAI 正式发布 Dots，一款始终保持运行的 AI 智能体产品。该服务旨在提供云端持久化智能助手，能够持续执行任务。发布后引发社区对其定位与平台锁定效应的广泛讨论。
 
-telegram · zaihuapd · 9月29日 05:46
+hackernews · alvis · 9月29日 17:07 · [社区讨论](https://news.ycombinator.com/item?id=49896604)
 
-**「背景」** 不可抗力条款允许合同方在外部不可控事件导致履约困难时暂缓义务。据报道，Oracle 于 2026 年 9 月 24 日通知开发商 Stack Infrastructure，若天然气管道审批拖延导致新墨西哥州 Project Jupiter 2.45GW 园区无法在 2028 年前供电，可能推迟支付租金；该项目是 Stargate AI 基础设施计划的关键部分。此前融资环境已趋紧：9 月 28 日的 Horizon 摘要提到美债收益率升至 2007 年以来最高，10 年期约 5.17%，推高 AI 数据中心融资成本，JPMorgan 估算到 2030 年将有 4.1 万亿美元 AI 相关债务发行。
+**「背景」** OpenAI 在 DevDay 活动上发布了 Dots，将其定位为“始终在线”的个人代理助手，宣称可主动使用电脑和已连接应用完成调研、起草文档、编写软件等任务。据 TechCrunch 报道，Dots 由 GPT-6 Astra 驱动，并与 Meta 的人气 agent 产品 Muse 形成竞争。
 
-**「影响」** 对参与星际之门的贷款方和承建方而言，电力审批与微电网配套的不确定性已直接反映在融资成本上：180 亿美元银团贷款出现折价交易，得州暂停新数据中心审批也会抬高后续项目的获取成本和排期风险。
+**「社区讨论」** 有评论者担忧，Dots 等始终在线智能体通过深度平台集成和持久化工作历史，将用户锁定在特定生态系统，使其难以切换至其他模型或服务。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.cnbc.com/2026/09/27/debt-hungry-data-center-companies-increased-risk-bond-yields-spike.html">2026-09-28 — Treasury Yield Spike Raises Costs for AI Data-Center Buildout</a></li>
-<li><a href="https://coloprice.com/guides/oracle-force-majeure-project-jupiter/">Oracle Invokes Force Majeure on Stargate&#x27;s Project Jupiter as…</a></li>
+<li><a href="https://slashdot.org/story/26/09/29/1723239/openai-unveils-always-on-ai-agent-dots">OpenAI Unveils Always-On AI Agent &#x27;Dots&#x27; - Slashdot</a></li>
+<li><a href="https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/">OpenAI launches Dots, its bubbly agentic avatar | TechCrunch</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI infrastructure`, `#data centers`, `#Oracle`, `#energy grid`, `#Stargate`
+**标签**: `#AI agents`, `#OpenAI`, `#product announcement`, `#always-on agents`, `#technology industry`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [CNNIC 报告：中国生成式 AI 用户破 7 亿](https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;amp;item_id=187569887152346976&amp;amp;channelId=1119) ⭐️ 7.0/10
+### [PostgreSQL 视角下的 Linux 内核：Kernel Recipes 大会报道](https://lwn.net/Articles/1096827/) ⭐️ 7.0/10
 
-9 月 29 日，中国互联网络信息中心（CNNIC）发布《生成式人工智能应用发展报告（2026）》。报告称，截至 2026 年上半年，中国生成式人工智能用户规模突破 7 亿人，普及率超过 50.0%；智能问答是最主要应用场景，76.0%的用户用它回答问题，AI 综合助手和 AI 效率办公的使用次数同比均增长超 100%。同期，中国智能算力规模达 2185 EFLOPS，同比增长 177%。这些数字来自官方统计报告，尚非独立第三方测量结果。
+LWN 报道了 PostgreSQL 开发者 Andres Freund 在 2026 年 Kernel Recipes 大会上的演讲，内容围绕 PostgreSQL 与 Linux 内核特性之间的交互，以及内核未来可以如何更好地支持类似 PostgreSQL 的应用。该报道并非正式发布或成果公告，而是对会议演讲的专家级技术总结，面向关注数据库性能与系统底层的工程师。
 
-telegram · zaihuapd · 9月29日 06:39
+rss · LWN.net · 9月29日 15:42
 
-**「背景」** 生成式人工智能（Generative AI）能够根据用户输入生成文本、图像等内容，其应用在中国迅速普及。中国互联网络信息中心（CNNIC）定期发布《生成式人工智能应用发展报告》，此次报告是衡量该技术在中国应用规模的重要官方统计。
+**「背景」** Kernel Recipes 是面向 Linux 内核开发者的年度会议，通常邀请资深开发者分享内核相关话题。PostgreSQL 等数据库在运行中高度依赖进程调度、I/O、内存管理和同步原语等内核行为，因此数据库性能工程师往往需要深入理解并配合内核特性来优化工作负载。安德烈斯·弗罗因德（Andres Freund）是 PostgreSQL 社区中长期从事性能改进的开发者，他在本次会议上的报告正是从这一数据库视角出发，讨论内核与 PostgreSQL 的相互影响。
 
-**「影响」** 对应用开发者而言，报告中的数据提供了场景优先级依据：智能问答已是最大场景，AI 综合助手与效率办公增速最快，均可视为已获大规模用户验证的方向。报告未披露用户构成、付费或留存数据，因此不宜据此推断具体商业表现。
-
-**标签**: `#generative AI`, `#China`, `#AI adoption`, `#user statistics`, `#intelligent computing`
+**标签**: `#linux kernel`, `#postgresql`, `#database performance`, `#systems engineering`, `#conference coverage`
 
 ---
 
 <a id="item-tech-news-9"></a>
-### [Cloudflare 发布面向 AI Agent 的 CLI 工具 cf](https://blog.cloudflare.com/cloudflare-cf-cli-launch/) ⭐️ 7.0/10
+### [从词袋到 Jev：文本分类模型与校准的可视化指南](https://magazine.sebastianraschka.com/p/classifier-history-and-jev) ⭐️ 7.0/10
 
-Cloudflare 发布了 cf CLI 开放测试版，开发者和 AI Agent 可以通过命令行调用其 API。该工具由 API Schema 生成，覆盖超过 3,000 项 API 操作，并以 JSON 作为默认输出，支持命令搜索和引导；对比之下，现有 Wrangler 覆盖约 280 种操作。Cloudflare 举例说，Agent 可以用同一工具创建和部署 Worker、监控服务、配置 Access 与 WAF，甚至购买域名。
+Sebastian Raschka 于 2026 年 9 月 29 日发表技术指南《Language Models for Text Classification: From Bag-of-Words to Jev》，以可视化与动手实验方式介绍文本分类方法，覆盖词袋模型、RNN、CNN、Transformer 及模型校准，并给出准确性与效率的对比实验。该文面向机器学习工程师，属于教学性资料，而非宣称发布新模型或行业级突破。
 
-telegram · zaihuapd · 9月29日 13:46
+rss · Ahead of AI · 9月29日 10:50
 
-**「背景」** Cloudflare 此前提供的 Wrangler CLI 主要面向 Workers 开发，覆盖约 280 种 API 操作；新的 cf CLI 在覆盖范围上大幅扩展到了超过 3,000 项操作。
+**「背景」** 文本分类是自然语言处理的基础任务，技术路线从早期的词袋模型、LSTM 语言模型，逐步演进到以 Transformer 为基础的大语言模型。相关大规模评测曾比较过大型语言模型在零样本或少样本设置下的分类表现与微调较小模型的差异，这篇指南正是在这一脉络下回顾各代架构，并配以动手实验。
 
-**「影响」** 对开发者和 AI Agent 构建者而言，cf 提供了一个统一的命令行入口，能够以结构化 JSON 输出完成从部署到配置的多种 Cloudflare 操作。由于仍处开放测试版，用户在生产环境采用前应验证命令行为与输出格式是否稳定。
+**「影响」** 正在选择文本分类基线的工程师可以将该指南作为方法对比的起点，在经典模型与 Transformer 之间评估准确率和效率的权衡，并考虑校准步骤对分类可靠性的影响。
 
-**标签**: `#Cloudflare`, `#CLI`, `#AI Agents`, `#DevTools`, `#API`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://magazine.sebastianraschka.com/p/classifier-history-and-jev">Language Models for Text Classification : From Bag-of-Words to Jev</a></li>
+<li><a href="https://paperswithcode.co/paper/2403.17661">Language Models for Text Classification : Is... | Papers with Code</a></li>
+<li><a href="https://www.educative.io/courses/natural-language-processing-ml/introduction-JEqZRP7Kz4J">LSTM Language Models for Text Classification and Generation</a></li>
+
+</ul>
+</details>
+
+**标签**: `#text-classification`, `#transformers`, `#recurrent-neural-networks`, `#model-calibration`, `#machine-learning`
 
 ---
 
 <a id="item-tech-news-10"></a>
-### [谷歌修复 Firebase iOS 崩溃问题](https://github.com/firebase/firebase-ios-sdk/issues/16728) ⭐️ 7.0/10
+### [中国生成式 AI 用户破 7 亿，普及率超 50%](https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&amp;amp;item_id=187569887152346976&amp;amp;channelId=1119) ⭐️ 7.0/10
 
-谷歌确认，Google Analytics for Firebase 的 iOS 服务端曾返回格式错误数据，导致大量集成该组件的 iOS 应用启动时崩溃。问题始于 2026 年 9 月 28 日 17:41（美国太平洋夏令时），修复于 19:52 完成推出。谷歌表示无需更新 SDK 或应用；受缓存影响，部分应用最长可能在修复后继续崩溃约 4 小时，残余问题将自行消退。
+9 月 29 日，中国互联网络信息中心（CNNIC）发布《生成式人工智能应用发展报告（2026）》。报告显示，截至 2026 年上半年，中国生成式 AI 用户规模突破 7 亿人，普及率超过 50.0%；其中智能问答是最主要应用场景，76.0%的用户用它回答问题，AI 综合助手、AI 效率办公的使用次数同比增幅均超过 100%。同期，中国智能算力规模达 2185 EFLOPS，同比增长 177%。
 
-telegram · zaihuapd · 9月29日 16:29
+telegram · zaihuapd · 9月29日 06:39
 
-**「背景」** Google Analytics for Firebase 是 Firebase 在 iOS 上的分析组件，应用启动时会请求并解析服务端返回的数据。此次事故中该服务端返回了格式错误的数据，客户端解析逻辑无法容错，导致集成该组件的应用在启动阶段崩溃；由于根因在服务端而非 SDK 代码，修复后开发者无需更新 SDK 或重新发布应用。
+**「背景」** 中国互联网络信息中心（CNNIC）是官方互联网统计机构，此次发布的《生成式人工智能应用发展报告（2026）》是一份年度行业报告，统计口径覆盖截至 2026 年上半年的生成式 AI 用户规模、主要应用场景和智能算力规模等指标。该报告为理解此次用户规模突破 7 亿人、普及率超过 50% 的结论提供了官方数据基础。
 
-**「影响」** 受影响的 iOS 开发者无需更新 SDK 或应用，但需注意修复后因缓存导致的 4 小时残存崩溃窗口，无需额外操作即可自动恢复。
+**「影响」** 对开发者和算力运营方而言，这份数据意味着 AI 综合助手和 AI 效率办公已成为增长最快的落地场景，应用投入可优先向这两个方向倾斜；同时智能算力同比增长 177%也说明大规模模型服务对算力基础设施的依赖仍在快速放大。
 
-**标签**: `#Firebase`, `#iOS`, `#crash`, `#Google Analytics`, `#bug fix`
+**标签**: `#generative AI`, `#China`, `#user adoption`, `#AI infrastructure`, `#industry data`
 
 ---
 
 <a id="item-tech-news-11"></a>
-### [PS5 Relapse Exploit 瞄准 WebKit JavaScriptCore 漏洞](https://github.com/ntfargo/Relapse-Exploit) ⭐️ 6.0/10
+### [Cloudflare 发布面向 AI Agent 的命令行工具 cf](https://blog.cloudflare.com/cloudflare-cf-cli-launch/) ⭐️ 7.0/10
 
-GitHub 上出现了一个名为 Relapse Exploit 的 PS5 越狱利用项目，并在 Hacker News 引发讨论；该项目针对 PS5 的 WebKit JavaScriptCore 引擎漏洞。目前公开信息只表明这是一次早期披露，尚没有漏洞细节或独立验证能证明该利用已经稳定可用。对关注主机安全和越狱的用户来说，这更像是研究进展，而非可直接部署的越狱工具。
+Cloudflare 发布了 cf CLI 的开放测试版，目标是让开发者和 AI Agent 通过命令行调用 Cloudflare 全部 API。cf 由 API Schema 自动生成，覆盖超过 3,000 项 API 操作，而现有 Wrangler 只覆盖约 280 种操作；它以 JSON 作为默认输出，支持命令搜索与引导，Agent 可借此自动发现、执行操作并处理结果。
 
-hackernews · therepanic · 9月29日 15:44 · [社区讨论](https://news.ycombinator.com/item?id=49895304)
+telegram · zaihuapd · 9月29日 13:46
 
-**「背景」** Relapse 是针对 PS5 固件 7.00 至 13.60 的越狱漏洞链，利用 WebKit 的 JavaScriptCore 漏洞来突破浏览器沙盒，随后通过内核漏洞获取完整系统权限。该漏洞链需要多次尝试才能稳定执行，浏览器页面可能卡死，内核漏洞也可能导致主机死机。
+**「背景」** Cloudflare 原有的 Wrangler CLI 主要面向 Workers 开发，覆盖约 280 种 API 操作；cf 则从 Cloudflare 的 API Schema 生成，因此能够对接更完整的平台能力，而不局限于单一产品。
 
-**「社区讨论」** 评论者 MaxBarraclough 指出该利用看起来针对 WebKit 的 JavaScriptCore JavaScript 引擎，并怀疑 PS5 上是否启用 JIT，以及索尼是否会通过禁用 JIT 收窄攻击面；Muromec 则认为相关社区往往握有一批零日漏洞储备。另有用户感叹，用户需要破解自己合法拥有的硬件才能获得完全控制并不合理——这些均为讨论中的观点，而非已证实结论。
+**「影响」** 需要自动化管理 Cloudflare 资源的开发者或 AI Agent，现在可以用同一工具完成创建和部署 Worker、监控服务、配置 Access 与 WAF 等操作，减少在多个产品或 API 端点之间切换的成本；不过该工具目前仍是开放测试版，实际接入生产流程前应评估其稳定性。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://github.com/ntfargo/Relapse-Exploit">GitHub - ntfargo/ Relapse - Exploit : Exploit chain for PS 5 7.00 - 13.60</a></li>
-<li><a href="https://www.superpsx.com/ps5-relapse-jailbreak-13-60-and-lower-complete-guide/">PS 5 Relapse Jailbreak 13.60 and Lower – Complete Guide</a></li>
-
-</ul>
-</details>
-
-**标签**: `#security`, `#exploit`, `#PS5`, `#WebKit`, `#jailbreak`
+**标签**: `#Cloudflare`, `#CLI`, `#AI agents`, `#developer tools`, `#API`
 
 ---
 
 <a id="item-tech-news-12"></a>
-### [Tcl/Tk 9.1 发布：轻量级脚本语言与 GUI 工具包更新](https://www.tcl-lang.org/software/tcltk/9.1.html) ⭐️ 6.0/10
+### [谷歌修复 Firebase 致 iOS 应用启动崩溃问题](https://github.com/firebase/firebase-ios-sdk/issues/16728) ⭐️ 7.0/10
 
-Tcl/Tk 9.1 于 2026 年 9 月 29 日正式发布，是 9.x 系列的增量版本，面向使用这一长寿命脚本语言和 GUI 工具包的开发者与爱好者。官方发布公告指出该版本延续了 Tk 的简易 GUI 开发传统，并提供了持续的现代平台支持。用户可从 tcl-lang.org 获取源代码和二进制包。
+谷歌确认 Google Analytics for Firebase 的 iOS 服务端在 2026 年 9 月 28 日 17:41（美国太平洋夏令时）开始返回格式错误数据，导致大量集成该组件的 iOS 应用启动时崩溃；修复于当日 19:52 完成推出。官方表示无需更新 SDK 或应用，但受缓存影响，部分应用在修复后仍可能继续崩溃约四小时，之后会自动消退。
 
-hackernews · dmux · 9月29日 17:13 · [社区讨论](https://news.ycombinator.com/item?id=49896712)
+telegram · zaihuapd · 9月29日 16:29
 
-**「背景」** Tcl/Tk 9.0 是此前的稳定版本线，而 9.1 是在其基础上继续开发的新版本。官方页面将 Tcl/Tk 9.1.0 描述为在 9.0 基础上增加新特性与接口的当前开发成果，目标是在 2026 年 9 月发布稳定版；Tcl 9.1a1 的发布说明也已列出相对 9.0 的主要变化，包括面向 Tcl 库用户和脚本编写者的新命令与选项。
+**「背景」** Google Analytics for Firebase 是 Google 提供的移动分析 SDK，广泛集成于 iOS 应用中。其服务端与客户端通过特定数据格式通信；当服务端意外返回格式错误的数据时，客户端在启动阶段解析失败会导致应用崩溃。此次事件前，此类崩溃通常需要开发者更新 SDK 或发版修复，而本次 Google 在服务端修复，无需客户端更新。
 
-**「社区讨论」** 在 Hacker News 评论中，多位用户称赞 Tcl/Tk 9.1 保持了其简单易用的 GUI 开发体验，例如用户 trebligdivad 称其为“最简单的 GUI 系统”，认为上手几乎无需费力。同时，也有用户（如 srean）指出 Tcl 语言的字符串元编程和 upvar/uplevel 等特性虽然有趣，但需谨慎用于专业项目，另一位用户 neilv 则回顾了 Tk 在早期 Unix/X Window 时代作为 GUI 简易方案的历史地位。
+**「影响」** 对于受影响应用的开发者，直接含义是不必为此次问题发布客户端修复或升级 SDK；若用户仍看到崩溃，应等待缓存消退后再判断是否涉及自身代码问题。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.tcl-lang.org/software/tcltk/9.1.html?ref=upstract.com">Tcl / Tk 9 . 1</a></li>
-<li><a href="https://comp.lang.tcl.narkive.com/KwC5CCg9/tcl-9-1a1-released">Tcl 9 . 1 a 1 RELEASED</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Tcl/Tk`, `#release`, `#GUI toolkit`, `#scripting language`, `#programming languages`
+**标签**: `#Firebase`, `#iOS`, `#crash`, `#Google`, `#bug-fix`
 
 ---
 
 <a id="item-tech-news-13"></a>
-### [Rust 原生 GPU 目标愿景：无需专用库](https://lwn.net/Articles/1095731/) ⭐️ 6.0/10
+### [德里如何将配电损耗从 50%降至 5%](https://spectrum.ieee.org/delhi-electricity-loss) ⭐️ 6.0/10
 
-在 RustConf 2026 上，rust-gpu 与 Rust CUDA 的维护者 Christian Legnitto 阐述了他的愿景：让 GPU 成为普通 Rust 代码的标准编译器目标，无需专用库或新的生态支持。他同时表示已有一个准备发布的原型，但该愿景尚未完全实现，演讲内容仍属于计划与方向，而非已落地的完整能力。
+IEEE Spectrum 的一篇案例研究报道称，新德里通过公用事业改革、反窃电和电网现代化，将配电损耗率从约 50% 降至 5%。报道将这一变化归因于对非法接线、表计漏洞和监管执行的系统性治理，而非单纯的技术升级。该数字来自报道本身的核算口径，读者应将其视为案例研究结论，而非独立测量结果。
 
-rss · LWN.net · 9月29日 17:57
+hackernews · rbanffy · 9月29日 12:43 · [社区讨论](https://news.ycombinator.com/item?id=49892245)
 
-**「背景」** 目前从 Rust 编写 GPU 程序主要依赖 rust-gpu 和 Rust CUDA 这类专门库，它们负责把 Rust 代码与 GPU 硬件或相关运行时衔接起来。RustConf 2026 上的这场演讲提出的愿景是，把这种支持直接下沉到编译器层面，让 GPU 像 CPU 一样成为普通 Rust 代码的标准编译目标，从而不再需要这些专门库或额外的生态支持。
+**「背景」** 这里的“配电损耗”指电网购入的电量中，因线路技术问题、窃电或计量与收费漏洞而无法转化为收入的部分；德里长久以来受高损耗影响，供电稳定性和财务可持续性都较差。
 
-**「影响」** 对于目前依赖 rust-gpu 或 Rust CUDA 编写 GPU 代码的开发者，这一方向意味着未来可能可以脱离这些专用库，直接用普通 Rust 代码面向 GPU 编译。但原型尚未发布，现阶段仍应以现有库和生态作为实际开发选择。
+**「影响」** 对印度其他高损耗配电系统而言，这个案例提供了一条可检验的治理路径：在推进智能表计等现代化措施的同时，需要配套反窃电执法与公用事业财务改革，才能真正压缩损耗。若将这一经验迁移到其他城市，需先确认当地损耗统计中是否区分技术性损耗与窃电等非技术性损耗。
 
-**标签**: `#Rust`, `#GPU`, `#compilers`, `#programming languages`, `#open source`
+**「社区讨论」** 评论者 motionlessveloc 回忆，德里 20 年前频繁出现计划外停电和来电浪涌，认为消除这些停电比降低损耗本身更具革命性；groos 则报告说，为了防窃电而绝缘化的电线让猴子更容易沿线路穿行，反而带来新的社区影响。这些都是个人观察，并非报道中的正式结论。
+
+**标签**: `#electricity-grid`, `#infrastructure`, `#energy-policy`, `#india`, `#smart-meters`
 
 ---
 
 <a id="item-tech-news-14"></a>
-### [AI Has Taste 推翻数学论文猜想获原作者确认](http://weixin.sogou.com/weixin?type=2&amp;query=%E6%96%B0%E6%99%BA%E5%85%83+AI%E6%89%BE%E5%87%BA%E6%95%B0%E5%AD%A6%E5%8F%8D%E4%BE%8B%E6%8E%A8%E7%BF%BB%E8%AE%BA%E6%96%87%EF%BC%8C%E4%BD%9C%E8%80%85%E7%A1%AE%E8%AE%A4%EF%BC%81453%E7%AF%87%E6%89%8B%E7%A8%BF%EF%BC%8CAI%E5%BC%80%E5%A7%8B%E8%87%AA%E5%B7%B1%E5%87%BA%E9%A2%98%E4%BA%86) ⭐️ 6.0/10
+### [PS5 发布基于 WebKit JavaScriptCore 的漏洞利用](https://github.com/ntfargo/Relapse-Exploit) ⭐️ 6.0/10
 
-思特雅大学研究员曾仔健开发的 AI Has Taste 系统，在输入一篇数学论文的猜想后，自动构造出反例并推翻该猜想，经原作者回信确认反例成立。该项目并非专注于证明定理，而是将 AI 的角色从“生成答案”转向“生成研究议程”，目前公开仓库已收录 453 份数学研究手稿，其中 6 篇被归类为 AI 提出的猜想。
+2026 年 9 月 29 日，GitHub 上公开了名为 Relapse-Exploit 的 PS5 漏洞利用代码，其目标是通过 WebKit 的 JavaScriptCore 引擎漏洞，被视为潜在的越狱研究素材。该仓库发布后引起了安全与主机破解社区的关注，但截至当前信息，它只是已公开的漏洞利用代码，并非完整越狱工具链；实际可用性、适用固件版本和索尼的响应都仍不明确。
 
-rss · 新智元 · 9月29日 03:40
+hackernews · therepanic · 9月29日 15:44 · [社区讨论](https://news.ycombinator.com/item?id=49895304)
 
-**「背景」** 以往 AI 数学研究的重点，是让模型求解已知难题或写出严谨证明，本质上仍是“从已知问题生成答案”。AI Has Taste 项目的意图是从“答案生成”走向“研究议程生成”：让 AI 不仅证明或推翻具体猜想，还负责选题、反例搜索、失败管理和提出可证伪的新猜想。项目负责人曾仔健称，转折点来自一次测试——AI 没有顺着论文“证明”猜想，而是构造出反例，经写信向原论文作者核实后，对方回信确认该反例成立。
+**「背景」** WebKit 的 JavaScriptCore 是负责解析和执行 JavaScript 的引擎，广泛用于 Safari 以及许多嵌入式浏览器环境。针对这类引擎的漏洞利用通常借助内存破坏缺陷劫持执行流程，从而在浏览器进程中获得代码执行能力，这类浏览器层漏洞往往是后续突破系统限制、实现越狱的链条起点。
 
-**「影响」** 对数学研究者和论文审稿人而言，AI Has Taste 提供了一个可操作的反例筛查方式：在依赖或发表公开猜想前，可用类似系统搜索可能推翻猜想的反例。本例中，原论文作者已经确认 AI 构造的反例成立，说明这类验证流程可能发现人类审稿阶段遗漏的错误命题。
+**「影响」** 该漏洞直接影响 PS5 与 PS5 Pro 固件 7.00 至 13.60 的用户：仓库声称通过 WebKit 内存泄漏配合内核 aio\_multi\_wait 的释放后使用（UAF）竞态实现任意读写，从而运行未签名代码，并绕过官方数字内容校验。此说法尚未独立验证；索尼很可能通过固件更新修补或收窄这一攻击面，处于该固件范围的用户若看重安全应等待官方补丁，而想保留越狱条件的用户则需暂缓升级。
+
+**「社区讨论」** 评论者 MaxBarraclough 提出了更技术性的疑问：该利用针对 WebKit 的 JavaScriptCore，但 PS5 的 WebKit 是否启用了 JIT，以及索尼是否会通过关闭 JIT 来缩小攻击面；另一些评论则表达了对 Steam 游戏进入 PS5 的期待，以及对购买硬件后仍需破解才能获得完全控制权的不满。这些都属于社区推测与观点，尚无官方确认。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/Conjecture">Conjecture - Wikipedia</a></li>
+<li><a href="https://www.aroged.com/2026/09/29/playstation-5-and-ps5-pro-release-fast-jailbreak-recurrence-vulnerability/">PlayStation 5 and PS5 Pro release fast jailbreak recurrence vulnerability - Aroged</a></li>
+<li><a href="https://elsolitario.org/en/2026/09/29/relapse-repo-claims-ps5-exploit-firmware-7-00-to-13-60/">PS5 Jailbreak: What Is Relapse Exploit and Its Scope</a></li>
+<li><a href="https://dev.to/lu1tr0n/relapse-repo-afirma-exploit-de-ps5-en-firmware-700-1360-1n14">Relapse: repo afirma exploit de PS5 en firmware 7.00-13.60 - DEV Community</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI for Mathematics`, `#Automated Theorem Proving`, `#Counterexample Search`, `#AI Research`, `#Research Integrity`
+**标签**: `#PS5`, `#security`, `#exploit`, `#WebKit`, `#jailbreak`
 
 ---
 
 <a id="item-tech-news-15"></a>
-### [开源新书：从芯片到智能体的 ML 性能优化指南](https://www.reddit.com/r/MachineLearning/comments/1wt6ns4/i_wrote_a_free_opensource_book_on_making_ml/) ⭐️ 6.0/10
+### [Rust GPU 原生编译目标愿景与原型](https://lwn.net/Articles/1095731/) ⭐️ 6.0/10
 
-作者发布了免费开源的《How to Make Your Model Fast: A Systems View of Efficient Machine Learning, from Silicon to Agents》，面向 ML 性能工程从业者，覆盖从硬件/roofline 分析、内核、编译器、量化、剪枝，到推理服务与智能体的系统级优化内容。该书的核心主张是，降低 FLOPs 并不等于让模型更快，应先判断系统受限于计算、带宽、内存还是系统，再选择真正有效的优化手段。目前这是作者自述的成果，尚无外部验证；全书内容与开源仓库托管在 GitHub，作者欢迎 ML 系统、推理、编译器、边缘 AI 和性能工程从业者反馈与贡献。
+在 RustConf 2026 上，rust-gpu 和 Rust CUDA 的维护者 Christian Legnitto 提出将 GPU 作为 Rust 的普通编译器目标，让常规 Rust 代码无需专用库即可直接编译到 GPU 上运行。他展示了一个原型，但目前尚未完全实现，正在准备发布。这一方案旨在简化 GPU 编程，但仍处于计划阶段，尚无已发布的实现。
+
+rss · LWN.net · 9月29日 17:57
+
+**「背景」** Rust 目前要编写 GPU 代码，通常依赖 rust-gpu 或 Rust CUDA 这类库：例如 rust-gpu 将 Rust 编译为 SPIR-V 供 Vulkan 使用，Rust CUDA 则面向 NVIDIA CUDA。这些方案都需要专用库和与普通 Rust 不同的工具链。RustConf 2026 上，rust-gpu 维护者 Christian Legnitto 提出让 GPU 成为普通 Rust 编译器的原生目标，并称已有原型即将发布。
+
+**「影响」** 对 Rust 开发者而言，这一设想目前还没有可立即采用的新能力；编写 GPU 程序仍需依赖 rust-gpu、Rust CUDA 等独立库或专用工具链。Legnitto 的原型尚未发布，团队不应基于该演讲规划迁移，而应关注原型实际发布后的兼容性与使用方式，再评估是否值得切换。
+
+**标签**: `#Rust`, `#GPU computing`, `#compilers`, `#Rust-GPU`, `#RustConf`
+
+---
+
+<a id="item-tech-news-16"></a>
+### [Linux 发行版发布新一批安全更新](https://lwn.net/Articles/1097466/) ⭐️ 6.0/10
+
+2026 年 9 月 29 日，AlmaLinux、Debian、Fedora、Mageia、Slackware、SUSE 和 Ubuntu 等多家 Linux 发行版发布了新一批安全更新，涉及内核、Web 框架、图形库、虚拟化组件和服务器软件等大量软件包，例如 AlmaLinux 的 kernel 与 ruby、Debian 的 flatpak 与 rsync、Fedora 的 chromium 与 grub2、Ubuntu 的多版本 linux-aws 和 linux-azure 内核。管理员应通过各发行版的官方公告查看具体漏洞说明，并安装相应补丁。
+
+rss · LWN.net · 9月29日 15:38
+
+**「背景」** LWN 会汇总主流 Linux 发行版发布的安全公告；这类公告通常对应上游项目修复的漏洞，由发行版维护者打包后提供给用户。此次为例行汇总，不包含漏洞细节或严重性评估。
+
+**「影响」** 受影响发行版的用户应通过各自包管理器或更新服务安装所列软件包，并关注是否有需要重启服务或内核的后续说明；不同发行版的更新机制和风险等级不同，需分别查看对应安全公告。
+
+**标签**: `#security`, `#linux`, `#patch management`, `#system administration`, `#vulnerabilities`
+
+---
+
+<a id="item-tech-news-17"></a>
+### [免费开源书：从芯片到智能体的 ML 性能优化指南](https://www.reddit.com/r/MachineLearning/comments/1wt6ns4/i_wrote_a_free_opensource_book_on_making_ml/) ⭐️ 6.0/10
+
+作者 /u/SoloTiger\_ 在 Reddit 上发布并开源了一本免费电子书《How to Make Your Model Fast: A Systems View of Efficient Machine Learning, from Silicon to Agents》，目前托管在 GitHub。该书从 roofline 分析和硬件开始，依次覆盖内核、编译器、量化、剪枝、视觉模型、端侧大模型、机器人、性能分析、模型服务，最后延伸到智能体系统。作者强调，减少 FLOPs 并不一定让模型更快，优化前应先判断系统受算力、带宽、内存还是延迟约束。这目前是作者单方面发布的自荐资源，尚没有独立评测或规模化应用数据。
 
 reddit · r/MachineLearning · /u/SoloTiger\_ · 9月29日 10:35
 
-**「背景」** 机器学习模型的实际运行速度并非仅由浮点运算次数（FLOPs）决定，内存带宽、系统开销和硬件特性往往成为真正的瓶颈。这本书的出发点正是填补这一认知鸿沟，帮助开发者理解如何系统性地分析模型与硬件之间的性能边界。
+**「背景」** 在机器学习性能工程中，模型运行速度通常由最紧张的资源决定：即使计算量很小，内存带宽不足或通信开销过高也会成为瓶颈。Roofline 模型通过对比算力峰值和带宽峰值来刻画理论上限，帮助判断一段代码是计算密集型还是访存密集型，这正是该书所述系统化优化思路的起点。
 
-**「影响」** 关注 ML 性能工程的开发者现在可以直接免费获取该书的第一版（v1.0），并可在 GitHub 上阅读、下载或参与贡献；对希望从硬件原理、内核优化、量化与剪枝一路学到 serving 和 agent 系统的自学者而言，这提供了一条无需付费课程即可从入门走向实战的完整路径。
+**标签**: `#machine-learning`, `#performance-engineering`, `#open-source`, `#systems`, `#efficient-ml`
+
+---
+
+<a id="item-tech-news-18"></a>
+### [CoWindow 和 MassAlloc 注意力：两种减少冗余计算的注意机制](https://www.reddit.com/r/MachineLearning/comments/1wt1gbk/cowindow_and_massalloc_attention_collective/) ⭐️ 6.0/10
+
+作者提出了两种新的注意机制——CoWindow Attention（CoWA）和 MassAlloc Attention（MALA），旨在减少长上下文模型中的冗余计算。CoWA 通过互补窗口跨 KV 头分散远距离上下文，各头部稀疏关注但联合覆盖完整因果历史；MALA 保留完整 QK 打分，利用 softmax 统计决定是否执行后续分块计算。在 128K tokens、8 块 H100 GPU（TP=8）上，两方法相对于标准注意力在算子层面获得加速：CoWA 前向 7.4 倍、反向 8.6 倍、解码 3.0 倍；MALA 前向 2.2 倍、反向 3.0 倍、解码 1.6 倍。在 14B 模型 32K 上下文上，CoWA 和 MALA 分别减少 28.5%和 23.1%的总训练 FLOPs，且模型能力与全注意力相当。论文预印本 ID 分别为 arXiv:2609.32704 和 arXiv:2609.32712。作者明确指出这些加速是注意力算子而非端到端模型加速，且集体覆盖不等价于逐头交互与全注意力完全一致，MALA 仍需完整 QK 打分。
+
+reddit · r/MachineLearning · /u/BitExternal4608 · 9月29日 05:16
+
+**「背景」** 长上下文 Transformer 模型的标准注意力机制计算成本随序列长度平方增长，大量计算源于对低贡献位置或冗余的 KV 对进行评分和加权。现有稀疏注意力方法常依赖学习路由器或固定模式，可能无法在训练和推理中一致适应不同上下文分布。这些局限是 CoWA 和 MALA 试图解决的问题。
+
+**「影响」** 对于训练和部署长上下文模型的研究者与工程师，CoWA 和 MALA 提供了可训练的注意力替代方案，在算子层面带来数倍加速并显著减少总训练 FLOPs。但使用前需评估其与标准注意力的输出差异——作者明确不声称无损等价，且 MALA 仍需完整 QK 打分，因此解码阶段加速有限（1.6 倍）。建议先在自身模型和任务上复现评估，尤其是需要严格逐头交互一致性的场景（如精确注意力模式分析）。
+
+**标签**: `#attention mechanisms`, `#long-context models`, `#inference efficiency`, `#machine learning research`
+
+---
+
+<a id="item-tech-news-19"></a>
+### [Codex Pro 订阅明日重开，额度约减半](https://x.com/thsottiaux/status/2104823812042940713) ⭐️ 6.0/10
+
+据 Tibo 预告，OpenAI 将于明天向新用户重新开放 Codex Pro 的 $200 订阅，但实际可用额度按 API 花费折算后大约只有旧版 Pro $200 的一半。同一预告还称，本周 GPT-6 Sol 和 GPT-6 Luna 的 API 价格已降至原价的 50%，并承诺未来不再恢复 5 小时限制，用户可按自己节奏用完每周额度。目前这仍是非官方的产品与定价传闻，详细信息需等待 OpenAI 正式公告。
+
+telegram · zaihuapd · 9月29日 06:50
+
+**「背景」** Codex Pro $200 订阅此前已关闭对新用户开放，并设有每周 5 小时的使用限制。此次重新开放将调整用量计算方式，并取消 5 小时时限。
+
+**「对用户的影响」** 对 Codex Pro 用户而言，明天重新开放的新 $200 订阅将按 API 花费折算额度，实际可用配额约为旧版一半；若希望获得更多用量，可结合本周 GPT-6 Sol、GPT-6 Luna API 降价评估按需付费方案，并在开放后及时核对自己的折算额度。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://github.com/usamahz/make-your-model-fast/releases/tag/v1.0">Release How to Make Your Model Fast, first edition · usamahz/make-your-model-fast</a></li>
+<li><a href="https://pasqualepillitteri.it/en/news/19231/openai-pro-200-dollars-back-half-api-spend-codex">OpenAI announces Pro $200 is back, with half the API spend for Codex</a></li>
+<li><a href="https://the-decoder.com/openai-reopens-its-200-pro-plan-but-cuts-api-credits-in-half-as-it-nudges-users-toward-pay-per-use/">OpenAI reopens its $200 Pro plan but cuts API credits in half as it nudges users toward pay-per-use</a></li>
 
 </ul>
 </details>
 
-**标签**: `#ML performance`, `#Systems optimization`, `#Open source`, `#LLM inference`, `#Hardware`
+**标签**: `#OpenAI`, `#Codex`, `#AI coding`, `#pricing`, `#GPT-6`
 
 ---
 
 ## 财经新闻
 
 <a id="item-finance-news-1"></a>
-### [特朗普市政债券持仓或高达 10 亿美元，引发利益冲突关注](https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html) ⭐️ 8.0/10
+### [盘前：FHFA 调整房贷定价重创 Fair Isaac，AMD 与 Summit 公布交易](https://www.cnbc.com/2026/09/29/stocks-making-the-biggest-moves-premarket-fair-isaac-spacex-amd-more.html) ⭐️ 8.0/10
 
-据 CNBC 对其财务披露的分析，特朗普的市政债券持仓超过 1000 笔、总值在 3 亿至 10 亿美元之间，其中包括 2026 年已披露的至少 243 笔购买（约 6820 万美元至 2.338 亿美元）；CNBC 未发现其利用政策信息交易的证据。
+盘前多只个股因重大消息波动：美国联邦住房金融局（FHFA）宣布将房利美和房地美的抵押贷款定价合并为一个定价网格，Fair Isaac 股价跌 18%；AMD 以 82 亿美元收购 AI 公司 World Labs，盘前涨逾 1%。此外，AstraZeneca 向 Summit Therapeutics 投资 20 亿美元，后者涨 18%。
 
-rss · CNBC Finance · 9月29日 14:37
+rss · CNBC Finance · 9月29日 12:03
 
-**「背景」** CNBC 对特朗普财务披露的分析显示，截至 2026 年 9 月，特朗普的市政债券（地方政府和公共机构发行的债务）持仓已增至 1000 多笔、总额约 3 亿至 10 亿美元，其中许多债券来自受其政府政策影响的市政府、医院和公用事业机构；CNBC 称未发现他利用内部信息交易或直接指挥具体交易的证据。
+**「背景」** FHFA 是美国监管房利美和房地美的机构；Fair Isaac 是 FICO 信用评分模型的母公司。此前房贷定价使用两套分开的网格，新安排改为单一网格，并让 VantageScore 加入 FICO Classic 所在的定价网格。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html">Trump municipal bond portfolio valued at up to $ 1 billion</a></li>
-<li><a href="https://qz.com/trump-municipal-bond-portfolio-billion-conflict-interest-092926">Trump municipal bond portfolio approaching $ 1 billion</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Municipal Bonds`, `#Trump Administration`, `#Conflict of Interest`, `#Financial Disclosures`, `#Ethics`
+**标签**: `#FHFA mortgage pricing`, `#M&amp;A`, `#earnings`, `#stock movers`, `#healthcare investment`
 
 ---
 
 <a id="item-finance-news-2"></a>
-### [高盛 CEO 接班面临变数：所罗门迟疑，沃尔德伦等待有限](https://www.cnbc.com/2026/09/29/goldman-sachs-ceo-succession-planning.html) ⭐️ 7.0/10
+### [甲骨文就星际之门新墨西哥数据中心电力审批延期发出不可抗力通知](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center) ⭐️ 8.0/10
 
-据《华尔街日报》报道，高盛董事会正讨论最快明年将 CEO 戴维·所罗门转为执行主席、由总裁约翰·沃尔德伦接任的交接计划，并可能在数月内表决；但所罗门或不愿让位，沃尔德伦也可能不愿无限期等待，接班仍存不确定性。
+甲骨文已就星际之门（Stargate）新墨西哥州 Project Jupiter 数据中心向项目开发方发出不可抗力通知，拟在外部因素导致延期时推迟部分付款；该项目因 2.45GW 配套微电网的环境与供电审批未落地，面临 2028 年投运延期风险。报道称，相关 180 亿美元银团贷款已出现折价交易，得州也已暂停新数据中心项目审批。
 
-rss · CNBC Finance · 9月29日 20:50
+telegram · zaihuapd · 9月29日 05:46
 
-**「背景」** 高盛是全球最大的纯投资银行，所罗门 2018 年出任 CEO 以来股价上涨逾 300%，在 KBW 银行指数中仅次摩根大通 CEO 戴蒙。沃尔德伦此前据报曾与 Apollo 和 Carlyle 讨论高管职位，高盛已给予其 8000 万美元留任方案，有效期至 2030 年。
+**「背景」** 不可抗力通知指企业以无法控制的外部因素为由，提出延迟履约或免责。星际之门是大型人工智能数据中心计划，多数项目仍处于土建、审批和能源配套阶段，仅得州阿比林园区等少数项目投产。
 
-**「影响」** 接班若拖延或落空，可能影响高盛管理层稳定和股东对公司治理的评估；所罗门作为董事长对董事会有较大影响力，而财力雄厚的竞争对手仍可能尝试挖走沃尔德伦。
-
-**标签**: `#Goldman Sachs`, `#CEO succession`, `#corporate governance`, `#David Solomon`, `#John Waldron`
+**标签**: `#Oracle`, `#data center`, `#force majeure`, `#infrastructure delay`, `#AI investment`
 
 ---
 
 <a id="item-finance-news-3"></a>
-### [盘前异动：Fair Isaac 跌 18%，AMD 宣布 820 亿美元收购 World Labs](https://www.cnbc.com/2026/09/29/stocks-making-the-biggest-moves-premarket-fair-isaac-spacex-amd-more.html) ⭐️ 7.0/10
+### [三部门：10 月 1 日起首套房贷可获年化 1 个百分点贴息](https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm) ⭐️ 8.0/10
 
-9 月 29 日盘前，多只个股因重磅消息大幅波动：Fair Isaac 跌约 18%，因美国联邦住房金融局（FHFA）调整房贷定价规则；AMD 宣布以 82 亿美元收购 AI 公司 World Labs 后涨逾 1%；Summit Therapeutics 因获阿斯利康 20 亿美元投资涨约 18%；CarMax 因第二季度每股收益 1.16 美元、远超分析师预期的 0.73 美元而上涨逾 6%。
+财政部、中国人民银行、金融监管总局 9 月 29 日联合发布通知，自 2026 年 10 月 1 日起，对使用新发放商业贷款购买符合条件的首套住房的家庭，中央财政按贷款本金给予年化 1 个百分点的贴息，最长 5 年，单户贴息贷款上限 100 万元；政策暂定实施 1 年。
 
-rss · CNBC Finance · 9月29日 12:03
+telegram · zaihuapd · 9月29日 10:18
 
-**「背景」** FHFA 是房利美和房地美的监管机构；新政策把两套独立房贷定价网格合并为一套，并让 VantageScore（另一种信用评分）加入现有的 FICO Classic 定价网格。
+**「背景」** 申请贴息需同时满足：所购住房为首套、使用新发放商业贷款（以新贷款置换存量贷款不适用）、建筑面积不超过 120 平方米、购房价格不超过 150 万元。贴息由中央财政承担，旨在直接降低新购房家庭的贷款利息负担。
 
-**标签**: `#stock movers`, `#FHFA mortgage pricing`, `#M&amp;A`, `#earnings`, `#biotech financing`
+**标签**: `#住房贷款贴息`, `#财政政策`, `#房地产`, `#中国人民银行`, `#金融监管总局`
 
 ---
 
 <a id="item-finance-news-4"></a>
-### [中国为人形机器人 IPO 设立三项新标准，多数初创企业或难达标](https://www.cnbc.com/2026/09/29/china-criteria-humanoid-robot-ipos.html) ⭐️ 7.0/10
+### [特朗普市政债券持仓据估算最高达 10 亿美元，发行方与政府政策重叠](https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html) ⭐️ 7.0/10
 
-据知情人士透露，中国证监会为人形机器人公司上市设置了三项门槛：须有可持续收入和商业订单、亏损收窄并提供三年预测、掌握机器人“大脑”或“手”等核心技术；消息人士预计，目前至少 24 家申请赴港上市的相关公司中，可能只有少数甚至没有一家能达标。
+据 CNBC 对财务披露的分析，美国总统特朗普的市政债券持仓已超过 1,000 项，总价值约 3 亿至 10 亿美元；这些债券的发行方包括许多受其政府政策影响的电厂、医院和公用事业。CNBC 表示未发现特朗普或其投资经理利用政策内幕交易、以其财务利益左右政策或直接指示交易的证据。
 
-rss · CNBC Finance · 9月29日 07:19
+rss · CNBC Finance · 9月29日 14:37
 
-**「背景」** 人形机器人属于中国推动的“具身智能”领域，行业投资今年第二季度达 470.9 亿元人民币，同比增逾六倍；行业标杆宇树科技 8 月上市后股价已较首日收盘价大幅回落。
+**「背景」** 特朗普的债券投资由外部机构管理的全权账户持有，白宫与特朗普集团称他无法指挥、影响或参与具体买卖决定。
 
-**「影响」** 新标准可能使尚未稳定盈利的数十家人形机器人初创企业更难公开上市，依赖 IPO 退出的早期投资者也将面临更大不确定性。
-
-**标签**: `#China regulatory policy`, `#humanoid robots`, `#IPO criteria`, `#embodied AI`, `#CSRC`
+**标签**: `#municipal bonds`, `#Donald Trump`, `#conflict of interest`, `#financial disclosures`, `#public finance`
 
 ---
 
 <a id="item-finance-news-5"></a>
-### [三部门：10 月 1 日起首套房贷获财政贴息，年化 1%最长 5 年](https://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm) ⭐️ 7.0/10
+### [中国据报收紧人形机器人企业 IPO 标准，达标者或寥寥无几](https://www.cnbc.com/2026/09/29/china-criteria-humanoid-robot-ipos.html) ⭐️ 7.0/10
 
-中国财政部、中国人民银行、金融监管总局 9 月 29 日联合宣布，自 2026 年 10 月 1 日起对符合条件的首套住房商业贷款实施财政贴息，贴息标准为年化 1 个百分点，期限最长 5 年，单户贷款本金上限 100 万元，据此计算单户每年最高可获约 1 万元贴息。
+据三位知情人士称，中国证监会正提高人形机器人（即“具身智能”）初创企业的上市门槛，要求其具备可持续收入和商业订单、亏损收窄并需提供三年预测，以及拥有机器人“大脑”或“手”等核心技术。消息人士估计，在至少 24 家已提交赴港上市申请的企业中，最终能上市的可能只有少数几家，甚至没有。
 
-telegram · zaihuapd · 9月29日 10:18
+rss · CNBC Finance · 9月29日 07:19
 
-**「背景」** 此次贴息适用于新发放的首套房贷（不含存量贷款置换），所购住房面积须在 120 平方米以下、总价 150 万元以下，旨在直接减轻首次购房家庭的利息负担。
+**「背景」** 此前，在政府和私人资本推动下，中国人形机器人公司已超过 100 家；行业数据供应商 Xiniu 数据显示，二季度该领域投资达 470.9 亿元人民币（约 69.5 亿美元），环比增逾一倍，同比增逾六倍。监管收紧之际，明星公司宇树科技 8 月在上海上市首日大涨逾 460%，但此后股价已近乎腰斩。
 
-**标签**: `#住房贷款`, `#财政贴息`, `#房地产政策`, `#首套住房`, `#宏观政策`
+**标签**: `#China`, `#humanoid robots`, `#IPO regulation`, `#artificial intelligence`, `#CSRC`
 
 ---
 
