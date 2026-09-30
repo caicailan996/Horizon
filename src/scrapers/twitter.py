@@ -278,8 +278,7 @@ class TwitterScraper(BaseScraper):
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
         """Parse a tweet item from Scweet flat output."""
         try:
-            # 适配 Scweet 扁平字段
-            created_at_str = item.get("tweet.created_at")
+            created_at_str = item.get("created_at")
             if not created_at_str:
                 return None
 
@@ -293,25 +292,25 @@ class TwitterScraper(BaseScraper):
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
 
-            # if published_at < since:
-            #    return None
-
-            tweet_id = str(item.get("tweet.rest_id") or "")
-            if not tweet_id:
+            # 本地时间过滤（可临时注释以验证解析）
+            if published_at < since:
                 return None
 
-            # conversation_id 在 Scweet 中不直接提供，使用 tweet_id 代替
-            conversation_id = tweet_id
+            raw_id = str(item.get("id") or "")
+            if not raw_id:
+                return None
+            tweet_id = raw_id.replace("tweet-", "") if raw_id.startswith("tweet-") else raw_id
 
-            screen_name = item.get("user.handle") or "unknown"
+            conversation_id = str(item.get("conversation_id") or tweet_id)
+            screen_name = item.get("handle") or "unknown"
             author = screen_name
 
-            text = item.get("tweet.text") or ""
+            text = item.get("text") or ""
             if not text:
                 return None
             text = unescape(text)
 
-            url = item.get("tweet.tweet_url")
+            url = item.get("tweet_url")
             if not url:
                 url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
@@ -331,12 +330,12 @@ class TwitterScraper(BaseScraper):
                 metadata={
                     "tweet_id": tweet_id,
                     "conversation_id": conversation_id,
-                    "favorite_count": item.get("tweet.favorite_count", 0),
-                    "retweet_count": item.get("tweet.retweet_count", 0),
-                    "reply_count": item.get("tweet.reply_count", 0),
-                    "quote_count": item.get("tweet.quote_count", 0),
-                    "bookmark_count": item.get("tweet.bookmark_count", 0),
-                    "lang": item.get("tweet.lang"),
+                    "favorite_count": item.get("favorite_count", 0),
+                    "retweet_count": item.get("retweet_count", 0),
+                    "reply_count": item.get("reply_count", 0),
+                    "quote_count": item.get("quote_count", 0),
+                    "bookmark_count": item.get("bookmark_count", 0),
+                    "lang": item.get("lang"),
                     "category": self.config.category,
                 },
             )
