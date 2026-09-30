@@ -162,7 +162,15 @@ class TwitterScraper(BaseScraper):
         try:
             resp = await self.client.get(url, timeout=30.0)
             resp.raise_for_status()
-            return resp.json()
+            data = resp.json()
+            # ===== 调试日志开始 =====
+            if isinstance(data, list) and data:
+                logger.info(f"Dataset first item keys: {list(data[0].keys())}")
+                logger.info(f"Dataset first item sample: {data[0]}")
+            else:
+                logger.info(f"Dataset response type: {type(data)}, value: {data}")
+            # ===== 调试日志结束 =====
+            return data
         except Exception as exc:
             logger.error(f"Failed to fetch Apify dataset {dataset_id}: {exc}")
             return []
