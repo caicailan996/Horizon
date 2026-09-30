@@ -285,8 +285,8 @@ class TwitterScraper(BaseScraper):
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
 
-            if published_at < since:
-                return None
+            # if published_at < since:
+            #    return None
 
             tweet_id = str(item.get("tweet.rest_id") or "")
             if not tweet_id:
@@ -333,5 +333,5 @@ class TwitterScraper(BaseScraper):
                 },
             )
         except Exception as exc:
-            logger.debug(f"Failed to parse tweet: {exc}")
+            logger.info(f"Failed to parse tweet: {exc}")
             return None
