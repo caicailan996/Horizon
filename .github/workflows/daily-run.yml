@@ -21,7 +21,11 @@ jobs:
           enable-cache: true
 
       - name: Set up Python
-        run: uv python install
+        uses: actions/setup-python@v5
+        with:
+            python-version: '3.12'  # 显式指定为 3.12
+
+        
 
       - name: Run Horizon
         env:
