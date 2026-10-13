@@ -29,6 +29,9 @@ jobs:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }} # <-- 确保添加了这一行
           HORIZON_WEBHOOK_URL: ${{ secrets.HORIZON_WEBHOOK_URL }}
         run: |
+          sudo apt-get update  # 新增：安装 libxml2 和 libxslt 开发包
+          sudo apt-get install -y libxml2-dev libxslt1-dev
+          
           uv sync
           uv run horizon --config data/config.github.json  --log-level INFO
 
