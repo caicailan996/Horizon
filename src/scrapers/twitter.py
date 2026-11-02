@@ -203,11 +203,12 @@ class TwitterScraper(BaseScraper):
             if not isinstance(row, dict) or row.get("noResults"):
                 continue
 
-            row_id = str(row.get("tweetId") or "")
+            row_id = str(row.get("id") or "")
             if tweet_id and row_id == tweet_id:
                 continue
 
-            handle = row.get("fromProfile") or "unknown"
+            author_data = row.get("author") or {}
+            handle = author_data.get("username") or "unknown"
             if handle and own_author and handle.lower() == own_author.lower():
                 continue
 
@@ -215,8 +216,9 @@ class TwitterScraper(BaseScraper):
             if not text:
                 continue
 
-            likes = int(row.get("likeCount") or 0)
-            replies = int(row.get("replyCount") or 0)
+            stats = row.get("stats") or {}
+            likes = int(stats.get("likes") or 0)
+            replies = int(stats.get("replies") or 0)
             if likes < min_likes:
                 continue
 
@@ -252,7 +254,7 @@ class TwitterScraper(BaseScraper):
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
         """Parse a tweet item from omkar-cloud/twitter-tweet-scraper output."""
         try:
-            created_at_str = item.get("createdAt")
+            created_at_str = item.get("created_at")
             if not created_at_str:
                 return None
 
@@ -269,27 +271,28 @@ class TwitterScraper(BaseScraper):
             if published_at < since:
                 return None
 
-            raw_id = str(item.get("tweetId") or "")
-            if not raw_id:
+            tweet_id = str(item.get("id") or "")
+            if not tweet_id:
                 return None
-            tweet_id = raw_id
 
-            conversation_id = str(item.get("conversationId") or tweet_id)
-            screen_name = item.get("fromProfile") or "unknown"
-            author = screen_name
+            author_data = item.get("author") or {}
+            screen_name = author_data.get("username") or "unknown"
+            author = author_data.get("name") or screen_name
 
             text = item.get("text") or ""
             if not text:
                 return None
             text = unescape(text)
 
-            url = item.get("url")
+            url = item.get("link")
             if not url:
                 url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
             title_body = text[:50].replace("\n", " ").strip()
             if len(text) > 50:
                 title_body += "..."
+
+            stats = item.get("stats") or {}
 
             return ContentItem(
                 id=self._generate_id(SourceType.TWITTER.value, "tweet", tweet_id),
@@ -302,12 +305,12 @@ class TwitterScraper(BaseScraper):
                 profile=self.config.profile,
                 metadata={
                     "tweet_id": tweet_id,
-                    "conversation_id": conversation_id,
-                    "favorite_count": item.get("likeCount", 0),
-                    "retweet_count": item.get("retweetCount", 0),
-                    "reply_count": item.get("replyCount", 0),
-                    "quote_count": item.get("quoteCount", 0),
-                    "bookmark_count": item.get("bookmarkCount", 0),
+                    "conversation_id": item.get("conversation_id") or tweet_id,
+                    "favorite_count": stats.get("likes", 0),
+                    "retweet_count": stats.get("retweets", 0),
+                    "reply_count": stats.get("replies", 0),
+                    "quote_count": stats.get("quotes", 0),
+                    "bookmark_count": stats.get("bookmarks", 0),
                     "lang": item.get("lang"),
                     "category": self.config.category,
                 },
