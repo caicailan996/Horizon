@@ -1,4 +1,4 @@
-"""Twitter scraper using Apify altimis/scweet actor."""
+"""Twitter scraper using Apify omkar-cloud/twitter-tweet-scraper actor."""
 
 import asyncio
 import logging
@@ -21,7 +21,7 @@ _MAX_WAIT = 180
 
 
 class TwitterScraper(BaseScraper):
-    """Fetch tweets via the Apify altimis/scweet actor."""
+    """Fetch tweets via the Apify omkar-cloud/twitter-tweet-scraper actor."""
 
     def __init__(self, config: TwitterConfig, http_client: httpx.AsyncClient):
         super().__init__(config, http_client)
@@ -46,18 +46,18 @@ class TwitterScraper(BaseScraper):
 
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
-        max_items = max(100, self.config.fetch_limit)
+        max_items = self.config.fetch_limit if self.config.fetch_limit else 100
 
         if users:
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
             await self._collect_from_payload(
                 token,
                 {
-                    "source_mode": "profiles",
-                    "profile_urls": users,
-                    "search_sort": "Latest",
-                    "max_items": max_items,
-                    "since": since.strftime("%Y-%m-%d_%H:%M:%S_UTC"),
+                    "usernames": users,
+                    "maxTweetsPerProfile": max_items,
+                    "includeRetweets": False,
+                    "includeReplies": False,
+                    "since": since.strftime("%Y-%m-%d"),
                 },
                 since,
                 items,
@@ -70,11 +70,11 @@ class TwitterScraper(BaseScraper):
                 await self._collect_from_payload(
                     token,
                     {
-                        "source_mode": "search",
-                        "search_query": keyword,
-                        "search_sort": "Latest",
-                        "max_items": max_items,
-                        "since": since.strftime("%Y-%m-%d_%H:%M:%S_UTC"),
+                        "searchTerms": [keyword],
+                        "maxTweetsPerProfile": max_items,
+                        "includeRetweets": False,
+                        "includeReplies": False,
+                        "since": since.strftime("%Y-%m-%d"),
                     },
                     since,
                     items,
@@ -100,6 +100,7 @@ class TwitterScraper(BaseScraper):
         if not await self._wait_for_run(token, run_id):
             return
         raw_items = await self._fetch_dataset(token, dataset_id)
+        logger.info(f"Raw items count from Apify: {len(raw_items)}")
         for raw in raw_items:
             if isinstance(raw, dict) and raw.get("noResults"):
                 continue
@@ -123,19 +124,6 @@ class TwitterScraper(BaseScraper):
         except Exception as exc:
             logger.error(f"Failed to start Apify run: {exc}")
             return None, None
-
-    async def _start_run(
-        self, token: str, users: List[str]
-    ) -> tuple[Optional[str], Optional[str]]:
-        return await self._start_run_with_payload(
-            token,
-            {
-                "source_mode": "profiles",
-                "profile_urls": users,
-                "search_sort": "Latest",
-                "max_items": max(100, self.config.fetch_limit),
-            },
-        )
 
     async def _wait_for_run(self, token: str, run_id: str) -> bool:
         url = f"{_APIFY_BASE}/actor-runs/{run_id}?token={token}"
@@ -163,20 +151,15 @@ class TwitterScraper(BaseScraper):
             resp = await self.client.get(url, timeout=30.0)
             resp.raise_for_status()
             data = resp.json()
-            # ===== 调试日志开始 =====
             if isinstance(data, list) and data:
                 logger.info(f"Dataset first item keys: {list(data[0].keys())}")
-                logger.info(f"Dataset first item sample: {data[0]}")
-            else:
-                logger.info(f"Dataset response type: {type(data)}, value: {data}")
-            # ===== 调试日志结束 =====
             return data
         except Exception as exc:
             logger.error(f"Failed to fetch Apify dataset {dataset_id}: {exc}")
             return []
 
     async def fetch_replies_for_item(self, item: ContentItem) -> List[str]:
-        """Fetch reply texts for one tweet using scweet search mode."""
+        """Fetch reply texts for one tweet using search mode."""
         if not self.config.fetch_reply_text:
             return []
 
@@ -192,12 +175,11 @@ class TwitterScraper(BaseScraper):
         if max_replies == 0:
             return []
 
-        max_items = max(100, max_replies * 5)
         payload = {
-            "source_mode": "search",
-            "search_query": f"conversation_id:{conversation_id}",
-            "search_sort": "Latest",
-            "max_items": max_items,
+            "searchTerms": [f"conversation_id:{conversation_id}"],
+            "maxTweetsPerProfile": max_replies,
+            "includeRetweets": False,
+            "includeReplies": True,
         }
 
         run_id, dataset_id = await self._start_run_with_payload(token, payload)
@@ -211,7 +193,7 @@ class TwitterScraper(BaseScraper):
         return self._extract_reply_lines(item, rows, max_replies)
 
     def _extract_reply_lines(self, item: ContentItem, rows: list, max_replies: int) -> List[str]:
-        """Convert scweet rows into compact reply lines."""
+        """Convert reply rows into compact reply lines."""
         min_likes = max(self.config.reply_min_likes, 0)
         tweet_id = str(item.metadata.get("tweet_id") or "")
         own_author = (item.author or "").lstrip("@")
@@ -221,19 +203,11 @@ class TwitterScraper(BaseScraper):
             if not isinstance(row, dict) or row.get("noResults"):
                 continue
 
-            row_id = str(row.get("id") or "")
-            if row_id.startswith("tweet-"):
-                row_id = row_id[6:]
+            row_id = str(row.get("tweetId") or "")
             if tweet_id and row_id == tweet_id:
                 continue
 
-            user = row.get("user") or {}
-            handle = (
-                user.get("handle")
-                or row.get("handle")
-                or user.get("username")
-                or "unknown"
-            )
+            handle = row.get("fromProfile") or "unknown"
             if handle and own_author and handle.lower() == own_author.lower():
                 continue
 
@@ -241,8 +215,8 @@ class TwitterScraper(BaseScraper):
             if not text:
                 continue
 
-            likes = int(row.get("favorite_count") or 0)
-            replies = int(row.get("reply_count") or 0)
+            likes = int(row.get("likeCount") or 0)
+            replies = int(row.get("replyCount") or 0)
             if likes < min_likes:
                 continue
 
@@ -276,9 +250,9 @@ class TwitterScraper(BaseScraper):
         return True
 
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
-        """Parse a tweet item from Scweet flat output."""
+        """Parse a tweet item from omkar-cloud/twitter-tweet-scraper output."""
         try:
-            created_at_str = item.get("created_at")
+            created_at_str = item.get("createdAt")
             if not created_at_str:
                 return None
 
@@ -292,17 +266,16 @@ class TwitterScraper(BaseScraper):
             if published_at.tzinfo is None:
                 published_at = published_at.replace(tzinfo=timezone.utc)
 
-            # 本地时间过滤（可临时注释以验证解析）
             if published_at < since:
                 return None
 
-            raw_id = str(item.get("id") or "")
+            raw_id = str(item.get("tweetId") or "")
             if not raw_id:
                 return None
-            tweet_id = raw_id.replace("tweet-", "") if raw_id.startswith("tweet-") else raw_id
+            tweet_id = raw_id
 
-            conversation_id = str(item.get("conversation_id") or tweet_id)
-            screen_name = item.get("handle") or "unknown"
+            conversation_id = str(item.get("conversationId") or tweet_id)
+            screen_name = item.get("fromProfile") or "unknown"
             author = screen_name
 
             text = item.get("text") or ""
@@ -310,7 +283,7 @@ class TwitterScraper(BaseScraper):
                 return None
             text = unescape(text)
 
-            url = item.get("tweet_url")
+            url = item.get("url")
             if not url:
                 url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
@@ -330,11 +303,11 @@ class TwitterScraper(BaseScraper):
                 metadata={
                     "tweet_id": tweet_id,
                     "conversation_id": conversation_id,
-                    "favorite_count": item.get("favorite_count", 0),
-                    "retweet_count": item.get("retweet_count", 0),
-                    "reply_count": item.get("reply_count", 0),
-                    "quote_count": item.get("quote_count", 0),
-                    "bookmark_count": item.get("bookmark_count", 0),
+                    "favorite_count": item.get("likeCount", 0),
+                    "retweet_count": item.get("retweetCount", 0),
+                    "reply_count": item.get("replyCount", 0),
+                    "quote_count": item.get("quoteCount", 0),
+                    "bookmark_count": item.get("bookmarkCount", 0),
                     "lang": item.get("lang"),
                     "category": self.config.category,
                 },
