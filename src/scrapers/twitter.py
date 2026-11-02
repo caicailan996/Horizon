@@ -1,4 +1,4 @@
-"""Twitter scraper using Apify omkar-cloud/twitter-tweet-scraper actor."""
+"""Twitter scraper using Apify seemuapps/x-tweet-scraper actor."""
 
 import asyncio
 import logging
@@ -21,7 +21,7 @@ _MAX_WAIT = 180
 
 
 class TwitterScraper(BaseScraper):
-    """Fetch tweets via the Apify omkar-cloud/twitter-tweet-scraper actor."""
+    """Fetch tweets via the Apify seemuapps/x-tweet-scraper actor."""
 
     def __init__(self, config: TwitterConfig, http_client: httpx.AsyncClient):
         super().__init__(config, http_client)
@@ -46,18 +46,20 @@ class TwitterScraper(BaseScraper):
 
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
-        max_items = self.config.fetch_limit if self.config.fetch_limit else 100
+        
+        # seemuapps 免费版单次上限为 25 条，这里做个安全限制
+        max_items = min(self.config.fetch_limit, 25) if self.config.fetch_limit else 25
 
         if users:
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
             await self._collect_from_payload(
                 token,
                 {
-                    "usernames": users,
-                    "maxTweetsPerProfile": max_items,
-                    "includeRetweets": False,
+                    "fromUsers": users,
+                    "maxResults": max_items,
                     "includeReplies": False,
-                    "since": since.strftime("%Y-%m-%d"),
+                    "includeRetweets": False,
+                    "sortBy": "latest"
                 },
                 since,
                 items,
@@ -71,10 +73,10 @@ class TwitterScraper(BaseScraper):
                     token,
                     {
                         "searchTerms": [keyword],
-                        "maxTweetsPerProfile": max_items,
-                        "includeRetweets": False,
+                        "maxResults": max_items,
                         "includeReplies": False,
-                        "since": since.strftime("%Y-%m-%d"),
+                        "includeRetweets": False,
+                        "sortBy": "latest"
                     },
                     since,
                     items,
@@ -175,10 +177,11 @@ class TwitterScraper(BaseScraper):
         if max_replies == 0:
             return []
 
+        # seemuapps 回复抓取可能不直接支持，这里作为保底逻辑
+        # 如果该 actor 支持 searchTerms 搜 id，可以尝试
         payload = {
             "searchTerms": [f"conversation_id:{conversation_id}"],
-            "maxTweetsPerProfile": max_replies,
-            "includeRetweets": False,
+            "maxResults": max_replies,
             "includeReplies": True,
         }
 
@@ -203,7 +206,7 @@ class TwitterScraper(BaseScraper):
             if not isinstance(row, dict) or row.get("noResults"):
                 continue
 
-            row_id = str(row.get("id") or "")
+            row_id = str(row.get("tweetId") or "")
             if tweet_id and row_id == tweet_id:
                 continue
 
@@ -216,9 +219,8 @@ class TwitterScraper(BaseScraper):
             if not text:
                 continue
 
-            stats = row.get("stats") or {}
-            likes = int(stats.get("likes") or 0)
-            replies = int(stats.get("replies") or 0)
+            likes = int(row.get("likeCount") or 0)
+            replies = int(row.get("replyCount") or 0)
             if likes < min_likes:
                 continue
 
@@ -252,9 +254,9 @@ class TwitterScraper(BaseScraper):
         return True
 
     def _parse_item(self, item: dict, since: datetime) -> Optional[ContentItem]:
-        """Parse a tweet item from omkar-cloud/twitter-tweet-scraper output."""
+        """Parse a tweet item from seemuapps/x-tweet-scraper output."""
         try:
-            created_at_str = item.get("created_at")
+            created_at_str = item.get("createdAt") or item.get("created_at")
             if not created_at_str:
                 return None
 
@@ -271,28 +273,32 @@ class TwitterScraper(BaseScraper):
             if published_at < since:
                 return None
 
-            tweet_id = str(item.get("id") or "")
-            if not tweet_id:
+            raw_id = str(item.get("tweetId") or item.get("id") or "")
+            if not raw_id:
                 return None
+            tweet_id = raw_id
 
+            conversation_id = str(item.get("conversationId") or tweet_id)
+            
             author_data = item.get("author") or {}
-            screen_name = author_data.get("username") or "unknown"
+            screen_name = (
+                author_data.get("username") 
+                or author_data.get("userName")
+                or item.get("username") 
+                or "unknown"
+            )
             author = author_data.get("name") or screen_name
 
-            text = item.get("text") or ""
+            text = item.get("text") or item.get("full_text") or ""
             if not text:
                 return None
             text = unescape(text)
 
-            url = item.get("link")
-            if not url:
-                url = f"https://twitter.com/{screen_name}/status/{tweet_id}"
+            url = item.get("url") or f"https://twitter.com/{screen_name}/status/{tweet_id}"
 
             title_body = text[:50].replace("\n", " ").strip()
             if len(text) > 50:
                 title_body += "..."
-
-            stats = item.get("stats") or {}
 
             return ContentItem(
                 id=self._generate_id(SourceType.TWITTER.value, "tweet", tweet_id),
@@ -305,12 +311,12 @@ class TwitterScraper(BaseScraper):
                 profile=self.config.profile,
                 metadata={
                     "tweet_id": tweet_id,
-                    "conversation_id": item.get("conversation_id") or tweet_id,
-                    "favorite_count": stats.get("likes", 0),
-                    "retweet_count": stats.get("retweets", 0),
-                    "reply_count": stats.get("replies", 0),
-                    "quote_count": stats.get("quotes", 0),
-                    "bookmark_count": stats.get("bookmarks", 0),
+                    "conversation_id": conversation_id,
+                    "favorite_count": item.get("likeCount", 0),
+                    "retweet_count": item.get("retweetCount", 0),
+                    "reply_count": item.get("replyCount", 0),
+                    "quote_count": item.get("quoteCount", 0),
+                    "bookmark_count": item.get("bookmarkCount", 0),
                     "lang": item.get("lang"),
                     "category": self.config.category,
                 },
