@@ -25,7 +25,17 @@ jobs:
         with:
             python-version: '3.12'  # 显式指定为 3.12
 
-        
+      - name: Test API Connection
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          echo "Testing connection to CAIH..."
+          curl -i -X POST https://token.caih.com/v1/chat/completions \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $OPENAI_API_KEY" \
+            -d '{"model": "deepseek-v4-flash-0731", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
+
+
 
       - name: Run Horizon
         env:
