@@ -47,19 +47,19 @@ class TwitterScraper(BaseScraper):
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
         
-        # 免费版单次上限 25 条
-        max_items = min(self.config.fetch_limit, 25) if self.config.fetch_limit else 25
+        # seemuapps 免费版单次通常限制为 10 条，这里保守设为 10；若付费可调大
+        max_results = min(self.config.fetch_limit, 10) if self.config.fetch_limit else 10
 
         # 将用户列表转换为查询语法："from:user1 OR from:user2"
         if users:
-            search_query = " OR ".join([f"from:{u}" for u in users])
+            query = " OR ".join([f"from:{u}" for u in users])
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
             await self._collect_from_payload(
                 token,
                 {
-                    "searchQuery": search_query,
-                    "maxTweets": max_items,
-                    "sort": "Latest",
+                    "query": query,
+                    "maxResults": max_results,
+                    "sortBy": "latest",
                 },
                 since,
                 items,
@@ -72,9 +72,9 @@ class TwitterScraper(BaseScraper):
                 await self._collect_from_payload(
                     token,
                     {
-                        "searchQuery": keyword,
-                        "maxTweets": max_items,
-                        "sort": "Latest",
+                        "query": keyword,
+                        "maxResults": max_results,
+                        "sortBy": "latest",
                     },
                     since,
                     items,
@@ -176,9 +176,9 @@ class TwitterScraper(BaseScraper):
             return []
 
         payload = {
-            "searchQuery": f"conversation_id:{conversation_id}",
-            "maxTweets": max_replies,
-            "sort": "Latest",
+            "query": f"conversation_id:{conversation_id}",
+            "maxResults": max_replies,
+            "sortBy": "latest",
         }
 
         run_id, dataset_id = await self._start_run_with_payload(token, payload)
