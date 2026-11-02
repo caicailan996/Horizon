@@ -47,19 +47,19 @@ class TwitterScraper(BaseScraper):
         items: List[ContentItem] = []
         seen_ids: set[str] = set()
         
-        # seemuapps 免费版单次上限为 25 条，这里做个安全限制
+        # 免费版单次上限 25 条
         max_items = min(self.config.fetch_limit, 25) if self.config.fetch_limit else 25
 
+        # 将用户列表转换为查询语法："from:user1 OR from:user2"
         if users:
+            search_query = " OR ".join([f"from:{u}" for u in users])
             logger.info(f"Fetching Twitter (Apify) for users: {users}")
             await self._collect_from_payload(
                 token,
                 {
-                    "fromUsers": users,
-                    "maxResults": max_items,
-                    "includeReplies": False,
-                    "includeRetweets": False,
-                    "sortBy": "latest"
+                    "searchQuery": search_query,
+                    "maxTweets": max_items,
+                    "sort": "Latest",
                 },
                 since,
                 items,
@@ -72,11 +72,9 @@ class TwitterScraper(BaseScraper):
                 await self._collect_from_payload(
                     token,
                     {
-                        "searchTerms": [keyword],
-                        "maxResults": max_items,
-                        "includeReplies": False,
-                        "includeRetweets": False,
-                        "sortBy": "latest"
+                        "searchQuery": keyword,
+                        "maxTweets": max_items,
+                        "sort": "Latest",
                     },
                     since,
                     items,
@@ -177,12 +175,10 @@ class TwitterScraper(BaseScraper):
         if max_replies == 0:
             return []
 
-        # seemuapps 回复抓取可能不直接支持，这里作为保底逻辑
-        # 如果该 actor 支持 searchTerms 搜 id，可以尝试
         payload = {
-            "searchTerms": [f"conversation_id:{conversation_id}"],
-            "maxResults": max_replies,
-            "includeReplies": True,
+            "searchQuery": f"conversation_id:{conversation_id}",
+            "maxTweets": max_replies,
+            "sort": "Latest",
         }
 
         run_id, dataset_id = await self._start_run_with_payload(token, payload)
