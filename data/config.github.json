@@ -42,7 +42,7 @@
   "sources": {
     "twitter": {
         "enabled": true,
-        "actor_id": "omkar-cloud~twitter-tweet-scraper", 
+        "actor_id": "seemuapps/x-tweet-scraper", 
         "users": [
             "OpenAI",
             "AnthropicAI",
