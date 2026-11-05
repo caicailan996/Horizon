@@ -70,8 +70,26 @@
         "max_tweets": 25,
         "profile": "twitter-news"
     },
+    "ossinsight": {
+      "enabled": true,
+      "profile": "ai-projects",
+      "languages": ["Python", "C++"],
+      "period": "past_24_hours"
+    },
     "github": [
       {
+        "type": "repo_releases",
+        "owner": "vllm-project",
+        "repo": "vllm",
+        "enabled": true,
+        "profile": "ai-projects" 
+      },{
+        "type": "repo_releases",
+        "owner": "LMCache",
+        "repo": "LMCache",
+        "enabled": true,
+        "profile": "ai-projects"
+      },{
         "type": "user_events",
         "username": "karpathy",
         "enabled": true,
