@@ -36,7 +36,11 @@
       "ai-creator": {
         "threshold": 5.5,
         "topic_dedup": true
-      }
+      },
+       "ai-projects": { 
+         "threshold": 5.0, 
+         "topic_dedup": true 
+       } 
     }
   },
   "sources": {
