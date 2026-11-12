@@ -32,14 +32,7 @@ jobs:
           echo "Testing connection to CAIH...,key="${{ secrets.OPENAI_API_KEY }}
           curl -i -X POST https://token.caih.com/v1/chat/completions \
             -H "Content-Type: application/json" \
-            -H "Authorization: Bearer sk-zXZu4KJuSkCozx75xZuP70dO2lLz2WG06wCFMB4rT0SlwpTX" \
-            -d '{"model": "deepseek-v4-flash-0731", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
-
-          curl -i -X POST https://token.caih.com/v1/chat/completions \
-            -H "Content-Type: application/json" \
-            -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
             -H "Authorization: Bearer ${{ secrets.OPENAI_API_KEY }}" \
-            --http1.1 \
             -d '{"model": "deepseek-v4-flash-0731", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
 
 
