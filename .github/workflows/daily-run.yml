@@ -33,7 +33,7 @@ jobs:
           curl -i -X POST https://token.caih.com/v1/chat/completions \
             -H "Content-Type: application/json" \
             -H "Authorization: Bearer $OPENAI_API_KEY" \
-            -d '{"model": "deepseek-v4-pro-202606", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
+            -d '{"model": "deepseek-v4-flash-0731", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
 
 
 
