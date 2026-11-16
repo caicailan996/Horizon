@@ -1,8 +1,8 @@
 {
   "ai": {
     "provider": "openai",
-    "model": "deepseek-v4-pro-202606",
-    "base_url": "https://token.caih.com/v1",
+    "model": "deepseek/deepseek-v4-1-flash",
+    "base_url": "https://tokenapi.caih.com/v1",
     "api_key_env": "OPENAI_API_KEY",
     "temperature": 0.3,
     "max_tokens": 4096,
