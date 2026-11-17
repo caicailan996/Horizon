@@ -32,7 +32,7 @@ jobs:
           echo "Testing connection..."
           curl -i -X POST https://tokenapi.caih.com/v1/chat/completions \
             -H "Content-Type: application/json" \
-            -H "Authorization: Bearer sk-tjgjkwipgdriqxaewxpovpejcmyezlrlattffexrtlrnjnxh" \
+            -H "Authorization: $CAIH_KEY" \
             -d '{"model": "deepseek/deepseek-v4-1-flash", "messages": [{"role": "user", "content": "hello"}], "max_tokens": 5}'
 
 
